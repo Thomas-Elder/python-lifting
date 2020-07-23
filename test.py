@@ -26,15 +26,15 @@ def getExerciseMaxAverage(exercise: str, reps: int) -> float:
         sets = dataset[dataset['Date'] == date]
         #logging.debug('sets: %s' % (sets))
 
-        # get any snatch pull sets that happened on this date
+        # get sets with given exercise
         exercise_sets = sets[sets['Exercise'] == exercise]
         logging.debug('exercise_sets: \n%s' % (exercise_sets))
 
-        # we want only the sets with reps of 3
+        # get sets with given rep number
         exercise_sets_reps = exercise_sets[exercise_sets['Reps'] == reps]
         logging.debug('exercise_sets_reps: \n%s' % (exercise_sets_reps))
 
-        # we want to add only the highest snatch pull weight
+        # get max weight
         exercise_max = exercise_sets_reps['Weight'].max()
         logging.debug('exercise_max: \n%s' % (exercise_max))
 
@@ -48,8 +48,29 @@ def getExerciseMaxAverage(exercise: str, reps: int) -> float:
 
     return exercise_average
 
-print('Snatch: %s' % (getExerciseMaxAverage('Snatch', 1)))
-print('Clean and Jerk: %s' % (getExerciseMaxAverage('Clean and Jerk', 1)))
+def getExerciseMax(exercise: str, reps: int) -> float:
+    '''Finds the highest weight lifted for the given exercise and rep number.'''
+
+    logging.debug('Exercise being searched: %s' % (exercise))
+
+    # get sets with given exercise
+    exercise_sets = dataset[dataset['Exercise'] == exercise]
+    logging.debug('exercise_sets: \n%s' % (exercise_sets))
+
+    # get sets with given rep number
+    exercise_sets_reps = exercise_sets[exercise_sets['Reps'] == reps]
+    logging.debug('exercise_sets_reps: \n%s' % (exercise_sets_reps))
+
+    # get max weight
+    exercise_max = exercise_sets_reps['Weight'].max()
+    logging.debug('exercise_max: \n%s' % (exercise_max))
+
+    return exercise_max
+
+print()
+print('Snatch max: %s' % (getExerciseMax('Snatch', 1)))
+print('Clean and Jerk max: %s' % (getExerciseMax('Clean and Jerk', 1)))
+print()
 print('Snatch Pulls: %s' % (getExerciseMaxAverage('Snatch Pull', 3)))
 print('Clean Pulls: %s' % (getExerciseMaxAverage('Clean Pull', 3)))
 print('Front Squats: %s' % (getExerciseMaxAverage('Front Squat', 3)))
