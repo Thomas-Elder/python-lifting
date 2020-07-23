@@ -48,8 +48,12 @@ def getExerciseMaxAverage(exercise: str, reps: int) -> float:
 
     return exercise_average
 
-print('Snatch: %s' % (getExerciseMaxAverage('Snatch', 3)))
-print('Clean: %s' % (getExerciseMaxAverage('Clean', 3)))
-print('Clean and Jerk: %s' % (getExerciseMaxAverage('Clean and Jerk', 3)))
+print('Snatch: %s' % (getExerciseMaxAverage('Snatch', 1)))
+print('Clean and Jerk: %s' % (getExerciseMaxAverage('Clean and Jerk', 1)))
+print('Snatch Pulls: %s' % (getExerciseMaxAverage('Snatch Pull', 3)))
+print('Clean Pulls: %s' % (getExerciseMaxAverage('Clean Pull', 3)))
+print('Front Squats: %s' % (getExerciseMaxAverage('Front Squat', 3)))
+print('Back Squats: %s' % (getExerciseMaxAverage('Back Squat', 3)))
 print('Power Snatch: %s' % (getExerciseMaxAverage('Power Snatch', 3)))
 print('Power Clean: %s' % (getExerciseMaxAverage('Power Clean', 3)))
+print('Snatch Balance: %s' % (getExerciseMaxAverage('Snatch Balance', 1)))
