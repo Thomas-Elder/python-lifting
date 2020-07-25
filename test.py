@@ -20,6 +20,10 @@ def getExerciseMaxAverage(exercise: str, reps: int) -> float:
     ----------
     exercise: str
     reps: int
+
+    Returns
+    -------
+    A float, the average of all max weights for the given exercise and number of reps
     '''
 
     exercise_maxes = []
@@ -61,6 +65,10 @@ def getExerciseMax(exercise: str, reps: int) -> float:
     ----------
     exercise: str
     reps: int
+
+    Returns
+    -------
+    A float, the max weight lifted for the given exercise and number of reps
     '''
 
     logging.debug('Exercise being searched: %s' % (exercise))
@@ -91,6 +99,8 @@ def getExerciseMaxes(exercise: str, reps: int) -> list:
     -------
     A list of dictionaries containing all the max weights lifted in each session, eg
     [{'date': '25Jul20', 'weight': 80}]
+
+    for the given exercise and number of reps.
     '''
 
     exercise_maxes = []
