@@ -159,6 +159,14 @@ def getExerciseMaxes(dataset, exercise: str, reps: int) -> list:
 
     return clean_maxes
 
+def printKeyExercises(data):
+    print('Snatch Pulls average top set 3 reps: %s' % (getExerciseMaxAverage(data, 'Snatch Pull', 3)))
+    print('Clean Pulls average top set 3 reps: %s' % (getExerciseMaxAverage(data, 'Clean Pull', 3)))
+    print('Front Squats average top set 3 reps: %s' % (getExerciseMaxAverage(data, 'Front Squat', 3)))
+    print('Back Squats average top set 3 reps: %s' % (getExerciseMaxAverage(data, 'Back Squat', 3)))
+    print('Power Snatch average top set 3 reps: %s' % (getExerciseMaxAverage(data, 'Power Snatch', 3)))
+    print('Power Clean average top set 3 reps: %s' % (getExerciseMaxAverage(data, 'Power Clean', 3)))
+    print('Snatch Balance average top set 1 rep: %s' % (getExerciseMaxAverage(data, 'Snatch Balance', 1)))
 # 
 
 print()
@@ -168,13 +176,7 @@ print()
 
 requiredData = getDatasetForDateRange(dataset, '2020-01-01', '2020-07-17')
 
-print('Snatch Pulls average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Snatch Pull', 3)))
-print('Clean Pulls average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Clean Pull', 3)))
-print('Front Squats average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Front Squat', 3)))
-print('Back Squats average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Back Squat', 3)))
-print('Power Snatch average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Power Snatch', 3)))
-print('Power Clean average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Power Clean', 3)))
-print('Snatch Balance average top set 1 rep: %s' % (getExerciseMaxAverage(requiredData, 'Snatch Balance', 1)))
+printKeyExercises(requiredData)
 
 #
 
@@ -184,10 +186,4 @@ print()
 
 requiredData = getDatasetForDateRange(dataset, '2020-07-19', '2020-12-31')
 
-print('Snatch Pulls average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Snatch Pull', 3)))
-print('Clean Pulls average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Clean Pull', 3)))
-print('Front Squats average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Front Squat', 3)))
-print('Back Squats average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Back Squat', 3)))
-print('Power Snatch average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Power Snatch', 3)))
-print('Power Clean average top set 3 reps: %s' % (getExerciseMaxAverage(requiredData, 'Power Clean', 3)))
-print('Snatch Balance average top set 1 rep: %s' % (getExerciseMaxAverage(requiredData, 'Snatch Balance', 1)))
+printKeyExercises(requiredData)
