@@ -4,20 +4,42 @@ import pandas
 
 import os 
 import statistics
+from datetime import datetime
 
 import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-logging.disable(logging.CRITICAL)
+#logging.disable(logging.CRITICAL)
 
 logging.debug('cwd: %s' % (os.getcwd()))
 dataset = pandas.read_csv('lifting_data.csv')
 
+dataset['Date'] = pandas.to_datetime(dataset['Date'])
+#logging.debug('dataset: %s' % (dataset))
 
-def getExerciseMaxAverage(exercise: str, reps: int) -> float:
+def getDatasetForDateRange(dataset, fromDate: str, toDate: str):
+    '''Returns a dataframe containing sets between the specified dates
+    
+    Parameters
+    ----------
+    dataset: a pandas dataFrame
+    fromDate: str of format 2020-06-01
+    toDate: str of format 2020-06-01
+
+    Returns
+    -------
+    A pandas dataFrame
+    '''
+
+    mask = (dataset['Date'] > fromDate) & (dataset['Date'] <= toDate)
+
+    return dataset.loc[mask]
+
+def getExerciseMaxAverage(dataset, exercise: str, reps: int) -> float:
     '''Computes the average session maximum weight lifted for the given exercise and rep number.
     
     Parameters
     ----------
+    dataset: a pandas dataFrame
     exercise: str
     reps: int
 
@@ -58,11 +80,12 @@ def getExerciseMaxAverage(exercise: str, reps: int) -> float:
 
     return exercise_average
 
-def getExerciseMax(exercise: str, reps: int) -> float:
+def getExerciseMax(dataset, exercise: str, reps: int) -> float:
     '''Finds the highest weight lifted for the given exercise and rep number.
     
     Parameters
     ----------
+    dataset: a pandas dataFrame
     exercise: str
     reps: int
 
@@ -87,11 +110,12 @@ def getExerciseMax(exercise: str, reps: int) -> float:
 
     return exercise_max
 
-def getExerciseMaxes(exercise: str, reps: int) -> list:
+def getExerciseMaxes(dataset, exercise: str, reps: int) -> list:
     '''Finds the all the top set weights lifted for the given exercise and rep number.
     
     Parameters
     ----------
+    dataset: a pandas dataFrame
     exercise: str
     reps: int
 
@@ -132,16 +156,25 @@ def getExerciseMaxes(exercise: str, reps: int) -> list:
 
     return clean_maxes
 
-print()
-print('Snatch max 1 rep: %s' % (getExerciseMax('Snatch', 1)))
-print('Clean and Jerk max 1 rep: %s' % (getExerciseMax('Clean and Jerk', 1)))
-print()
-print('Snatch Pulls average top set 3 reps: %s' % (getExerciseMaxAverage('Snatch Pull', 3)))
-print('Clean Pulls average top set 3 reps: %s' % (getExerciseMaxAverage('Clean Pull', 3)))
-print('Front Squats average top set 3 reps: %s' % (getExerciseMaxAverage('Front Squat', 3)))
-print('Back Squats average top set 3 reps: %s' % (getExerciseMaxAverage('Back Squat', 3)))
-print('Power Snatch average top set 3 reps: %s' % (getExerciseMaxAverage('Power Snatch', 3)))
-print('Power Clean average top set 3 reps: %s' % (getExerciseMaxAverage('Power Clean', 3)))
-print('Snatch Balance average top set 1 rep: %s' % (getExerciseMaxAverage('Snatch Balance', 1)))
-print()
-print('Snatch Pulls top sets 3 reps: %s' % (getExerciseMaxes('Snatch Pull', 3)))
+
+fromDate = '2020-06-01'
+toDate = '2020-06-30'
+
+sets = getDatasetForDateRange(dataset, fromDate, toDate)
+
+print('Sets between 2020-06-01 and 2020-06-30:')
+print(sets)
+
+#    print()
+#    print('Snatch max 1 rep: %s' % (getExerciseMax('Snatch', 1)))
+#    print('Clean and Jerk max 1 rep: %s' % (getExerciseMax('Clean and Jerk', 1)))
+#    print()
+#    print('Snatch Pulls average top set 3 reps: %s' % (getExerciseMaxAverage('Snatch Pull', 3)))
+#    print('Clean Pulls average top set 3 reps: %s' % (getExerciseMaxAverage('Clean Pull', 3)))
+#    print('Front Squats average top set 3 reps: %s' % (getExerciseMaxAverage('Front Squat', 3)))
+#    print('Back Squats average top set 3 reps: %s' % (getExerciseMaxAverage('Back Squat', 3)))
+#    print('Power Snatch average top set 3 reps: %s' % (getExerciseMaxAverage('Power Snatch', 3)))
+#    print('Power Clean average top set 3 reps: %s' % (getExerciseMaxAverage('Power Clean', 3)))
+#    print('Snatch Balance average top set 1 rep: %s' % (getExerciseMaxAverage('Snatch Balance', 1)))
+#    print()
+#    print('Snatch Pulls top sets 3 reps: %s' % (getExerciseMaxes('Snatch Pull', 3)))
