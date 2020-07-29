@@ -29,7 +29,8 @@ def getExercises(dataset) -> list:
     -------
     The exercises as a list of strings
     '''
-    pass
+    
+    return dataset['Exercise'].unique()
 
 def getDatasetForDateRange(dataset, fromDate: str, toDate: str):
     '''Returns a dataframe containing sets between the specified dates
@@ -202,3 +203,8 @@ print()
 requiredData = getDatasetForDateRange(dataset, '2020-07-19', '2020-12-31')
 
 printKeyExercises(requiredData)
+
+print()
+print('Testing getExercises()... ')
+print(getExercises(dataset))
+print()
