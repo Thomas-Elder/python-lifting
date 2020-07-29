@@ -14,7 +14,22 @@ logging.debug('cwd: %s' % (os.getcwd()))
 dataset = pandas.read_csv('lifting_data.csv')
 
 dataset['Date'] = pandas.to_datetime(dataset['Date'])
-#logging.debug('dataset: %s' % (dataset))
+logging.debug('dataset: %s' % (dataset))
+
+def getExercises(dataset) -> list:
+    '''Returns a list of exercises from the given dataset
+
+    Parses the dataframe and compiles a list of unique Exercises.
+
+    Parameters
+    ----------
+    dataset: a pandas dataframe
+
+    Returns
+    -------
+    The exercises as a list of strings
+    '''
+    pass
 
 def getDatasetForDateRange(dataset, fromDate: str, toDate: str):
     '''Returns a dataframe containing sets between the specified dates
