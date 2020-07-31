@@ -10,7 +10,7 @@ import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.disable(logging.CRITICAL)
 
-class dataHandler:
+class DataHandler:
 
     def getExercises(self, dataset) -> list:
         '''Returns a list of exercises from the given dataset
