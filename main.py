@@ -3,7 +3,7 @@
 from data.dataReader import dataReader
 from data.dataHandler import dataHandler
 
-dr = dataReader('lifting_data.csv')
+dr = dataReader('data\\lifting_data.csv')
 
 dh = dataHandler()
 
