@@ -1,10 +1,10 @@
 #! python3
 
-from data.dataReader import dataReader
-from data.dataHandler import dataHandler
+from data.dataReader import DataReader
+from data.dataHandler import DataHandler
 
-dr = dataReader('data\\data.csv')
+dr = DataReader('data\\data.csv')
 
-dh = dataHandler()
+dh = DataHandler()
 
 print(dh.getExerciseMax(dr.getData(), 'Snatch', 1))
