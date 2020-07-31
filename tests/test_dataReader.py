@@ -6,13 +6,21 @@ from data.dataHandler import DataHandler
 import pandas
 from datetime import datetime
 
-def test_dataReaderInit():
-    dr = DataReader('tests\\test_data.csv')
-    assert dr != None
+class Test_DataReader():
 
-def test_dataReaderContent():
-    dr = DataReader('tests\\test_data.csv')
-    expected = pandas.DataFrame({'Date': ['2019-04-06'], 'Exercise': ['Snatch'], 'Reps': [1], 'Weight': [68]})
-    actual = dr.getData()
+    def setup_method(self):
+        self.dr = DataReader('tests\\test_data.csv')
+    
+    def teardown_method(self):
+        self.dr = None
 
-    assert actual['Date'][0] == expected['Date'][0]
+    def test_dataReaderInit(self):
+        #dr = DataReader('tests\\test_data.csv')
+        assert self.dr != None
+
+    def test_dataReaderContent(self):
+        #dr = DataReader('tests\\test_data.csv')
+        expected = pandas.DataFrame({'Date': ['2019-04-06'], 'Exercise': ['Snatch'], 'Reps': [1], 'Weight': [68]})
+        actual = self.dr.getData()
+
+        assert actual['Date'][0] == expected['Date'][0]
