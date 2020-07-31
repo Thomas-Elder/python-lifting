@@ -1,7 +1,7 @@
 #! python3
 
-from dataReader import dataReader
-from dataHandler import dataHandler
+from data.dataReader import dataReader
+from data.dataHandler import dataHandler
 
 dr = dataReader('lifting_data.csv')
 
