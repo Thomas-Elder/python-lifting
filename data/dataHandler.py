@@ -131,7 +131,6 @@ class DataHandler:
         '''
 
         competitionSets = dataset.loc[dataset['Attempt'] != 0]
-        print(dataset['Attempt'])
         return competitionSets['Date'].unique()
 
     def getPeriodDates(self, dataset, competitionDates) -> list:

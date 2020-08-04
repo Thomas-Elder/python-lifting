@@ -57,6 +57,15 @@ class Test_DataHandler():
     def test_getCompetitionDates(self):
         expected_competitionDates = [pandas.to_datetime('2020-04-20'), pandas.to_datetime('2020-06-01')]
         result = self.dh.getCompetitionDates(self.testDataFrame)
+        
+        # loggedy doggedy doo
+        logging.debug('pandas.to_datetime(2020-04-20): {}'.format(pandas.to_datetime('2020-04-20')))
+        logging.debug('type(pandas.to_datetime(\'2020-04-20\')): {}'.format(type(pandas.to_datetime('2020-04-20'))))
+        logging.debug('result: {}'.format(result))
+        logging.debug('type(result[0]): {}'.format(type(result[0])))
+        logging.debug('expected_competitionDates: {}'.format(expected_competitionDates))
+        logging.debug('type(expected_competitionDates[0]): {}'.format(type(expected_competitionDates[0])))
+
         assert numpy.all(result == expected_competitionDates)
 
     def test_getPeriodDates(self):
@@ -66,5 +75,5 @@ class Test_DataHandler():
                                 (pandas.to_datetime('2020-06-02'), pandas.to_datetime('2020-07-30'))]
         
         result = self.dh.getPeriodDates(self.testDataFrame, competitionDates)
-        
+
         assert numpy.all(result == expected_periodDates)
