@@ -193,13 +193,11 @@ class DataHandler:
 
         # Otherwise we need to loop over dates to get all the periods
         else:
-            for i in range(len(competitionDates)):
+            for i in range(len(competitionDates) - 1):
                 # Then we need to loop over compdates:
-                trainingPeriods.append((datetime.strftime(competitionDates[i] + timedelta(1)), datetime.strftime(competitionDates[i + 1] - timedelta(1))))
+                trainingPeriods.append((datetime.strftime(competitionDates[i] + timedelta(1), '%Y-%m-%d'), datetime.strftime(competitionDates[i + 1] - timedelta(1), '%Y-%m-%d')))
 
             # Then add the last period from last comp to end.
-            trainingPeriods.append((datetime.strftime(competitionDates[len(competitionDates)] + timedelta(1)), end))
-
-        # Then the last date in the list. 
+            trainingPeriods.append((datetime.strftime(competitionDates[len(competitionDates) - 1] + timedelta(1), '%Y-%m-%d'), end))
 
         return trainingPeriods
