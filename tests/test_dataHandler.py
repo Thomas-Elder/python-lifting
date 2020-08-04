@@ -45,5 +45,7 @@ class Test_DataHandler():
         assert result == expected_competitionDates
 
     def test_getPeriodDates(self):
-        assert 1 == 2
-        
+        competitionDates = ['2020-06-01']
+        expected_periodDates = [('2020-05-01', '2020-05-31'), ('2020-06-02', '2020-07-30')]
+        result = self.dh.getPeriodDates(self.testDataFrame, competitionDates)
+        assert result == expected_periodDates

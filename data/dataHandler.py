@@ -4,7 +4,7 @@ import pandas
 
 import os 
 import statistics
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -159,5 +159,47 @@ class DataHandler:
         return competitionSets['Date'].unique()
 
     def getPeriodDates(self, dataset, competitionDates) -> list:
+        '''Gets a list of tuples of the start/end date of training periods
+        
+        For the given competition dates, returns start/end dates of the periods
+        between competitions.
 
-        return []
+        Parameters
+        ----------
+        dataset: a pandas dataFrame
+        competitionDates: a list of strings representing competition dates
+
+        Returns
+        -------
+        A list of tuples of two strings, the start and end date
+        '''
+
+        trainingPeriods = []
+
+        # First we need the earliest and latest date in the list.
+        start = dataset['Date'].min()
+        end = dataset['Date'].max()
+
+        # Then I think we need to convert str to datetime so we can datemath things
+        for i in range(len(competitionDates)):
+            competitionDates[i] = datetime.strptime(competitionDates[i], '%Y-%m-%d')
+
+        # The first period will be from the start to the first comp, converting back to str:
+        trainingPeriods.append((start, datetime.strftime(competitionDates[0] - timedelta(1), '%Y-%m-%d')))
+
+        # If there's only one comp, we can just toss on the last period now
+        if len(competitionDates) == 1:
+            trainingPeriods.append((datetime.strftime(competitionDates[0] + timedelta(1), '%Y-%m-%d'), end))
+
+        # Otherwise we need to loop over dates to get all the periods
+        else:
+            for i in range(len(competitionDates)):
+                # Then we need to loop over compdates:
+                trainingPeriods.append((datetime.strftime(competitionDates[i] + timedelta(1)), datetime.strftime(competitionDates[i + 1] - timedelta(1))))
+
+            # Then add the last period from last comp to end.
+            trainingPeriods.append((datetime.strftime(competitionDates[len(competitionDates)] + timedelta(1)), end))
+
+        # Then the last date in the list. 
+
+        return trainingPeriods
