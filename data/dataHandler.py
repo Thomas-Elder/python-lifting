@@ -48,17 +48,8 @@ class DataHandler:
 
             logging.debug('Exercise being searched: %s' % (exercise))
 
-            # get the sets for this date
-            sets = dataset[dataset['Date'] == date]
-
-            # get sets with given exercise
-            exercise_sets = sets[sets['Exercise'] == exercise]
-
-            # get sets with given rep number
-            exercise_sets_reps = exercise_sets[exercise_sets['Reps'] == reps]
-
-            # get max weight
-            exercise_max = exercise_sets_reps['Weight'].max()
+            # get the max weight for this date, exercise and reps
+            exercise_max = dataset[(dataset['Date'] == date) & (dataset['Exercise'] == exercise) & (dataset['Reps'] == reps)].max()['Weight']
 
             # add exercise to the list
             exercise_maxes.append(exercise_max)
@@ -113,7 +104,7 @@ class DataHandler:
 
             logging.debug('Exercise being searched: %s' % (exercise))
 
-            # get the max for this exercise on this date, with this number of reps
+            # get the sets with max weight for this exercise on this date, with this number of reps
             maxweight = dataset[(dataset['Date'] == date) & (dataset['Exercise'] == exercise) & (dataset['Reps'] == reps)].max()
 
             # append to the list

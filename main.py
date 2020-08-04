@@ -8,8 +8,8 @@ dr = DataReader('data\\data.csv')
 
 dh = DataHandler()
 
-print(dh.getExerciseMax(dr.getData(), 'Snatch', 1))
-print(dh.getExerciseMax(dr.getData(), 'Clean and Jerk', 1))
+#print(dh.getExerciseMax(dr.getData(), 'Snatch', 1))
+#print(dh.getExerciseMax(dr.getData(), 'Clean and Jerk', 1))
 
 testDataFrame = pandas.DataFrame({
             'Date': ['2020-05-01', '2020-05-30','2020-06-01', '2020-06-01', '2020-06-01', '2020-06-01', '2020-07-01', '2020-07-30'], 
@@ -21,4 +21,6 @@ testDataFrame = pandas.DataFrame({
 exercise = 'Snatch'
 reps = 2
 
-print(dh.getExerciseMaxes(testDataFrame, 'Snatch', 3))
+#print(dh.getExerciseMaxes(testDataFrame, 'Snatch', 3))
+print('dh.getExerciseMaxes(testDataFrame, Snatch, 1): {}'.format(dh.getExerciseMaxes(testDataFrame, 'Snatch', 1)))
+#print(dh.getExerciseMaxAverage(testDataFrame, 'Snatch', 3))
