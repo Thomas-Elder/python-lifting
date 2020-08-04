@@ -18,7 +18,7 @@ class Test_DataHandler():
             'Exercise': ['Snatch', 'Snatch', 'Snatch', 'Snatch','Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch'], 
             'Reps': [1, 1, 3, 3, 2, 1, 1, 1, 2, 2], 
             'Weight': [10, 10, 10, 10, 20, 30, 40, 50, 30, 20],
-            'Attempt': ['', 1, '', '', '', 1, 2, 3, '', '']})
+            'Attempt': [0, 1, 0, 0, 0, 1, 2, 3, 0, 0]})
     
     def teardown_method(self):
         logging.info('Tearing down after test... ')

@@ -16,6 +16,8 @@ class DataReader:
         logging.debug('cwd: %s' % (os.getcwd()))
         self.file = file
         self.dataset = pandas.read_csv(self.file)
+        self.dataset['Attempt'] = self.dataset['Attempt'].fillna(0)
+        self.dataset['Date'] = pandas.to_datetime(self.dataset['Date'])
     
     def getData(self, fromDate='', toDate=''):
         '''Returns a dataframe containing sets between the specified dates
@@ -35,5 +37,5 @@ class DataReader:
         if fromDate == '' or toDate == '':
             return self.dataset
 
-        mask = (self.dataset['Date'] > fromDate) & (self.dataset['Date'] <= toDate)
+        mask = (self.dataset['Date'] >= fromDate) & (self.dataset['Date'] <= toDate)
         return self.dataset.loc[mask] 

@@ -4,6 +4,7 @@ import pandas
 
 import os 
 import statistics
+import numpy
 from datetime import datetime, timedelta
 
 import logging
@@ -126,11 +127,11 @@ class DataHandler:
 
         Returns
         -------
-        A list of strings in date format
+        A list of numpy datetime objects
         '''
 
-        competitionSets = dataset.loc[dataset['Attempt'] != '']
-
+        competitionSets = dataset.loc[dataset['Attempt'] != 0]
+        print(dataset['Attempt'])
         return competitionSets['Date'].unique()
 
     def getPeriodDates(self, dataset, competitionDates) -> list:
@@ -152,27 +153,29 @@ class DataHandler:
         trainingPeriods = []
 
         # First we need the earliest and latest date in the list.
-        start = dataset['Date'].min()
-        end = dataset['Date'].max()
+        start = min(dataset['Date'])
+        end = max(dataset['Date'])
+
+        print('start :{}, end: {}'.format(start, end))
 
         # Then I think we need to convert str to datetime so we can datemath things
-        for i in range(len(competitionDates)):
-            competitionDates[i] = datetime.strptime(competitionDates[i], '%Y-%m-%d')
+        #for i in range(len(competitionDates)):
+        #    competitionDates[i] = datetime.strptime(competitionDates[i], '%Y-%m-%d')
 
-        # The first period will be from the start to the first comp, converting back to str:
-        trainingPeriods.append((start, datetime.strftime(competitionDates[0] - timedelta(1), '%Y-%m-%d')))
+        # The first period will be from the start to the first comp:
+        trainingPeriods.append((start, competitionDates[0] - pandas.Timedelta(1)))
 
         # If there's only one comp, we can just toss on the last period now
         if len(competitionDates) == 1:
-            trainingPeriods.append((datetime.strftime(competitionDates[0] + timedelta(1), '%Y-%m-%d'), end))
+            trainingPeriods.append((competitionDates[0] + pandas.Timedelta(1), end))
 
         # Otherwise we need to loop over dates to get all the periods
         else:
             for i in range(len(competitionDates) - 1):
                 # Then we need to loop over compdates:
-                trainingPeriods.append((datetime.strftime(competitionDates[i] + timedelta(1), '%Y-%m-%d'), datetime.strftime(competitionDates[i + 1] - timedelta(1), '%Y-%m-%d')))
+                trainingPeriods.append((competitionDates[i] + pandas.Timedelta(1), competitionDates[i + 1] - pandas.Timedelta(1)))
 
             # Then add the last period from last comp to end.
-            trainingPeriods.append((datetime.strftime(competitionDates[len(competitionDates) - 1] + timedelta(1), '%Y-%m-%d'), end))
+            trainingPeriods.append((competitionDates[len(competitionDates) - 1] + pandas.Timedelta(1), end))
 
         return trainingPeriods
