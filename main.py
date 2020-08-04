@@ -18,7 +18,10 @@ testDataFrame = pandas.DataFrame({
             'Weight': [10, 10, 20, 30, 40, 50, 30, 20],
             'Attempt': ['','','',1,2,3,'','']})
 
-expected_competitionDates = ['2020-06-01']
-result = dh.getCompetitionDates(testDataFrame)
+exercise = 'Snatch'
+reps = 2
 
-print('Get period dates {}'.format(dh.getPeriodDates(testDataFrame, expected_competitionDates)))
+print(testDataFrame.loc[testDataFrame['Exercise'] == 'Snatch'])
+print(testDataFrame.loc[(testDataFrame['Exercise'] == exercise) & (testDataFrame['Reps'] == reps)])
+print(testDataFrame.loc[(testDataFrame['Exercise'] == exercise) & (testDataFrame['Reps'] == reps)].max())
+print(testDataFrame.loc[(testDataFrame['Exercise'] == exercise) & (testDataFrame['Reps'] == reps)].max()['Weight'])
