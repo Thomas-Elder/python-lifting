@@ -126,7 +126,7 @@ class DataHandler:
             sets = dataset[dataset['Date'] == date]
 
             # get sets with given exercise
-            exercise_sets = sets[sets['Exercise'] == exercise]
+            exercise_sets = sets[sets['Attempts'] != '']
 
             # get sets with given rep number
             exercise_sets_reps = exercise_sets[exercise_sets['Reps'] == reps]
@@ -142,4 +142,6 @@ class DataHandler:
 
     def getCompetitionDates(self, dataset) -> list:
         
-        return []
+        competitionSets = dataset.loc[dataset['Attempt'] != '']
+
+        return competitionSets['Date'].unique()
