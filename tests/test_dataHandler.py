@@ -14,7 +14,16 @@ class Test_DataHandler():
         logging.info('Setting up before test... ')
         self.dh = DataHandler()
         self.testDataFrame = pandas.DataFrame({
-            'Date': ['2020-04-01', '2020-04-20', '2020-05-01', '2020-05-30', '2020-06-01', '2020-06-01', '2020-06-01', '2020-06-01', '2020-07-01', '2020-07-30'], 
+            'Date': [pandas.to_datetime('2020-04-01'), 
+                    pandas.to_datetime('2020-04-20'), 
+                    pandas.to_datetime('2020-05-01'), 
+                    pandas.to_datetime('2020-05-30'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-07-01'), 
+                    pandas.to_datetime('2020-07-30')], 
             'Exercise': ['Snatch', 'Snatch', 'Snatch', 'Snatch','Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch'], 
             'Reps': [1, 1, 3, 3, 2, 1, 1, 1, 2, 2], 
             'Weight': [10, 10, 10, 10, 20, 30, 40, 50, 30, 20],
@@ -38,20 +47,24 @@ class Test_DataHandler():
 
     def test_getExerciseMaxes(self):
         exercise, rep = 'Snatch', 3
-        expected_exerciseMaxes = [{'Date':'2020-05-01', 'Weight':10},
-                                {'Date':'2020-05-30', 'Weight':10}]
+        expected_exerciseMaxes = [{'Date':pandas.to_datetime('2020-05-01'), 'Weight':10},
+                                {'Date':pandas.to_datetime('2020-05-30'), 'Weight':10}]
         
         result = self.dh.getExerciseMaxes(self.testDataFrame, exercise, rep)
 
         assert numpy.all(result == expected_exerciseMaxes)
 
     def test_getCompetitionDates(self):
-        expected_competitionDates = ['2020-04-20', '2020-06-01']
+        expected_competitionDates = [pandas.to_datetime('2020-04-20'), pandas.to_datetime('2020-06-01')]
         result = self.dh.getCompetitionDates(self.testDataFrame)
         assert numpy.all(result == expected_competitionDates)
 
     def test_getPeriodDates(self):
-        competitionDates = ['2020-04-20', '2020-06-01']
-        expected_periodDates = [('2020-04-01', '2020-04-19'), ('2020-04-21', '2020-05-31'), ('2020-06-02', '2020-07-30')]
+        competitionDates = [pandas.to_datetime('2020-04-20'), pandas.to_datetime('2020-06-01')]
+        expected_periodDates = [(pandas.to_datetime('2020-04-01'), pandas.to_datetime('2020-04-19')), 
+                                (pandas.to_datetime('2020-04-21'), pandas.to_datetime('2020-05-31')), 
+                                (pandas.to_datetime('2020-06-02'), pandas.to_datetime('2020-07-30'))]
+        
         result = self.dh.getPeriodDates(self.testDataFrame, competitionDates)
+        
         assert numpy.all(result == expected_periodDates)
