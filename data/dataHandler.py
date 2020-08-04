@@ -113,21 +113,14 @@ class DataHandler:
 
             logging.debug('Exercise being searched: %s' % (exercise))
 
-            # get the sets for this date
-            sets = dataset[dataset['Date'] == date]
+            # get the max for this exercise on this date, with this number of reps
+            maxweight = dataset[(dataset['Date'] == date) & (dataset['Exercise'] == exercise) & (dataset['Reps'] == reps)].max()
 
-            # get sets with given exercise
-            exercise_sets = sets[sets['Attempts'] != '']
+            # append to the list
+            exercise_maxes.append({'Date': maxweight['Date'], 'Weight': maxweight['Weight']})
 
-            # get sets with given rep number
-            exercise_sets_reps = exercise_sets[exercise_sets['Reps'] == reps]
-
-            # get max weight
-            exercise_max = {'date': date, 'weight': exercise_sets_reps['Weight'].max()}
-
-            exercise_maxes.append(exercise_max)
-
-        clean_maxes = [x for x in exercise_maxes if str(x['weight']) != 'nan']
+        # clear out all the nans.
+        clean_maxes = [x for x in exercise_maxes if str(x['Weight']) != 'nan']
 
         return clean_maxes
 

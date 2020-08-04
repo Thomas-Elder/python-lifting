@@ -14,7 +14,7 @@ class Test_DataHandler():
         logging.info('Setting up before test... ')
         self.dh = DataHandler()
         self.testDataFrame = pandas.DataFrame({
-            'Date': ['2020-04-01', '2020-04-20', '2020-05-01', '2020-05-30','2020-06-01', '2020-06-01', '2020-06-01', '2020-06-01', '2020-07-01', '2020-07-30'], 
+            'Date': ['2020-04-01', '2020-04-20', '2020-05-01', '2020-05-30', '2020-06-01', '2020-06-01', '2020-06-01', '2020-06-01', '2020-07-01', '2020-07-30'], 
             'Exercise': ['Snatch', 'Snatch', 'Snatch', 'Snatch','Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch'], 
             'Reps': [1, 1, 3, 3, 2, 1, 1, 1, 2, 2], 
             'Weight': [10, 10, 10, 10, 20, 30, 40, 50, 30, 20],
@@ -37,8 +37,13 @@ class Test_DataHandler():
         assert self.dh.getExerciseMax(self.testDataFrame, exercise, rep) == weight
 
     def test_getExerciseMaxes(self):
-        exercise, rep, weight = 'Snatch', 3, 10.0
-        assert self.dh.getExerciseMaxAverage(self.testDataFrame, exercise, rep) == weight
+        exercise, rep = 'Snatch', 3
+        expected_exerciseMaxes = [{'Date':'2020-05-01', 'Weight':10},
+                                {'Date':'2020-05-30', 'Weight':10}]
+        
+        result = self.dh.getExerciseMaxes(self.testDataFrame, exercise, rep)
+
+        assert numpy.all(result == expected_exerciseMaxes)
 
     def test_getCompetitionDates(self):
         expected_competitionDates = ['2020-04-20', '2020-06-01']

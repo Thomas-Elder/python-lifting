@@ -21,7 +21,4 @@ testDataFrame = pandas.DataFrame({
 exercise = 'Snatch'
 reps = 2
 
-print(testDataFrame.loc[testDataFrame['Exercise'] == 'Snatch'])
-print(testDataFrame.loc[(testDataFrame['Exercise'] == exercise) & (testDataFrame['Reps'] == reps)])
-print(testDataFrame.loc[(testDataFrame['Exercise'] == exercise) & (testDataFrame['Reps'] == reps)].max())
-print(testDataFrame.loc[(testDataFrame['Exercise'] == exercise) & (testDataFrame['Reps'] == reps)].max()['Weight'])
+print(dh.getExerciseMaxes(testDataFrame, 'Snatch', 3))
