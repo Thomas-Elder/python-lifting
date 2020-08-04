@@ -33,3 +33,6 @@ class Test_DataHandler():
     def test_getExerciseMaxes(self):
         exercise, rep, weight = 'Snatch', 5, 50.0
         assert self.dh.getExerciseMaxAverage(self.testDataFrame, exercise, rep) == weight
+
+    def test_getCompetitionDates(self):
+        assert 1 == 2

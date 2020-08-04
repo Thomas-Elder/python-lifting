@@ -139,3 +139,7 @@ class DataHandler:
         clean_maxes = [x for x in exercise_maxes if str(x['weight']) != 'nan']
 
         return clean_maxes
+
+    def getCompetitionDates(self, dataset) -> list:
+        
+        return []

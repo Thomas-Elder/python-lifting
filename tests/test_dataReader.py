@@ -23,7 +23,7 @@ class Test_DataReader():
         assert self.dr != None
 
     def test_dataReaderContent(self):
-        expected = pandas.DataFrame({'Date': ['2019-04-06'], 'Exercise': ['Snatch'], 'Reps': [1], 'Weight': [68]})
+        expected = pandas.DataFrame({'Date': ['2020-07-18'], 'Exercise': ['Snatch'], 'Reps': [3], 'Weight': [30]})
         actual = self.dr.getData()
 
         assert actual['Date'][0] == expected['Date'][0]
