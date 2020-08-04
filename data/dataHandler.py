@@ -141,7 +141,23 @@ class DataHandler:
         return clean_maxes
 
     def getCompetitionDates(self, dataset) -> list:
+        '''Finds the all the dates of competition.
         
+        Finds sets with an attempt number and returns the dates when those sets occured.
+
+        Parameters
+        ----------
+        dataset: a pandas dataFrame
+
+        Returns
+        -------
+        A list of strings in date format
+        '''
+
         competitionSets = dataset.loc[dataset['Attempt'] != '']
 
         return competitionSets['Date'].unique()
+
+    def getPeriodDates(self, dataset, competitionDates) -> list:
+
+        return []
