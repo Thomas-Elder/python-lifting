@@ -88,16 +88,7 @@ class DataHandler:
 
         logging.debug('Exercise being searched: %s' % (exercise))
 
-        # get sets with given exercise
-        exercise_sets = dataset[dataset['Exercise'] == exercise]
-
-        # get sets with given rep number
-        exercise_sets_reps = exercise_sets[exercise_sets['Reps'] == reps]
-
-        # get max weight
-        exercise_max = exercise_sets_reps['Weight'].max()
-
-        return exercise_max
+        return dataset.loc[(dataset['Exercise'] == exercise) & (dataset['Reps'] == reps)].max()['Weight']
 
     def getExerciseMaxes(self, dataset, exercise: str, reps: int) -> list:
         '''Finds the all the top set weights lifted for the given exercise and rep number.
