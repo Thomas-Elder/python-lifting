@@ -131,7 +131,8 @@ class DataHandler:
         '''
 
         competitionSets = dataset.loc[dataset['Attempt'] != 0]
-        return competitionSets['Date'].unique()
+
+        return pandas.unique(competitionSets['Date'].tolist())
 
     def getPeriodDates(self, dataset, competitionDates) -> list:
         '''Gets a list of tuples of the start/end date of training periods

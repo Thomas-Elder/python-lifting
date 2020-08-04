@@ -49,15 +49,16 @@ class Test_DataHandler():
         exercise, rep = 'Snatch', 3
         expected_exerciseMaxes = [{'Date':pandas.to_datetime('2020-05-01'), 'Weight':10},
                                 {'Date':pandas.to_datetime('2020-05-30'), 'Weight':10}]
-        
-        result = self.dh.getExerciseMaxes(self.testDataFrame, exercise, rep)
 
+        result = self.dh.getExerciseMaxes(self.testDataFrame, exercise, rep)
+        
         assert numpy.all(result == expected_exerciseMaxes)
 
     def test_getCompetitionDates(self):
         expected_competitionDates = [pandas.to_datetime('2020-04-20'), pandas.to_datetime('2020-06-01')]
         result = self.dh.getCompetitionDates(self.testDataFrame)
-        
+        assert numpy.all(result == expected_competitionDates)
+
         # loggedy doggedy doo
         logging.debug('pandas.to_datetime(2020-04-20): {}'.format(pandas.to_datetime('2020-04-20')))
         logging.debug('type(pandas.to_datetime(\'2020-04-20\')): {}'.format(type(pandas.to_datetime('2020-04-20'))))
@@ -66,7 +67,7 @@ class Test_DataHandler():
         logging.debug('expected_competitionDates: {}'.format(expected_competitionDates))
         logging.debug('type(expected_competitionDates[0]): {}'.format(type(expected_competitionDates[0])))
 
-        assert numpy.all(result == expected_competitionDates)
+        #assert numpy.all(result == expected_competitionDates)
 
     def test_getPeriodDates(self):
         competitionDates = [pandas.to_datetime('2020-04-20'), pandas.to_datetime('2020-06-01')]
