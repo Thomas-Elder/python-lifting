@@ -29,6 +29,22 @@ class DataHandler:
         
         return dataset['Exercise'].unique()
 
+    def getSets(self, dataset, fromDate, toDate) -> pandas.DataFrame:
+        '''Returns a list of sets performed between the given dates
+        
+        Parameters
+        ----------
+        dataset: a pandas dataframe
+        fromDate: a pandas datetime object
+        toDate: a pandas datetime object
+
+        Returns
+        -------
+        The exercises as a dataframe
+        '''
+        
+        return dataset[(dataset['Date'] >= fromDate) & (dataset['Date'] <= toDate)]
+
     def getExerciseMaxAverage(self, dataset, exercise: str, reps: int) -> float:
         '''Computes the average session maximum weight lifted for the given exercise and rep number.
         

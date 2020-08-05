@@ -28,7 +28,7 @@ class Test_DataHandler():
             'Reps': [1, 1, 3, 3, 2, 1, 1, 1, 2, 2], 
             'Weight': [10, 10, 10, 10, 20, 30, 40, 50, 30, 20],
             'Attempt': [0, 1, 0, 0, 0, 1, 2, 3, 0, 0]})
-    
+
     def teardown_method(self):
         logging.info('Tearing down after test... ')
         self.dh = None
@@ -36,6 +36,32 @@ class Test_DataHandler():
     def test_getExercises(self):
         exercises = ['Snatch']
         assert self.dh.getExercises(self.testDataFrame) == exercises
+
+    def test_getSets(self):
+        expected_Sets = pandas.DataFrame({
+            'Date': [pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01')
+                    ], 
+            'Exercise': ['Snatch', 'Snatch', 'Snatch', 'Snatch'], 
+            'Reps': [2, 1, 1, 1], 
+            'Weight': [20, 30, 40, 50],
+            'Attempt': [0, 1, 2, 3]})
+        date = pandas.to_datetime('2020-06-01')
+        
+        result = self.dh.getSets(self.testDataFrame, date, date)
+
+        logging.debug('result:{}'.format(result))
+        logging.debug('expected_Sets:{}'.format(expected_Sets))
+
+        # The dataframe comes back with the index from it's position in 
+        # the dataframe passed, so the expected sets have index 0,1,2,3,
+        # and the result has index 4,5,6,7.
+        # This line just resets the index of the result.
+        result.reset_index(drop=True, inplace=True)
+
+        assert numpy.all(result == expected_Sets)
 
     def test_getExerciseMaxAverage(self):
         exercise, rep, weight = 'Snatch', 3, 10.0
