@@ -35,15 +35,21 @@ for i in range(len(trainingPeriods)):
     print('For training period {}:{}'.format(datetime.strftime(trainingPeriods[i][0], '%Y-%m-%d'), datetime.strftime(trainingPeriods[i][1], '%Y-%m-%d')))
 
     for exercise in dh.getExercises(periodData):
-        print('Average max weight for {} 3s was: {}'.format(exercise, dh.getExerciseMaxAverage(periodData, exercise, 3)))
+
+        exerciseMaxAverage = dh.getExerciseMaxAverage(periodData, exercise, 3)
+
+        if exerciseMaxAverage != 0:
+            print('Average max weight for {} 3s was: {}'.format(exercise, exerciseMaxAverage))
+
+print()
+print('The average max sets of 3 for each exercise, for each training period:'.format(exercise))  
 
 for exercise in dh.getExercises(allData):
 
-    print()
-    print('The average max sets of 3 for {}, for each training period:'.format(exercise))    
-
     for i in range(len(trainingPeriods)):
         periodData = dr.getData(trainingPeriods[i][0], trainingPeriods[i][1])
+        exerciseMaxAverage = dh.getExerciseMaxAverage(periodData, exercise, 3)
 
-        print('For training period {}:{}'.format(datetime.strftime(trainingPeriods[i][0], '%Y-%m-%d'), datetime.strftime(trainingPeriods[i][1], '%Y-%m-%d')))
-        print('Average max weight for {} 3s was: {}'.format(exercise, dh.getExerciseMaxAverage(periodData, exercise, 3)))
+        if exerciseMaxAverage != 0:
+            print('For training period {}:{}'.format(datetime.strftime(trainingPeriods[i][0], '%Y-%m-%d'), datetime.strftime(trainingPeriods[i][1], '%Y-%m-%d')))
+            print('Average max weight for {} 3s was: {}'.format(exercise, exerciseMaxAverage))
