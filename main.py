@@ -28,8 +28,10 @@ for i in range(len(competitionDates)):
 print('Training period data')
 for i in range(len(trainingPeriods)):
 
+    periodData = dr.getData(trainingPeriods[i][0], trainingPeriods[i][1])
+
     print()
     print('For training period {}:{}'.format(datetime.strftime(trainingPeriods[i][0], '%Y-%m-%d'), datetime.strftime(trainingPeriods[i][1], '%Y-%m-%d')))
 
-    for exercise in dh.getExercises(dr.getData(trainingPeriods[i][0], trainingPeriods[i][1])):
-        print('Average max weight for {} 3s was: {}'.format(exercise, dh.getExerciseMaxAverage(dr.getData(trainingPeriods[i][0], trainingPeriods[i][1]), exercise, 3)))
+    for exercise in dh.getExercises(periodData):
+        print('Average max weight for {} 3s was: {}'.format(exercise, dh.getExerciseMaxAverage(periodData, exercise, 3)))
