@@ -42,7 +42,7 @@ for i in range(len(trainingPeriods)):
             print('Average max weight for {} 3s was: {}'.format(exercise, exerciseMaxAverage))
 
 print()
-print('The average max sets of 3 for each exercise, for each training period:'.format(exercise))  
+print('The average max sets of 3 for each exercise, for each training period:{}'.format(exercise))  
 
 for exercise in dh.getExercises(allData):
 
