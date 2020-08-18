@@ -45,7 +45,7 @@ class Test_DataHandler():
                     pandas.to_datetime('2020-06-01')
                     ], 
             'Exercise': ['Snatch', 'Snatch', 'Snatch', 'Snatch'], 
-            'Reps': [2, 1, 1, 1], 
+            'Reps': ['1X', '1', '1', '1'], 
             'Weight': [20, 30, 40, 50],
             'Attempt': [0, 1, 2, 3]})
         date = pandas.to_datetime('2020-06-01')
