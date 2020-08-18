@@ -163,7 +163,7 @@ class DataHandler:
 
         Returns
         -------
-        A list of tuples of two strings, the start and end date
+        A list of tuples of two pandas datetime objects for the start and end date
         '''
 
         trainingPeriods = []
