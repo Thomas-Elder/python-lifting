@@ -69,6 +69,28 @@ class Test_DataHandler():
 
         assert result == {'total':3, 'successful': 2, 'failed':1}
 
+    def test_getSuccessRate(self):
+
+        testDataFrame = pandas.DataFrame({
+            'Date': [pandas.to_datetime('2020-04-01'), 
+                    pandas.to_datetime('2020-04-20'), 
+                    pandas.to_datetime('2020-05-01'), 
+                    pandas.to_datetime('2020-05-30'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-07-01'), 
+                    pandas.to_datetime('2020-07-30')], 
+            'Exercise': ['Snatch', 'Snatch', 'Snatch', 'Snatch','Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch'], 
+            'Reps': ['1', '1', '1X1', '3', '1X', '1', '1', '1', '2', '2'], 
+            'Weight': [10, 10, 10, 10, 20, 30, 40, 50, 30, 20],
+            'Attempt': [0, 1, 0, 0, 0, 1, 2, 3, 0, 0]})
+
+        result = self.dh.getSuccessRate(testDataFrame, 'Snatch')
+
+        assert result == 1.0
+
     def test_getExerciseMaxAverage(self):
         exercise, rep, weight = 'Snatch', 3, 10.0
         assert self.dh.getExerciseMaxAverage(self.testDataFrame, exercise, rep) == weight
