@@ -89,7 +89,7 @@ class Test_DataHandler():
 
         result = self.dh.getSuccessRate(testDataFrame, 'Snatch')
 
-        assert result == 1.0
+        assert result == 0.85
 
     def test_getExerciseMaxAverage(self):
         exercise, rep, weight = 'Snatch', 3, 10.0

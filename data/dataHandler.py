@@ -96,7 +96,7 @@ class DataHandler:
 
         logging.debug('data: {}'.format(data))
 
-        return successful/total
+        return round(successful/total, 2)
 
     def getExerciseMaxAverage(self, dataset: pandas.DataFrame, exercise: str, reps: int) -> float:
         '''Computes the average session maximum weight lifted for the given exercise and rep number.
