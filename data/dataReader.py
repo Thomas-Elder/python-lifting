@@ -19,7 +19,7 @@ class DataReader:
         self.dataset['Attempt'] = self.dataset['Attempt'].fillna(0)
         self.dataset['Date'] = pandas.to_datetime(self.dataset['Date'])
     
-    def getData(self, fromDate='', toDate=''):
+    def getData(self, fromDate=None, toDate=None):
         '''Returns a dataframe containing sets between the specified dates
     
         If fromDate or toDate are not specified returns the entire dataset.
@@ -34,7 +34,7 @@ class DataReader:
         A pandas dataFrame
         '''
         
-        if fromDate == '' or toDate == '':
+        if fromDate == None or toDate == None:
             return self.dataset
 
         mask = (self.dataset['Date'] >= fromDate) & (self.dataset['Date'] <= toDate)
