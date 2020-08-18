@@ -45,6 +45,20 @@ class DataHandler:
         
         return dataset[(dataset['Date'] >= fromDate) & (dataset['Date'] <= toDate)]
 
+    def getReps(self, set: pandas.Dataframe) -> dict:
+        '''Returns a dictionary of total, successful and failed reps in the given set
+        
+        Parameters
+        ----------
+        set: a pandas dataframe
+
+        Returns
+        -------
+        A dictionary of successful and failed reps in the given set, eg:
+        {'total':3, 'successful': 2, 'failed':1}
+        '''
+        return
+
     def getExerciseMaxAverage(self, dataset: pandas.DataFrame, exercise: str, reps: int) -> float:
         '''Computes the average session maximum weight lifted for the given exercise and rep number.
         
