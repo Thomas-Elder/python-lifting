@@ -63,6 +63,12 @@ class Test_DataHandler():
 
         assert numpy.all(result == expected_Sets)
 
+    def test_getReps(self):
+        testReps = '1X1'
+        result = self.dh.getReps(testReps)
+
+        assert result == {'total':3, 'successful': 2, 'failed':1}
+
     def test_getExerciseMaxAverage(self):
         exercise, rep, weight = 'Snatch', 3, 10.0
         assert self.dh.getExerciseMaxAverage(self.testDataFrame, exercise, rep) == weight
