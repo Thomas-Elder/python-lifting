@@ -60,13 +60,44 @@ class DataHandler:
 
         repsDict = {'total':0, 'successful': 0, 'failed':0}
 
-        for char in reps:
-            repsDict['total'] += 1
+        if 'X' not in reps:
+            repsDict['total'] += int(reps)
+            repsDict['successful'] += int(reps)
+        else: 
+            for char in reps:
+                repsDict['total'] += 1
 
-            if char == 'X':
-                repsDict['failed'] += 1
-            else:
-                repsDict['successful'] += 1
+                if char == 'X':
+                    repsDict['failed'] += 1
+                else:
+                    repsDict['successful'] += 1
+
+        return repsDict
+
+    def getTotalReps(self, dataset: pandas.DataFrame, exercise: str) -> tuple:
+        '''Returns a dictionary of total, successful and failed reps for this exercise in the dataset
+        
+        Parameters
+        ----------
+        dataset: a pandas dataframe object
+        reps: a string
+
+        Returns
+        -------
+        A dictionary of successful and failed reps in the given set, eg:
+        {'total':3, 'successful': 2, 'failed':1}
+        '''
+
+        repsDict = {'total':0, 'successful': 0, 'failed':0}
+
+        data = dataset[dataset['Exercise'] == exercise]['Reps'].values
+
+        for element in data:
+            reps = self.getReps(element)
+
+            repsDict['successful'] += reps['successful']
+            repsDict['total'] += reps['total']
+            repsDict['failed'] += reps['failed']
 
         return repsDict
 

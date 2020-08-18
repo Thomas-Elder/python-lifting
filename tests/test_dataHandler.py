@@ -64,10 +64,32 @@ class Test_DataHandler():
         assert numpy.all(result == expected_Sets)
 
     def test_getReps(self):
-        testReps = '1X1'
-        result = self.dh.getReps(testReps)
+        assert self.dh.getReps('XX1') == {'total':3, 'successful': 1, 'failed':2}
+        assert self.dh.getReps('1X1') == {'total':3, 'successful': 2, 'failed':1}
+        assert self.dh.getReps('1X') == {'total':2, 'successful': 1, 'failed':1}
+        assert self.dh.getReps('X') == {'total':1, 'successful': 0, 'failed':1}
 
-        assert result == {'total':3, 'successful': 2, 'failed':1}
+    def test_getTotalReps(self):
+        testDataFrame = pandas.DataFrame({
+            'Date': [pandas.to_datetime('2020-04-01'), 
+                    pandas.to_datetime('2020-04-20'), 
+                    pandas.to_datetime('2020-05-01'), 
+                    pandas.to_datetime('2020-05-30'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-06-01'), 
+                    pandas.to_datetime('2020-07-01'), 
+                    pandas.to_datetime('2020-07-30')], 
+            'Exercise': ['Snatch', 'Snatch', 'Snatch', 'Snatch','Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch', 'Snatch'], 
+            'Reps': ['1', '1', '1X1', '3', '1X', '1', '1', '1', '2', '2'], 
+            'Weight': [10, 10, 10, 10, 20, 30, 40, 50, 30, 20],
+            'Attempt': [0, 1, 0, 0, 0, 1, 2, 3, 0, 0]})
+
+        expected = {'total':17, 'successful': 15, 'failed':2}
+        result = self.dh.getTotalReps(testDataFrame, 'Snatch')
+
+        assert result == expected
 
     def test_getSuccessRate(self):
 
@@ -89,7 +111,7 @@ class Test_DataHandler():
 
         result = self.dh.getSuccessRate(testDataFrame, 'Snatch')
 
-        assert result == 0.85
+        assert result == 0.88
 
     def test_getExerciseMaxAverage(self):
         exercise, rep, weight = 'Snatch', 3, 10.0
@@ -121,7 +143,7 @@ class Test_DataHandler():
         logging.debug('expected_competitionDates: {}'.format(expected_competitionDates))
         logging.debug('type(expected_competitionDates[0]): {}'.format(type(expected_competitionDates[0])))
 
-        #assert numpy.all(result == expected_competitionDates)
+        assert numpy.all(result == expected_competitionDates)
 
     def test_getPeriodDates(self):
         competitionDates = [pandas.to_datetime('2020-04-20'), pandas.to_datetime('2020-06-01')]
