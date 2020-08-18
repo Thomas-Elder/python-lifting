@@ -13,7 +13,7 @@ class Test_DataReader():
 
     def setup_method(self):
         logging.info('Setting up before test... ')
-        self.dr = DataReader('.\\tests\\test_data.csv')
+        self.dr = DataReader('./tests/test_data.csv')
     
     def teardown_method(self):
         logging.info('Tearing down after test... ')
