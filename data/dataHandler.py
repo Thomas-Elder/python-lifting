@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 
 import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-logging.disable(logging.CRITICAL)
+#logging.disable(logging.CRITICAL)
 
 class DataHandler:
 
@@ -178,9 +178,20 @@ class DataHandler:
         A float, the max weight lifted for the given exercise and number of reps
         '''
 
-        logging.debug('Exercise being searched: %s' % (exercise))
+        print('Exercise being searched: %s' % (exercise))
+        print('dataset being searched: %s' % (dataset))
+        exSets = dataset[dataset['Exercise'] == exercise]
+        repSets = []
+        
+        print('exSets : {}'.format(dataset))
 
-        return dataset.loc[(dataset['Exercise'] == exercise) & (dataset['Reps'] == reps)].max()['Weight']
+        for data in exSets:
+            print('data: {}'.format(data))
+            if self.getReps(data['Reps'])['total'] == reps:
+                repSets.append(data)
+
+        return None #max(repSets['Weight'].values)
+        #dataset.loc[(dataset['Exercise'] == exercise) & (dataset['Reps'] == reps)].max()['Weight']
 
     def getExerciseMaxes(self, dataset: pandas.DataFrame, exercise: str, reps: int) -> list:
         '''Finds the all the top set weights lifted for the given exercise and rep number.
