@@ -2,6 +2,7 @@
 # imports
 from data.models.session import Session
 from data.models.exercise import Exercise
+
 import pandas
 
 # logging
@@ -17,6 +18,7 @@ class Test_Session():
 
     def teardown_method(self):
         logging.info('Tearing down after test... ')
+        self.session = None
 
     def test_getDate(self):
         expected = pandas.to_datetime('2020-04-01')
@@ -24,9 +26,9 @@ class Test_Session():
 
         assert result == expected
 
-    def test_getExercises(self):
-        expected = Exercise('Snatch')
-        result = self.session.getExercises()
+    def test_session(self):
+        expected = 'Snatch'
+        result = self.session.exercises[0].name
 
         assert result == expected
     
