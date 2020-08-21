@@ -38,7 +38,7 @@ class DataReader:
         -------
         None
         '''
-        
+
         dates = dataset['Date'].unique()
 
         self.sessions = [Session(date) for date in dates]
@@ -58,6 +58,16 @@ class DataReader:
                     exercise.sets.append(Set(exerciseSet[2], 0, exerciseSet[2], exerciseSet[3]))
 
     def translateRepetitions(self, repetitionString: str):
+        ''' Converts a str a tuple of 3 ints representing the repetitions
+
+        Parameters
+        ----------
+        repetitionString: a str
+
+        Returns
+        -------
+        tuple of 3 values, totalRepetitions, successfulRepetitions, failedRepetitions
+        '''
 
         return (1, 2, 3)
         # return a list (tuple?) with 3 values for the repeitions
