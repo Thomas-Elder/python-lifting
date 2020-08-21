@@ -20,12 +20,6 @@ class Test_Session():
         logging.info('Tearing down after test... ')
         self.session = None
 
-    def test_getDate(self):
-        expected = pandas.to_datetime('2020-04-01')
-        result = self.session.getDate()
-
-        assert result == expected
-
     def test_session(self):
         expected = 'Snatch'
         result = self.session.exercises[0].name

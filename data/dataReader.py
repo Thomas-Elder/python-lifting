@@ -25,16 +25,17 @@ class DataReader:
     
     def translateData(self, dataset: pandas.DataFrame):
 
-        for date in dataset['Date'].unique():
+        dates = dataset['Date'].unique()
 
-            session = Session(date)
-            sessionData = dataset[dataset['Date'] == date]
-            
-            # add each element of sessionData to the session
-            session.exercises = [Exercise(row.Exercise) for row in sessionData.itertuples()]
+        self.sessions = [Session(date) for date in dates]
 
-            # append all sessions to the sessions list
-            self.sessions.append(session)
+        for session in self.sessions:
+
+            exercisesForDate = dataset[dataset['Date'] == session.date]['Exercise'].unique()
+
+            session.exercises = [Exercise(exercise) for exercise in exercisesForDate]
+        
+        
 
     def getData(self, fromDate=None, toDate=None):
         '''Returns a dataframe containing sets between the specified dates

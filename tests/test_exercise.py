@@ -1,7 +1,7 @@
 
 # imports
 from data.models.exercise import Exercise
-import pandas
+from data.models.set import Set
 
 # logging
 import logging
@@ -11,6 +11,7 @@ class Test_Exercise():
 
     def setup_method(self):
         logging.info('Setting up before test... ')
+        # , [Set(3, 2, 1, 30)]
         self.exercise = Exercise('Snatch')
 
     def teardown_method(self):
@@ -19,3 +20,4 @@ class Test_Exercise():
 
     def test_exercise(self):
         assert self.exercise.name == 'Snatch'
+        #assert self.exercise.sets[0].totalRepetitions == 3
