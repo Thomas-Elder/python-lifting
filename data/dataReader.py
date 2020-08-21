@@ -24,7 +24,21 @@ class DataReader:
         self.sessions = []
     
     def translateData(self, dataset: pandas.DataFrame):
+        ''' Converts a pandas DataFrame into a list of session objects
 
+        Uses dubious pandas anti-patterns to convert the dataframe into a more
+        comprehensible (for me) list of session objects, with associated
+        exercise and set objects.
+
+        Parameters
+        ----------
+        dataset: a pandas dataFrame
+
+        Returns
+        -------
+        None
+        '''
+        
         dates = dataset['Date'].unique()
 
         self.sessions = [Session(date) for date in dates]
