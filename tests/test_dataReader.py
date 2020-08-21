@@ -35,10 +35,12 @@ class Test_DataReader():
         data = pandas.DataFrame({'Date': pandas.to_datetime('2020-07-18'), 'Exercise': ['Snatch'], 'Reps': [3], 'Weight': [30], 'Attempt': 0})
 
         expectedDate = pandas.to_datetime('2020-07-18')
-        expectedExercise = 'Snatch'
+        expectedExerciseName = 'Snatch'
+        expectedWeight = 30
 
         self.dr.translateData(data)
         actual = self.dr.sessions
 
         assert actual[0].date == expectedDate
-        assert actual[0].exercises[0].name == expectedExercise
+        assert actual[0].exercises[0].name == expectedExerciseName
+        assert actual[0].exercises[0].sets[0].weight == expectedWeight

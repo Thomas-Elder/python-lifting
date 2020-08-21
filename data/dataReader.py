@@ -32,10 +32,16 @@ class DataReader:
         for session in self.sessions:
 
             exercisesForDate = dataset[dataset['Date'] == session.date]['Exercise'].unique()
-
             session.exercises = [Exercise(exercise) for exercise in exercisesForDate]
         
-        
+            for exercise in session.exercises:
+                # add set to the exercise for each row with this exercise and date
+                exerciseSets = dataset[(dataset['Date'] == session.date) & (dataset['Exercise'] == exercise.name)]
+
+                exercise.sets = [Set(0, 0, 0, weight) for weight in exerciseSets['Weight'].values]
+                #setsSets = [Set(sets.Reps, sets.Reps, 0, sets.Weight) for sets in sets]
+                print(exercise)
+
 
     def getData(self, fromDate=None, toDate=None):
         '''Returns a dataframe containing sets between the specified dates

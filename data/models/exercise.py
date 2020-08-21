@@ -5,4 +5,4 @@ class Exercise:
 
     def __init__(self, name: str):
         self.name = name
-        #self.sets = sets
+        self.sets = []
