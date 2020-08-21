@@ -31,7 +31,7 @@ class DataReader:
             sessionData = dataset[dataset['Date'] == date]
             
             # add each element of sessionData to the session
-            session.exercises = [Exercise(name) for name in sessionData.to_dict(orient='records')]
+            session.exercises = [Exercise(row.Exercise) for row in sessionData.itertuples()]
 
             # append all sessions to the sessions list
             self.sessions.append(session)

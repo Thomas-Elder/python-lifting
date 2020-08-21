@@ -34,8 +34,11 @@ class Test_DataReader():
     def test_translateData(self):
         data = pandas.DataFrame({'Date': pandas.to_datetime('2020-07-18'), 'Exercise': ['Snatch'], 'Reps': [3], 'Weight': [30], 'Attempt': 0})
 
-        expected = pandas.to_datetime('2020-07-18')
-        self.dr.translate(data)
+        expectedDate = pandas.to_datetime('2020-07-18')
+        expectedExercise = 'Snatch'
+
+        self.dr.translateData(data)
         actual = self.dr.sessions
 
-        assert actual[0].date == expected
+        assert actual[0].date == expectedDate
+        assert actual[0].exercises[0].name == expectedExercise
