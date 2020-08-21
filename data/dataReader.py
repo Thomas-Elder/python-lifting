@@ -35,13 +35,13 @@ class DataReader:
             session.exercises = [Exercise(exercise) for exercise in exercisesForDate]
         
             for exercise in session.exercises:
-                # add set to the exercise for each row with this exercise and date
+                
+                # Get all the sets for this session's date, for this exercise
                 exerciseSets = dataset[(dataset['Date'] == session.date) & (dataset['Exercise'] == exercise.name)]
-
+                
+                # add set to the exercise for each row with this exercise and date
+                # Need to figure out how to work in the reps here... 
                 exercise.sets = [Set(0, 0, 0, weight) for weight in exerciseSets['Weight'].values]
-
-                # Here we need to translate the rep scheme into total/successful/failed reps and add them to the sets
-
 
     def getData(self, fromDate=None, toDate=None):
         '''Returns a dataframe containing sets between the specified dates
