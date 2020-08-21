@@ -1,5 +1,8 @@
 #! python3
 
+# imports
+from data.models.session import Session, Exercise, Set
+
 import pandas
 
 import os 
@@ -18,7 +21,21 @@ class DataReader:
         self.dataset = pandas.read_csv(self.file)
         self.dataset['Attempt'] = self.dataset['Attempt'].fillna(0)
         self.dataset['Date'] = pandas.to_datetime(self.dataset['Date'])
+        self.sessions = []
     
+    def translateData(self, dataset: pandas.DataFrame):
+
+        for date in dataset['Date'].unique():
+
+            session = Session(date)
+            sessionData = dataset[dataset['Date'] == date]
+            
+            # add each element of sessionData to the session
+            session.exercises = [Exercise(name) for name in sessionData.to_dict(orient='records')]
+
+            # append all sessions to the sessions list
+            self.sessions.append(session)
+
     def getData(self, fromDate=None, toDate=None):
         '''Returns a dataframe containing sets between the specified dates
     
