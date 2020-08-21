@@ -32,7 +32,7 @@ class Test_DataReader():
         assert actual['Date'][0] == expected['Date'][0]
 
     def test_translateData(self):
-        data = pandas.DataFrame({'Date': pandas.to_datetime('2020-07-18'), 'Exercise': ['Snatch'], 'Reps': [3], 'Weight': [30], 'Attempt': 0})
+
         data = self.dr.getData()
         
         expectedDate = pandas.to_datetime('2020-07-18')
@@ -45,3 +45,5 @@ class Test_DataReader():
         assert actual[0].date == expectedDate
         assert actual[0].exercises[0].name == expectedExerciseName
         assert actual[0].exercises[0].sets[0].weight == expectedWeight
+        assert actual[0].exercises[0].sets[0].totalRepetitions == 3
+        assert len(actual[0].exercises[0].sets) == 13

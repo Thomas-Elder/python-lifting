@@ -37,11 +37,13 @@ class DataReader:
             for exercise in session.exercises:
                 
                 # Get all the sets for this session's date, for this exercise
-                exerciseSets = dataset[(dataset['Date'] == session.date) & (dataset['Exercise'] == exercise.name)]
+                exerciseSets = dataset[(dataset['Date'] == session.date) & (dataset['Exercise'] == exercise.name)].values.tolist()
                 
                 # add set to the exercise for each row with this exercise and date
-                # Need to figure out how to work in the reps here... 
-                exercise.sets = [Set(0, 0, 0, weight) for weight in exerciseSets['Weight'].values]
+                for exerciseSet in exerciseSets:
+                    exercise.sets.append(Set(exerciseSet[2], 0, exerciseSet[2], exerciseSet[3]))
+
+                #exercise.sets = [Set(0, 0, 0, weight) for weight in exerciseSets['Weight'].values]
 
     def getData(self, fromDate=None, toDate=None):
         '''Returns a dataframe containing sets between the specified dates
