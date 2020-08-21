@@ -69,8 +69,23 @@ class DataReader:
         tuple of 3 values, totalRepetitions, successfulRepetitions, failedRepetitions
         '''
 
-        return (1, 2, 3)
-        # return a list (tuple?) with 3 values for the repeitions
+        total, successful, failed = 0, 0, 0
+
+        if 'X' not in repetitionString:
+            total += int(repetitionString)
+            successful += int(repetitionString)
+
+        else: 
+            for char in repetitionString:
+
+                if char == 'X':
+                    failed += 1
+                    total += 1
+                else:
+                    successful += int(char)
+                    total += int(char)
+
+        return (total, successful, failed)
 
     def getData(self, fromDate=None, toDate=None):
         '''Returns a dataframe containing sets between the specified dates

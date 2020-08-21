@@ -50,4 +50,9 @@ class Test_DataReader():
 
     def test_translateRepetitions(self):
 
-        assert 1 == 0
+        testRepetitionString = '1X1X5XXX3'
+
+        expected = (15, 10, 5)
+        actual = self.dr.translateRepetitions(testRepetitionString)
+
+        assert actual == expected
