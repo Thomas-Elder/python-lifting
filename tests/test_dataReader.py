@@ -33,7 +33,8 @@ class Test_DataReader():
 
     def test_translateData(self):
         data = pandas.DataFrame({'Date': pandas.to_datetime('2020-07-18'), 'Exercise': ['Snatch'], 'Reps': [3], 'Weight': [30], 'Attempt': 0})
-
+        data = self.dr.getData()
+        
         expectedDate = pandas.to_datetime('2020-07-18')
         expectedExerciseName = 'Snatch'
         expectedWeight = 30

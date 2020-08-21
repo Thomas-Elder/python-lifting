@@ -39,8 +39,8 @@ class DataReader:
                 exerciseSets = dataset[(dataset['Date'] == session.date) & (dataset['Exercise'] == exercise.name)]
 
                 exercise.sets = [Set(0, 0, 0, weight) for weight in exerciseSets['Weight'].values]
-                #setsSets = [Set(sets.Reps, sets.Reps, 0, sets.Weight) for sets in sets]
-                print(exercise)
+
+                # Here we need to translate the rep scheme into total/successful/failed reps and add them to the sets
 
 
     def getData(self, fromDate=None, toDate=None):
