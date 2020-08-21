@@ -43,7 +43,10 @@ class DataReader:
                 for exerciseSet in exerciseSets:
                     exercise.sets.append(Set(exerciseSet[2], 0, exerciseSet[2], exerciseSet[3]))
 
-                #exercise.sets = [Set(0, 0, 0, weight) for weight in exerciseSets['Weight'].values]
+    def translateRepetitions(self, repetitionString: str):
+
+        return (1, 2, 3)
+        # return a list (tuple?) with 3 values for the repeitions
 
     def getData(self, fromDate=None, toDate=None):
         '''Returns a dataframe containing sets between the specified dates

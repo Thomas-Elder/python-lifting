@@ -47,3 +47,7 @@ class Test_DataReader():
         assert actual[0].exercises[0].sets[0].weight == expectedWeight
         assert actual[0].exercises[0].sets[0].totalRepetitions == 3
         assert len(actual[0].exercises[0].sets) == 13
+
+    def test_translateRepetitions(self):
+
+        assert 1 == 0
