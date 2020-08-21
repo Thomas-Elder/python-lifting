@@ -21,7 +21,7 @@ class DataReader:
         self.dataset = pandas.read_csv(self.file)
         self.dataset['Attempt'] = self.dataset['Attempt'].fillna(0)
         self.dataset['Date'] = pandas.to_datetime(self.dataset['Date'])
-        self.sessions = []
+        self.sessions = self.translateData(self.dataset, self.translateRepetitions)
     
     def translateData(self, dataset: pandas.DataFrame, repetitionTranslator):
         ''' Converts a pandas DataFrame into a list of session objects
@@ -36,14 +36,14 @@ class DataReader:
 
         Returns
         -------
-        None
+        A list of session objects
         '''
 
         dates = dataset['Date'].unique()
 
-        self.sessions = [Session(date) for date in dates]
+        sessions = [Session(date) for date in dates]
 
-        for session in self.sessions:
+        for session in sessions:
 
             exercisesForDate = dataset[dataset['Date'] == session.date]['Exercise'].unique()
             session.exercises = [Exercise(exercise) for exercise in exercisesForDate]
@@ -57,6 +57,8 @@ class DataReader:
                 for exerciseSet in exerciseSets:
                     totalRepetitions, successfulRepetitions, failedRepetitions = repetitionTranslator(exerciseSet[2])
                     exercise.sets.append(Set(totalRepetitions, successfulRepetitions, failedRepetitions, exerciseSet[3]))
+
+        return sessions
 
     def translateRepetitions(self, repetitionString: str):
         ''' Converts a str a tuple of 3 ints representing the repetitions
