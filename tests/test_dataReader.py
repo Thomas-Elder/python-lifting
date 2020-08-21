@@ -39,7 +39,7 @@ class Test_DataReader():
         expectedExerciseName = 'Snatch'
         expectedWeight = 30
 
-        self.dr.translateData(data)
+        self.dr.translateData(data, self.dr.translateRepetitions)
         actual = self.dr.sessions
 
         assert actual[0].date == expectedDate

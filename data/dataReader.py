@@ -23,7 +23,7 @@ class DataReader:
         self.dataset['Date'] = pandas.to_datetime(self.dataset['Date'])
         self.sessions = []
     
-    def translateData(self, dataset: pandas.DataFrame):
+    def translateData(self, dataset: pandas.DataFrame, repetitionTranslator):
         ''' Converts a pandas DataFrame into a list of session objects
 
         Uses dubious pandas anti-patterns to convert the dataframe into a more
@@ -55,7 +55,8 @@ class DataReader:
                 
                 # add set to the exercise for each row with this exercise and date
                 for exerciseSet in exerciseSets:
-                    exercise.sets.append(Set(exerciseSet[2], 0, exerciseSet[2], exerciseSet[3]))
+                    a,b,c = repetitionTranslator(exerciseSet[2])
+                    exercise.sets.append(Set(a,b,c, exerciseSet[3]))
 
     def translateRepetitions(self, repetitionString: str):
         ''' Converts a str a tuple of 3 ints representing the repetitions
