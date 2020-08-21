@@ -13,21 +13,30 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 
 class DataHandler:
 
-    def getExercises(self, dataset: pandas.DataFrame) -> list:
+    def getExercises(self, sessions: list) -> list:
         '''Returns a list of exercises from the given dataset
 
-        Parses the dataframe and compiles a list of unique Exercises.
+        Parses the list and compiles a list of unique Exercises.
 
         Parameters
         ----------
-        dataset: a pandas dataframe
+        sessions: a list of Session objects
 
         Returns
         -------
         The exercises as a list of strings
         '''
+
+        exercises = []
         
-        return dataset['Exercise'].unique()
+        for session in sessions:
+
+            for exercise in session.exercises:
+
+                if exercise.name not in exercises:
+                    exercises.append(exercise.name)
+
+        return exercises
 
     def getSets(self, dataset: pandas.DataFrame, fromDate: pandas.datetime, toDate: pandas.datetime) -> pandas.DataFrame:
         '''Returns a list of sets performed between the given dates
