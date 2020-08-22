@@ -57,9 +57,9 @@ class Test_DataHandler():
 
         assert 0
 
-    def test_getExerciseMaxAverage(self):
-        
-        assert 0
+    def test_getExerciseMaxAverage(self, test_data):
+        exercise, rep, weight = 'Snatch', 1, 30.0
+        assert self.dh.getExerciseMaxAverage(test_data, exercise, rep) == weight
 
     def test_getExerciseMax(self, test_data):
         exercise, rep, weight = 'Snatch', 1, 30.0

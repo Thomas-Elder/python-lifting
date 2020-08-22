@@ -142,7 +142,7 @@ class DataHandler:
 
         return round(successful/total, 2)
 
-    def getExerciseMaxAverage(self, dataset: pandas.DataFrame, exercise: str, reps: int) -> float:
+    def getExerciseMaxAverage(self, sessions: list, exercise: str, reps: int) -> float:
         '''Computes the average session maximum weight lifted for the given exercise and rep number.
         
         Parameters
@@ -156,26 +156,15 @@ class DataHandler:
         A float, the average of all max weights for the given exercise and number of reps
         '''
 
-        exercise_maxes = []
-
-        for date in dataset['Date'].unique():
-
-            logging.debug('Exercise being searched: %s' % (exercise))
-
-            # get the max weight for this date, exercise and reps
-            exercise_max = dataset[(dataset['Date'] == date) & (dataset['Exercise'] == exercise) & (dataset['Reps'] == reps)].max()['Weight']
-
-            # add exercise to the list
-            exercise_maxes.append(exercise_max)
-
-        # clean empty elements
-        clean_maxes = [x for x in exercise_maxes if str(x) != 'nan']
-
-        if len(clean_maxes) > 0:
-            exercise_average = statistics.mean(clean_maxes)
-            return exercise_average
-
-        return 0
+        weights = []
+        
+        for session in sessions:
+            for e in session.exercises:
+                if exercise == e.name:
+                    exerciseSets = [s.weight for s in e.sets]
+                    weights.append(max(exerciseSets))
+        
+        return statistics.mean(weights)
 
     def getExerciseMax(self, sessions: list, exercise: Exercise, reps: int) -> float:
         '''Finds the highest weight lifted for the given exercise and rep number.
