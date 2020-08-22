@@ -19,10 +19,17 @@ def test_data():
 
     session = Session(pandas.to_datetime('2020-04-01'))
 
-    exercise = Exercise('Snatch')
-    exercise.sets = [Set(3, 2, 1, 30)]
+    exercises = []
 
-    session.addExercise(exercise)
+    exercises.append(Exercise('Snatch'))
+    exercises.append(Exercise('Clean and Jerk'))
+
+    exercises[0].sets = [Set(3, 2, 1, 30), Set(3, 3, 0, 10), Set(3, 3, 0, 20), Set(3, 3, 0, 15)]
+    exercises[1].sets = [Set(3, 2, 1, 50), Set(3, 3, 0, 20), Set(3, 3, 0, 30), Set(3, 3, 0, 45)]
+
+    session.addExercise(exercises[0])
+    session.addExercise(exercises[1])
+
     testSessions.append(session)
 
     return testSessions
@@ -38,7 +45,7 @@ class Test_DataHandler():
         self.dh = None
 
     def test_getExercises(self, test_data):
-        exercises = ['Snatch']
+        exercises = ['Snatch', 'Clean and Jerk']
         assert self.dh.getExercises(test_data) == exercises
 
     def test_getSets(self):
