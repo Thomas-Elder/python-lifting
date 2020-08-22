@@ -159,9 +159,15 @@ class DataHandler:
         A list of pandas datetime objects
         '''
 
-        return 0
+        competitionDates = []
 
-    def getPeriodDates(self, dataset: pandas.DataFrame, competitionDates: list) -> list:
+        for session in sessions:
+            if session.competition == True:
+                competitionDates.append(session.date)
+
+        return competitionDates
+
+    def getPeriodDates(self, competitionDates: list) -> list:
         '''Gets a list of tuples of the start/end date of training periods
         
         For the given competition dates, returns start/end dates of the periods
@@ -169,7 +175,6 @@ class DataHandler:
 
         Parameters
         ----------
-        dataset: a pandas dataFrame
         competitionDates: a list of pandas.datetime objects representing competition dates
 
         Returns
@@ -180,8 +185,8 @@ class DataHandler:
         trainingPeriods = []
 
         # First we need the earliest and latest date in the list.
-        start = min(dataset['Date'])
-        end = max(dataset['Date'])
+        start = pandas.to_datetime('1986-03-24') 
+        end = pandas.to_datetime('2030-12-31')
 
         print('competitionDates[0] - pandas.Timedelta(1): {}'.format(competitionDates[0] - pandas.Timedelta(days=1)))
 

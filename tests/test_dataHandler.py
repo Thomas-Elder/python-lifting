@@ -66,10 +66,16 @@ class Test_DataHandler():
         exercise, rep, weight = 'Snatch', 3, [{'date':pandas.to_datetime('2020-04-01'), 'weight': 30.0}]
         assert self.dh.getExerciseMaxes(test_data, exercise, rep) == weight
 
-    def test_getCompetitionDates(self):
+    def test_getCompetitionDates(self, test_data):
         
-        assert 0
+        # TODO add a competition session to the test data so we can check this properly.
+        assert self.dh.getCompetitionDates(test_data) == []
 
-    def test_getPeriodDates(self):
+    def test_getPeriodDates(self, test_data):
+        competitionDates = [pandas.to_datetime('2020-04-01'), pandas.to_datetime('2020-07-01')]
+        expected = [(pandas.to_datetime('1986-03-24'), pandas.to_datetime('2020-03-31')), 
+                    (pandas.to_datetime('2020-04-02'), pandas.to_datetime('2020-06-30')), 
+                    (pandas.to_datetime('2020-07-02'), pandas.to_datetime('2030-12-31'))]
         
-        assert 0
+        result = self.dh.getPeriodDates(competitionDates)
+        assert result == expected
