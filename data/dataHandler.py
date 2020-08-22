@@ -42,78 +42,6 @@ class DataHandler:
 
         return exercises
 
-    def getSets(self, dataset: pandas.DataFrame, fromDate: pandas.datetime, toDate: pandas.datetime) -> pandas.DataFrame:
-        '''Returns a list of sets performed between the given dates
-        
-        Parameters
-        ----------
-        dataset: a pandas dataframe
-        fromDate: a pandas datetime object
-        toDate: a pandas datetime object
-
-        Returns
-        -------
-        The exercises as a dataframe
-        '''
-        
-        return dataset[(dataset['Date'] >= fromDate) & (dataset['Date'] <= toDate)]
-
-    def getReps(self, reps: str) -> dict:
-        '''Returns a dictionary of total, successful and failed reps in the given string
-        
-        Parameters
-        ----------
-        reps: a string
-
-        Returns
-        -------
-        A dictionary of successful and failed reps in the given set, eg:
-        {'total':3, 'successful': 2, 'failed':1}
-        '''
-
-        repsDict = {'total':0, 'successful': 0, 'failed':0}
-
-        if 'X' not in reps:
-            repsDict['total'] += int(reps)
-            repsDict['successful'] += int(reps)
-        else: 
-            for char in reps:
-                repsDict['total'] += 1
-
-                if char == 'X':
-                    repsDict['failed'] += 1
-                else:
-                    repsDict['successful'] += 1
-
-        return repsDict
-
-    def getTotalReps(self, dataset: pandas.DataFrame, exercise: str) -> dict:
-        '''Returns a dictionary of total, successful and failed reps for this exercise in the dataset
-        
-        Parameters
-        ----------
-        dataset: a pandas dataframe object
-        reps: a string
-
-        Returns
-        -------
-        A dictionary of successful and failed reps in the given set, eg:
-        {'total':3, 'successful': 2, 'failed':1}
-        '''
-
-        repsDict = {'total':0, 'successful': 0, 'failed':0}
-
-        data = dataset[dataset['Exercise'] == exercise]['Reps'].values
-
-        for element in data:
-            reps = self.getReps(element)
-
-            repsDict['successful'] += reps['successful']
-            repsDict['total'] += reps['total']
-            repsDict['failed'] += reps['failed']
-
-        return repsDict
-
     def getSuccessRate(self, sessions: list, exercise: str,reps: int) -> float:
         '''Returns the % of reps successfully made for the given exercise
         
@@ -184,18 +112,17 @@ class DataHandler:
         for session in sessions:
             for e in session.exercises:
                 if exercise == e.name:
-                    for s in e.sets:
-                        weights.append(s.weight)
+                    exerciseSets = [s.weight for s in e.sets if s.totalRepetitions == reps]
+                    weights.append(max(exerciseSets))
                 
         return max(weights)
 
-
-    def getExerciseMaxes(self, dataset: pandas.DataFrame, exercise: str, reps: int) -> list:
+    def getExerciseMaxes(self, sessions: list, exercise: str, reps: int) -> list:
         '''Finds the all the top set weights lifted for the given exercise and rep number.
         
         Parameters
         ----------
-        dataset: a pandas dataFrame
+        sessions: A list of session objects
         exercise: str
         reps: int
 
@@ -207,22 +134,16 @@ class DataHandler:
         for the given exercise and number of reps.
         '''
 
-        exercise_maxes = []
+        exerciseMaxes = []
 
-        for date in dataset['Date'].unique():
+        for session in sessions:
+            for e in session.exercises:
+                if exercise == e.name:
+                    exerciseSets = [s.weight for s in e.sets if s.totalRepetitions == reps]
 
-            logging.debug('Exercise being searched: %s' % (exercise))
+                    exerciseMaxes.append({'date': session.date, 'weight': max(exerciseSets)})
 
-            # get the sets with max weight for this exercise on this date, with this number of reps
-            maxweight = dataset[(dataset['Date'] == date) & (dataset['Exercise'] == exercise) & (dataset['Reps'] == reps)].max()
-
-            # append to the list
-            exercise_maxes.append({'Date': maxweight['Date'], 'Weight': maxweight['Weight']})
-
-        # clear out all the nans.
-        clean_maxes = [x for x in exercise_maxes if str(x['Weight']) != 'nan']
-
-        return clean_maxes
+        return exerciseMaxes
 
     def getCompetitionDates(self, dataset: pandas.DataFrame) -> list:
         '''Finds the all the dates of competition.

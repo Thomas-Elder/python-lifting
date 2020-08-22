@@ -10,6 +10,8 @@ from data.models.set import Set
 
 import pandas
 import numpy
+from datetime import datetime
+
 import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -24,7 +26,7 @@ def test_data():
     exercises.append(Exercise('Snatch'))
     exercises.append(Exercise('Clean and Jerk'))
 
-    exercises[0].sets = [Set(3, 2, 1, 30), Set(1, 1, 0, 10), Set(3, 3, 0, 20), Set(3, 3, 0, 15)]
+    exercises[0].sets = [Set(3, 2, 1, 30), Set(1, 1, 0, 10), Set(2, 2, 0, 20), Set(3, 3, 0, 15)]
     exercises[1].sets = [Set(3, 2, 1, 50), Set(3, 3, 0, 20), Set(3, 3, 0, 30), Set(3, 3, 0, 45)]
 
     session.addExercise(exercises[0])
@@ -48,33 +50,21 @@ class Test_DataHandler():
         exercises = ['Snatch', 'Clean and Jerk']
         assert self.dh.getExercises(test_data) == exercises
 
-    def test_getSets(self):
-
-        assert 0
-
-    def test_getReps(self):
-        
-        assert 0
-
-    def test_getTotalReps(self):
-
-        assert 0
-
     def test_getSuccessRate(self, test_data):
         exercise, rep = 'Snatch', 3
-        assert self.dh.getSuccessRate(test_data, exercise, rep) == 0.89
+        assert self.dh.getSuccessRate(test_data, exercise, rep) == 0.83
 
     def test_getExerciseMaxAverage(self, test_data):
         exercise, rep, weight = 'Snatch', 3, 30.0
         assert self.dh.getExerciseMaxAverage(test_data, exercise, rep) == weight
 
     def test_getExerciseMax(self, test_data):
-        exercise, rep, weight = 'Snatch', 1, 30.0
+        exercise, rep, weight = 'Snatch', 2, 20.0
         assert self.dh.getExerciseMax(test_data, exercise, rep) == weight
 
-    def test_getExerciseMaxes(self):
-        
-        assert 0
+    def test_getExerciseMaxes(self, test_data):
+        exercise, rep, weight = 'Snatch', 3, [{'date':pandas.to_datetime('2020-04-01'), 'weight': 30.0}]
+        assert self.dh.getExerciseMaxes(test_data, exercise, rep) == weight
 
     def test_getCompetitionDates(self):
         
