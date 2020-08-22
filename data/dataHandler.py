@@ -2,6 +2,10 @@
 
 import pandas
 
+from data.models.session import Session
+from data.models.exercise import Exercise
+from data.models.set import Set
+
 import os 
 import statistics
 import numpy
@@ -83,7 +87,7 @@ class DataHandler:
 
         return repsDict
 
-    def getTotalReps(self, dataset: pandas.DataFrame, exercise: str) -> tuple:
+    def getTotalReps(self, dataset: pandas.DataFrame, exercise: str) -> dict:
         '''Returns a dictionary of total, successful and failed reps for this exercise in the dataset
         
         Parameters
@@ -173,12 +177,12 @@ class DataHandler:
 
         return 0
 
-    def getExerciseMax(self, dataset: pandas.DataFrame, exercise: str, reps: int) -> float:
+    def getExerciseMax(self, sessions: list, exercise: Exercise, reps: int) -> float:
         '''Finds the highest weight lifted for the given exercise and rep number.
         
         Parameters
         ----------
-        dataset: a pandas dataFrame
+        sessions: A list of session objects
         exercise: str
         reps: int
 
@@ -187,20 +191,16 @@ class DataHandler:
         A float, the max weight lifted for the given exercise and number of reps
         '''
 
-        print('Exercise being searched: %s' % (exercise))
-        print('dataset being searched: %s' % (dataset))
-        exSets = dataset[dataset['Exercise'] == exercise]
-        repSets = []
+        weights = []
         
-        print('exSets : {}'.format(dataset))
+        for session in sessions:
+            for e in session.exercises:
+                if exercise == e.name:
+                    for s in e.sets:
+                        weights.append(s.weight)
+                
+        return max(weights)
 
-        for data in exSets:
-            print('data: {}'.format(data))
-            if self.getReps(data['Reps'])['total'] == reps:
-                repSets.append(data)
-
-        return None #max(repSets['Weight'].values)
-        #dataset.loc[(dataset['Exercise'] == exercise) & (dataset['Reps'] == reps)].max()['Weight']
 
     def getExerciseMaxes(self, dataset: pandas.DataFrame, exercise: str, reps: int) -> list:
         '''Finds the all the top set weights lifted for the given exercise and rep number.
