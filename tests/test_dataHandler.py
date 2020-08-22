@@ -24,7 +24,7 @@ def test_data():
     exercises.append(Exercise('Snatch'))
     exercises.append(Exercise('Clean and Jerk'))
 
-    exercises[0].sets = [Set(3, 2, 1, 30), Set(3, 3, 0, 10), Set(3, 3, 0, 20), Set(3, 3, 0, 15)]
+    exercises[0].sets = [Set(3, 2, 1, 30), Set(1, 1, 0, 10), Set(3, 3, 0, 20), Set(3, 3, 0, 15)]
     exercises[1].sets = [Set(3, 2, 1, 50), Set(3, 3, 0, 20), Set(3, 3, 0, 30), Set(3, 3, 0, 45)]
 
     session.addExercise(exercises[0])
@@ -60,12 +60,12 @@ class Test_DataHandler():
 
         assert 0
 
-    def test_getSuccessRate(self):
-
-        assert 0
+    def test_getSuccessRate(self, test_data):
+        exercise, rep, weight = 'Snatch', 3, 30.0
+        assert self.dh.getSuccessRate(test_data, exercise, rep) == 0.89
 
     def test_getExerciseMaxAverage(self, test_data):
-        exercise, rep, weight = 'Snatch', 1, 30.0
+        exercise, rep, weight = 'Snatch', 3, 30.0
         assert self.dh.getExerciseMaxAverage(test_data, exercise, rep) == weight
 
     def test_getExerciseMax(self, test_data):

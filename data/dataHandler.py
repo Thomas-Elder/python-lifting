@@ -114,31 +114,30 @@ class DataHandler:
 
         return repsDict
 
-    def getSuccessRate(self, dataset, exercise: str, competition=False) -> float:
+    def getSuccessRate(self, sessions: list, exercise: str,reps: int) -> float:
         '''Returns the % of reps successfully made for the given exercise
         
         Parameters
         ----------
-        dataset: a pandas dataframe object
+        sessions: A list of session objects
         exercise: a string
-        competition: a boolean, whether we want comp success rate, or training
+        reps: int
 
         Returns
         -------
         A float, successful/total lifts
         '''
 
-        successful, total = 0, 0
+        total, successful = 0, 0
 
-        data = dataset[dataset['Exercise'] == exercise]['Reps'].values
+        for session in sessions:
+            for e in session.exercises:
+                if exercise == e.name:
+                    exerciseSets = [s for s in e.sets if s.totalRepetitions == reps]
 
-        for element in data:
-            reps = self.getReps(element)
-
-            successful += reps['successful']
-            total += reps['total']
-
-        logging.debug('data: {}'.format(data))
+                    for s in exerciseSets:
+                        total += s.totalRepetitions
+                        successful += s.successfulRepetitions
 
         return round(successful/total, 2)
 
@@ -147,7 +146,7 @@ class DataHandler:
         
         Parameters
         ----------
-        dataset: a pandas dataFrame
+        sessions: A list of session objects
         exercise: str
         reps: int
 
@@ -161,7 +160,7 @@ class DataHandler:
         for session in sessions:
             for e in session.exercises:
                 if exercise == e.name:
-                    exerciseSets = [s.weight for s in e.sets]
+                    exerciseSets = [s.weight for s in e.sets if s.totalRepetitions == reps]
                     weights.append(max(exerciseSets))
         
         return statistics.mean(weights)
