@@ -56,3 +56,8 @@ class Test_DataReader():
         actual = self.dr.translateRepetitions(testRepetitionString)
 
         assert actual == expected
+
+    def test_dataReaderSessions(self):
+        
+        assert self.dr.sessions[0].competition == True
+        assert self.dr.sessions[1].competition == False

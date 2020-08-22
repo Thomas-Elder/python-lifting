@@ -145,23 +145,21 @@ class DataHandler:
 
         return exerciseMaxes
 
-    def getCompetitionDates(self, dataset: pandas.DataFrame) -> list:
+    def getCompetitionDates(self, sessions: list) -> list:
         '''Finds the all the dates of competition.
         
         Finds sets with an attempt number and returns the dates when those sets occured.
 
         Parameters
         ----------
-        dataset: a pandas dataFrame
+        sessions: A list of session objects
 
         Returns
         -------
         A list of pandas datetime objects
         '''
 
-        competitionSets = dataset.loc[dataset['Attempt'] != 0]
-
-        return pandas.unique(competitionSets['Date'].tolist())
+        return 0
 
     def getPeriodDates(self, dataset: pandas.DataFrame, competitionDates: list) -> list:
         '''Gets a list of tuples of the start/end date of training periods

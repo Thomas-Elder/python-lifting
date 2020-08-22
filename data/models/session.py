@@ -8,6 +8,7 @@ class Session:
     def __init__(self, date: pandas.datetime):
         self.date = date
         self.exercises = []
+        self.competition = False
 
     def addExercise(self, exercise: Exercise):
         self.exercises.append(exercise)
