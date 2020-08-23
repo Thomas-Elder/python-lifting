@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 def test_data():
     testSessions = []
 
-    session = Session(pandas.to_datetime('2020-04-01'))
+    testSessions.append(Session(pandas.to_datetime('2020-04-01')))
 
     exercises = []
 
@@ -29,10 +29,22 @@ def test_data():
     exercises[0].sets = [Set(3, 2, 1, 30), Set(1, 1, 0, 10), Set(2, 2, 0, 20), Set(3, 3, 0, 15)]
     exercises[1].sets = [Set(3, 2, 1, 50), Set(3, 3, 0, 20), Set(3, 3, 0, 30), Set(3, 3, 0, 45)]
 
-    session.addExercise(exercises[0])
-    session.addExercise(exercises[1])
+    testSessions[0].addExercise(exercises[0])
+    testSessions[0].addExercise(exercises[1])
 
-    testSessions.append(session)
+    testSessions.append(Session(pandas.to_datetime('2020-05-01')))
+    testSessions[1].competition = True
+
+    exercises = []
+
+    exercises.append(Exercise('Snatch'))
+    exercises.append(Exercise('Clean and Jerk'))
+
+    exercises[0].sets = [Set(1, 0, 1, 50), Set(1, 1, 0, 50), Set(1, 1, 0, 40), Set(1, 1, 0, 30)]
+    exercises[1].sets = [Set(1, 0, 1, 70), Set(1, 1, 0, 60), Set(1, 1, 0, 50), Set(1, 1, 0, 40)]
+
+    testSessions[1].addExercise(exercises[0])
+    testSessions[1].addExercise(exercises[1])
 
     return testSessions
 
