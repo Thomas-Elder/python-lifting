@@ -19,9 +19,26 @@ class DataHandler:
 
     def getSessions(self, sessions: list, fromDate: pandas.datetime, toDate:pandas.datetime, competition=False):
 
+        '''Returns a list of sessions between the toDate and fromDate or a session on the fromDate from the given session list. 
+
+        If fromDate and toDate are the same, this will return one session object. If they're different it'll return
+        a list of session objects.
+
+        Parameters
+        ----------
+        sessions: a list of Session objects
+        fromDate: a pandas.datetime
+        toDate: a pandas.datetime
+        competition: whether the sessions returned are competition sessions, default False
+
+        Returns
+        -------
+        The exercises as a list of strings
+        '''
+
         if fromDate == toDate:
             for session in sessions:
-                if session.date == fromDate:
+                if session.date == fromDate and session.competition == competition:
                     return session 
 
         return [s for s in sessions if s.date >= fromDate and s.date <= toDate and s.competition == competition]
