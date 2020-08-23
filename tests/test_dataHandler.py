@@ -58,6 +58,15 @@ class Test_DataHandler():
         logging.info('Tearing down after test... ')
         self.dh = None
 
+    def test_getSessions(self, test_data):
+        expected = [pandas.to_datetime('2020-04-01')]
+        result = self.dh.getSessions(test_data, pandas.to_datetime('2020-04-01'), pandas.to_datetime('2020-04-30'))
+
+        assert len(result) == len(expected)
+
+        for i in range(len(result)):
+            assert result[i].date == expected[i]
+
     def test_getExercises(self, test_data):
         exercises = ['Snatch', 'Clean and Jerk']
         assert self.dh.getExercises(test_data) == exercises
