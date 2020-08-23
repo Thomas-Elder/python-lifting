@@ -115,7 +115,9 @@ class DataHandler:
             for e in session.exercises:
                 if exercise == e.name:
                     exerciseSets = [s.weight for s in e.sets if s.totalRepetitions == reps]
-                    weights.append(max(exerciseSets))
+                    
+                    if len(exerciseSets) != 0:
+                        weights.append(max(exerciseSets))
                 
         return max(weights)
 
