@@ -79,9 +79,8 @@ class Test_DataHandler():
         assert self.dh.getExerciseMaxes(test_data, exercise, rep) == weight
 
     def test_getCompetitionDates(self, test_data):
-        
-        # TODO add a competition session to the test data so we can check this properly.
-        assert self.dh.getCompetitionDates(test_data) == []
+        expected = [pandas.to_datetime('2020-05-01')]
+        assert self.dh.getCompetitionDates(test_data) == expected
 
     def test_getPeriodDates(self, test_data):
         competitionDates = [pandas.to_datetime('2020-04-01'), pandas.to_datetime('2020-07-01')]
