@@ -17,9 +17,9 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 
 class DataHandler:
 
-    def getSessions(self, sessions: list, fromDate: pandas.datetime, toDate:pandas.datetime) -> list:
+    def getSessions(self, sessions: list, fromDate: pandas.datetime, toDate:pandas.datetime, competition=False) -> list:
 
-        return [s for s in sessions if s.date >= fromDate and s.date <= toDate]
+        return [s for s in sessions if s.date >= fromDate and s.date <= toDate and s.competition == competition]
 
     def getExercises(self, sessions: list) -> list:
         '''Returns a list of exercises from the given dataset
