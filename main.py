@@ -21,8 +21,17 @@ print('Dates of competition:{}'.format(competitionDates))
 print('Training periods: {}'.format(trainingPeriods))
 
 print()
-for date in competitionDates:  
-    print('Lifts on competition dates: \n{}'.format(dh.getSessions(allData, fromDate=date, toDate=date)))
+for date in competitionDates:
+    session = dh.getSessions(allData, fromDate=date, toDate=date, competition=True)
+
+    print('Lifts on competition dated: {}'.format(session.date))
+    for e in session.exercises:
+
+        print('{} lifts:'.format(e.name))
+        for s in e.sets:
+            print('successfulRepetitions: {}, failedRepetitions: {}, weight: {}'.format(s.successfulRepetitions, s.failedRepetitions, s.weight))
+        
+        print()
 
 print()
 print('Training period data')

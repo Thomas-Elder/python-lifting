@@ -17,7 +17,12 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 
 class DataHandler:
 
-    def getSessions(self, sessions: list, fromDate: pandas.datetime, toDate:pandas.datetime, competition=False) -> list:
+    def getSessions(self, sessions: list, fromDate: pandas.datetime, toDate:pandas.datetime, competition=False):
+
+        if fromDate == toDate:
+            for session in sessions:
+                if session.date == fromDate:
+                    return session 
 
         return [s for s in sessions if s.date >= fromDate and s.date <= toDate and s.competition == competition]
 
