@@ -145,7 +145,8 @@ class DataHandler:
                 if exercise == e.name:
                     exerciseSets = [s.weight for s in e.sets if s.totalRepetitions == reps]
 
-                    exerciseMaxes.append({'date': session.date, 'weight': max(exerciseSets)})
+                    if len(exerciseSets) != 0:
+                        exerciseMaxes.append({'date': session.date, 'weight': max(exerciseSets)})
 
         return exerciseMaxes
 
