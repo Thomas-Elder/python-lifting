@@ -97,7 +97,10 @@ class DataHandler:
                     if len(exerciseSets) != 0:
                         weights.append(max(exerciseSets))
         
-        return statistics.mean(weights)
+        if len(weights) != 0:
+            return statistics.mean(weights)
+        
+        return 0
 
     def getExerciseMax(self, sessions: list, exercise: Exercise, reps: int) -> float:
         '''Finds the highest weight lifted for the given exercise and rep number.
