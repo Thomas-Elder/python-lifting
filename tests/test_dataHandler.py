@@ -100,11 +100,11 @@ class Test_DataHandler():
         expected = [pandas.to_datetime('2020-05-01')]
         assert self.dh.getCompetitionDates(test_data) == expected
 
-    def test_getPeriodDates(self, test_data):
+    def test_getCompetitionPeriodDates(self, test_data):
         competitionDates = [pandas.to_datetime('2020-04-01'), pandas.to_datetime('2020-07-01')]
         expected = [(pandas.to_datetime('1986-03-24'), pandas.to_datetime('2020-03-31')), 
                     (pandas.to_datetime('2020-04-02'), pandas.to_datetime('2020-06-30')), 
                     (pandas.to_datetime('2020-07-02'), pandas.to_datetime('2030-12-31'))]
         
-        result = self.dh.getPeriodDates(competitionDates)
+        result = self.dh.getCompetitionPeriodDates(competitionDates)
         assert result == expected

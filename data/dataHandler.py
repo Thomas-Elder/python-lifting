@@ -201,7 +201,7 @@ class DataHandler:
 
         return competitionDates
 
-    def getPeriodDates(self, competitionDates: list) -> list:
+    def getCompetitionPeriodDates(self, competitionDates: list) -> list:
         '''Gets a list of tuples of the start/end date of training periods
         
         For the given competition dates, returns start/end dates of the periods
