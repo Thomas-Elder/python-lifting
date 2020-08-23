@@ -98,7 +98,7 @@ class DataHandler:
                         weights.append(max(exerciseSets))
         
         if len(weights) != 0:
-            return statistics.mean(weights)
+            return round(statistics.mean(weights), 2)
         
         return 0
 
