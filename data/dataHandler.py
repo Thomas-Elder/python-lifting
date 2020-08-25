@@ -36,11 +36,6 @@ class DataHandler:
         The exercises as a list of strings
         '''
 
-        if fromDate == toDate:
-            for session in sessions:
-                if session.date == fromDate and session.competition == competition:
-                    return session 
-
         return [s for s in sessions if s.date >= fromDate and s.date <= toDate and s.competition == competition]
 
     def getExercises(self, sessions: list) -> list:
