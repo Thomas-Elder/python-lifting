@@ -20,7 +20,8 @@ class DataReader:
         self.file = file
         self.dataset = pandas.read_csv(self.file)
         self.dataset['Attempt'] = self.dataset['Attempt'].fillna(0)
-        self.dataset['Date'] = pandas.to_datetime(self.dataset['Date'])
+        #self.dataset['Date'] = pandas.to_datetime(self.dataset['Date'], format='%Y-%m-%d')
+        self.dataset['Date'] = self.dataset['Date'].map(lambda date: pandas.Timestamp(date).to_pydatetime())
         self.sessions = self.translateData(self.dataset, self.translateRepetitions)
     
     def translateData(self, dataset: pandas.DataFrame, repetitionTranslator):

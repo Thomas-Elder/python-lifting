@@ -26,21 +26,20 @@ class Test_DataReader():
         assert self.dr != None
 
     def test_dataReaderContent(self):
-        expected = pandas.DataFrame({'Date': pandas.to_datetime('2020-07-18'), 'Exercise': ['Snatch'], 'Reps': [3], 'Weight': [30], 'Attempt': 0})
-        actual = self.dr.getData()
+        expected = pandas.DataFrame({'Date': datetime.strptime('2020-07-18', '%Y-%m-%d'), 'Exercise': ['Snatch'], 'Reps': [3], 'Weight': [30], 'Attempt': 0})
+        sessions = self.dr.sessions
 
-        assert actual['Date'][0] == expected['Date'][0]
+        assert sessions[0].date == expected['Date'][0]
 
     def test_translateData(self):
 
         data = self.dr.getData()
         
-        expectedDate = pandas.to_datetime('2020-07-18')
+        expectedDate = datetime.strptime('2020-07-18', '%Y-%m-%d')
         expectedExerciseName = 'Snatch'
         expectedWeight = 30
 
         actual = self.dr.translateData(data, self.dr.translateRepetitions)
-        #actual = self.dr.sessions
 
         assert actual[0].date == expectedDate
         assert actual[0].exercises[0].name == expectedExerciseName
