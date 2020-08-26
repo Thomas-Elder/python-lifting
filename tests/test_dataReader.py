@@ -9,6 +9,7 @@ from data.models.session import Session
 
 from datetime import datetime
 import pandas
+import numpy
 import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -26,16 +27,17 @@ class Test_DataReader():
         assert self.dr != None
 
     def test_dataReaderContent(self):
-        expected = pandas.DataFrame({'Date': datetime.strptime('2020-07-18', '%Y-%m-%d'), 'Exercise': ['Snatch'], 'Reps': [3], 'Weight': [30], 'Attempt': 0})
-        sessions = self.dr.sessions
 
-        assert sessions[0].date == expected['Date'][0]
+        expectedDate = numpy.datetime64('2020-07-18')
+        actual = self.dr.sessions
+
+        assert actual[0].date == expectedDate
 
     def test_translateData(self):
 
         data = self.dr.getData()
         
-        expectedDate = datetime.strptime('2020-07-18', '%Y-%m-%d')
+        expectedDate = numpy.datetime64('2020-07-18')
         expectedExerciseName = 'Snatch'
         expectedWeight = 30
 
