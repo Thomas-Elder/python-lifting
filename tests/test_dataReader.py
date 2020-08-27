@@ -60,5 +60,5 @@ class Test_DataReader():
 
     def test_dataReaderSessions(self):
 
-        assert self.dr.sessions[0].competition == True
-        assert self.dr.sessions[1].competition == False
+        assert self.dr.sessions[2].competition == True
+        assert self.dr.sessions[0].competition == False

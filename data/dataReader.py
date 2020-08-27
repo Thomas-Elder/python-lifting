@@ -66,7 +66,7 @@ class DataReader:
                     exercise.sets.append(Set(totalRepetitions, successfulRepetitions, failedRepetitions, int(exerciseSet[3])))
 
                     # while we're here, let's check if any sets have an attempt value, if so, mark this session as a competition one
-                    if exerciseSet[4] != 0:
+                    if exerciseSet[4] != '':
                         session.competition = True
 
         return sessions
