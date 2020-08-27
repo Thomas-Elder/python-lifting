@@ -3,8 +3,7 @@
 # imports
 from data.models.session import Session, Exercise, Set
 
-import pandas
-
+import csv
 import os 
 from datetime import datetime
 
@@ -18,13 +17,17 @@ class DataReader:
         
         logging.debug('cwd: %s' % (os.getcwd()))
         self.file = file
-        self.dataset = pandas.read_csv(self.file)
-        self.dataset['Attempt'] = self.dataset['Attempt'].fillna(0)
-        self.dataset['Date'] = pandas.to_datetime(self.dataset['Date'], format='%Y-%m-%d')
-        #self.dataset['Date'] = self.dataset['Date'].map(lambda date: pandas.Timestamp(date).to_pydatetime())
+        self.dataset = []
+
+        with open(file, mode='r', newline='') as csv_file:
+            self.reader = csv.reader(csv_file)
+
+            for data in self.reader:
+                self.dataset.append(data)
+
         self.sessions = self.translateData(self.dataset, self.translateRepetitions)
     
-    def translateData(self, dataset: pandas.DataFrame, repetitionTranslator):
+    def translateData(self, dataset: list, repetitionTranslator):
         ''' Converts a pandas DataFrame into a list of session objects
 
         Uses dubious pandas anti-patterns to convert the dataframe into a more
@@ -40,20 +43,23 @@ class DataReader:
         A list of session objects
         '''
 
-        dates = dataset['Date'].unique()
+        dates = list(set([x[0] for x in dataset]))
 
         sessions = [Session(date) for date in dates]
 
         for session in sessions:
 
-            exercisesForDate = dataset[dataset['Date'] == session.date]['Exercise'].unique()
+            # Get all the exercises for this date
+            exercisesForDate = list(set([data[1] for data in dataset if data[0] == session.date]))
+
+            # Add them to the sessions' exercise list
             session.exercises = [Exercise(exercise) for exercise in exercisesForDate]
         
             for exercise in session.exercises:
                 
-                # Get all the sets for this session's date, for this exercise
-                exerciseSets = dataset[(dataset['Date'] == session.date) & (dataset['Exercise'] == exercise.name)].values.tolist()
-                
+                # Get all the sets for this session's date, for this exercise               
+                exerciseSets = [data for data in dataset if data[0] == session.date and data[1] == exercise.name]
+
                 # add set to the exercise for each row with this exercise and date
                 for exerciseSet in exerciseSets:
                     totalRepetitions, successfulRepetitions, failedRepetitions = repetitionTranslator(exerciseSet[2])
@@ -113,5 +119,6 @@ class DataReader:
         if fromDate == None or toDate == None:
             return self.dataset
 
-        mask = (self.dataset['Date'] >= fromDate) & (self.dataset['Date'] <= toDate)
-        return self.dataset.loc[mask] 
+        #mask = (self.dataset['Date'] >= fromDate) & (self.dataset['Date'] <= toDate)
+        return 0 
+        #self.dataset.loc[mask] 
