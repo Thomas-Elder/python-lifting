@@ -1,7 +1,5 @@
 #! python3
 
-import pandas
-
 from data.models.session import Session
 from data.models.exercise import Exercise
 from data.models.set import Set
