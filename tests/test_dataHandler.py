@@ -59,8 +59,8 @@ class Test_DataHandler():
         self.dh = None
 
     def test_getSessionsNonCompetition(self, test_data):
-        expected = [pandas.to_datetime('2020-04-01')]
-        result = self.dh.getSessions(test_data, pandas.to_datetime('2020-04-01'), pandas.to_datetime('2020-04-30'), competition=False)
+        expected = [datetime.strptime('2020-04-01', '%Y-%m-%d')]
+        result = self.dh.getSessions(test_data, datetime.strptime('2020-04-01', '%Y-%m-%d'), datetime.strptime('2020-04-30', '%Y-%m-%d'), competition=False)
 
         assert len(result) == len(expected)
 
@@ -68,8 +68,8 @@ class Test_DataHandler():
             assert result[i].date == expected[i]
 
     def test_getSessionsCompetition(self, test_data):
-        expected = [pandas.to_datetime('2020-05-01')]
-        result = self.dh.getSessions(test_data, pandas.to_datetime('2020-05-01'), pandas.to_datetime('2020-05-30'), competition=True)
+        expected = [datetime.strptime('2020-05-01', '%Y-%m-%d')]
+        result = self.dh.getSessions(test_data, datetime.strptime('2020-05-01', '%Y-%m-%d'), datetime.strptime('2020-05-30', '%Y-%m-%d'), competition=True)
 
         assert len(result) == len(expected)
 
