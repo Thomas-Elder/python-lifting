@@ -61,41 +61,41 @@ targets = [{'exercise': 'Snatch Pull', 'weights': [96, 101, 107, 113]},
 # So I need 4 training period objects, with a list of exercises. Each exercise needs to have an actual and goal weight.
 
 trainingPeriods = []
-trainingPeriods.append({'dates': [pandas.to_datetime('2020-8-1'), pandas.to_datetime('2020-10-30')], 
-                        'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-8-1'), pandas.to_datetime('2020-10-30')) , 'Snatch Pull', 3), 'target': 96}, 
-                                     {'exercise': 'Clean Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-8-1'), pandas.to_datetime('2020-10-30')) , 'Clean Pull', 3), 'target': 112}, 
-                                     {'exercise': 'Front Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-8-1'), pandas.to_datetime('2020-10-30')) , 'Front Squat', 3), 'target': 91}, 
-                                     {'exercise': 'Back Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-8-1'), pandas.to_datetime('2020-10-30')) , 'Back Squat', 3), 'target': 98}, 
-                                     {'exercise': 'Power Snatch', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-8-1'), pandas.to_datetime('2020-10-30')) , 'Power Snatch', 3), 'target': 61}, 
-                                     {'exercise': 'Power Clean', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-8-1'), pandas.to_datetime('2020-10-30')) , 'Power Clean', 3), 'target': 72}, 
-                                     {'exercise': 'Snatch Balance', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-8-1'), pandas.to_datetime('2020-10-30')) , 'Snatch Balance', 3), 'target': 75}
+trainingPeriods.append({'dates': [datetime.strptime('2020-8-1', '%Y-%m-%d'), datetime.strptime('2020-10-30', '%Y-%m-%d')], 
+                        'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-8-1', '%Y-%m-%d'), datetime.strptime('2020-10-30', '%Y-%m-%d')) , 'Snatch Pull', 3), 'target': 96}, 
+                                     {'exercise': 'Clean Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-8-1', '%Y-%m-%d'), datetime.strptime('2020-10-30', '%Y-%m-%d')) , 'Clean Pull', 3), 'target': 112}, 
+                                     {'exercise': 'Front Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-8-1', '%Y-%m-%d'), datetime.strptime('2020-10-30', '%Y-%m-%d')) , 'Front Squat', 3), 'target': 91}, 
+                                     {'exercise': 'Back Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-8-1', '%Y-%m-%d'), datetime.strptime('2020-10-30', '%Y-%m-%d')) , 'Back Squat', 3), 'target': 98}, 
+                                     {'exercise': 'Power Snatch', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-8-1', '%Y-%m-%d'), datetime.strptime('2020-10-30', '%Y-%m-%d')) , 'Power Snatch', 3), 'target': 61}, 
+                                     {'exercise': 'Power Clean', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-8-1', '%Y-%m-%d'), datetime.strptime('2020-10-30', '%Y-%m-%d')) , 'Power Clean', 3), 'target': 72}, 
+                                     {'exercise': 'Snatch Balance', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-8-1', '%Y-%m-%d'), datetime.strptime('2020-10-30', '%Y-%m-%d')) , 'Snatch Balance', 3), 'target': 75}
                                     ]
                        })
 
-trainingPeriods.append({'dates': [pandas.to_datetime('2020-11-1'), pandas.to_datetime('2021-1-31')], 
-                        'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-11-1'), pandas.to_datetime('2021-1-31')) , 'Snatch Pull', 3), 'target': 101}, 
-                                     {'exercise': 'Clean Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-11-1'), pandas.to_datetime('2021-1-31')) , 'Clean Pull', 3), 'target': 118}, 
-                                     {'exercise': 'Front Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-11-1'), pandas.to_datetime('2021-1-31')) , 'Front Squat', 3), 'target': 96}, 
-                                     {'exercise': 'Back Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-11-1'), pandas.to_datetime('2021-1-31')) , 'Back Squat', 3), 'target': 104}, 
-                                     {'exercise': 'Power Snatch', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-11-1'), pandas.to_datetime('2021-1-31')) , 'Power Snatch', 3), 'target': 64}, 
-                                     {'exercise': 'Power Clean', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-11-1'), pandas.to_datetime('2021-1-31')) , 'Power Clean', 3), 'target': 76}, 
-                                     {'exercise': 'Snatch Balance', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-11-1'), pandas.to_datetime('2021-1-31')) , 'Snatch Balance', 3), 'target': 80}
+trainingPeriods.append({'dates': [datetime.strptime('2020-11-1', '%Y-%m-%d'), datetime.strptime('2021-1-31', '%Y-%m-%d')], 
+                        'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-11-1', '%Y-%m-%d'), datetime.strptime('2021-1-31', '%Y-%m-%d')) , 'Snatch Pull', 3), 'target': 101}, 
+                                     {'exercise': 'Clean Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-11-1', '%Y-%m-%d'), datetime.strptime('2021-1-31', '%Y-%m-%d')) , 'Clean Pull', 3), 'target': 118}, 
+                                     {'exercise': 'Front Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-11-1', '%Y-%m-%d'), datetime.strptime('2021-1-31', '%Y-%m-%d')) , 'Front Squat', 3), 'target': 96}, 
+                                     {'exercise': 'Back Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-11-1', '%Y-%m-%d'), datetime.strptime('2021-1-31', '%Y-%m-%d')) , 'Back Squat', 3), 'target': 104}, 
+                                     {'exercise': 'Power Snatch', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-11-1', '%Y-%m-%d'), datetime.strptime('2021-1-31', '%Y-%m-%d')) , 'Power Snatch', 3), 'target': 64}, 
+                                     {'exercise': 'Power Clean', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-11-1', '%Y-%m-%d'), datetime.strptime('2021-1-31', '%Y-%m-%d')) , 'Power Clean', 3), 'target': 76}, 
+                                     {'exercise': 'Snatch Balance', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2020-11-1', '%Y-%m-%d'), datetime.strptime('2021-1-31', '%Y-%m-%d')) , 'Snatch Balance', 3), 'target': 80}
                                     ]
                        })
 
-trainingPeriods.append({'dates': [pandas.to_datetime('2021-2-1'), pandas.to_datetime('2021-4-30')], 
-                        'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-2-1'), pandas.to_datetime('2020-4-30')) , 'Snatch Pull', 3), 'target': 107}, 
-                                     {'exercise': 'Clean Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-2-1'), pandas.to_datetime('2020-4-30')) , 'Clean Pull', 3), 'target': 124}, 
-                                     {'exercise': 'Front Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-2-1'), pandas.to_datetime('2020-4-30')) , 'Front Squat', 3), 'target': 101}, 
-                                     {'exercise': 'Back Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-2-1'), pandas.to_datetime('2020-4-30')) , 'Back Squat', 3), 'target': 109}, 
-                                     {'exercise': 'Power Snatch', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-2-1'), pandas.to_datetime('2020-4-30')) , 'Power Snatch', 3), 'target': 68}, 
-                                     {'exercise': 'Power Clean', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-2-1'), pandas.to_datetime('2020-4-30')) , 'Power Clean', 3), 'target': 80}, 
-                                     {'exercise': 'Snatch Balance', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-2-1'), pandas.to_datetime('2020-4-30')) , 'Snatch Balance', 3), 'target': 84}
+trainingPeriods.append({'dates': [datetime.strptime('2021-2-1', '%Y-%m-%d'), datetime.strptime('2021-4-30', '%Y-%m-%d')], 
+                        'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-2-1', '%Y-%m-%d'), datetime.strptime('2021-4-30', '%Y-%m-%d')) , 'Snatch Pull', 3), 'target': 107}, 
+                                     {'exercise': 'Clean Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-2-1', '%Y-%m-%d'), datetime.strptime('2021-4-30', '%Y-%m-%d')) , 'Clean Pull', 3), 'target': 124}, 
+                                     {'exercise': 'Front Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-2-1', '%Y-%m-%d'), datetime.strptime('2021-4-30', '%Y-%m-%d')) , 'Front Squat', 3), 'target': 101}, 
+                                     {'exercise': 'Back Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-2-1', '%Y-%m-%d'), datetime.strptime('2021-4-30', '%Y-%m-%d')) , 'Back Squat', 3), 'target': 109}, 
+                                     {'exercise': 'Power Snatch', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-2-1', '%Y-%m-%d'), datetime.strptime('2021-4-30', '%Y-%m-%d')) , 'Power Snatch', 3), 'target': 68}, 
+                                     {'exercise': 'Power Clean', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-2-1', '%Y-%m-%d'), datetime.strptime('2021-4-30', '%Y-%m-%d')) , 'Power Clean', 3), 'target': 80}, 
+                                     {'exercise': 'Snatch Balance', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-2-1', '%Y-%m-%d'), datetime.strptime('2021-4-30', '%Y-%m-%d')) , 'Snatch Balance', 3), 'target': 84}
                                     ]
                        })
 
-trainingPeriods.append({'dates': [pandas.to_datetime('2021-5-1'), pandas.to_datetime('2021-7-31')], 
-                        'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-1-1'), pandas.to_datetime('2020-7-31')) , 'Snatch Pull', 3), 'target': 113}, 
+trainingPeriods.append({'dates': [datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')], 
+                        'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')) , 'Snatch Pull', 3), 'target': 113}, 
                                      {'exercise': 'Clean Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-5-1'), pandas.to_datetime('2020-7-31')) , 'Clean Pull', 3), 'target': 130}, 
                                      {'exercise': 'Front Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-5-1'), pandas.to_datetime('2020-7-31')) , 'Front Squat', 3), 'target': 106}, 
                                      {'exercise': 'Back Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2021-5-1'), pandas.to_datetime('2020-7-31')) , 'Back Squat', 3), 'target': 114}, 
@@ -107,14 +107,14 @@ trainingPeriods.append({'dates': [pandas.to_datetime('2021-5-1'), pandas.to_date
 
 
 # First let's print the data for everything prior to 1Aug20.
-startingPoint = {'dates': [pandas.to_datetime('2020-1-1'), pandas.to_datetime('2020-7-31')], 
-                'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-1-1'), pandas.to_datetime('2020-7-31')) , 'Snatch Pull', 3)}, 
-                                {'exercise': 'Clean Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-1-1'), pandas.to_datetime('2020-7-31')) , 'Clean Pull', 3)}, 
-                                {'exercise': 'Front Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-1-1'), pandas.to_datetime('2020-7-31')) , 'Front Squat', 3)}, 
-                                {'exercise': 'Back Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-1-1'), pandas.to_datetime('2020-7-31')) , 'Back Squat', 3)}, 
-                                {'exercise': 'Power Snatch', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-1-1'), pandas.to_datetime('2020-7-31')) , 'Power Snatch', 3)}, 
-                                {'exercise': 'Power Clean', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-1-1'), pandas.to_datetime('2020-7-31')) , 'Power Clean', 3)}, 
-                                {'exercise': 'Snatch Balance', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, pandas.to_datetime('2020-1-1'), pandas.to_datetime('2020-7-31')) , 'Snatch Balance', 3)}
+startingPoint = {'dates': [datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')], 
+                'exercises': [{'exercise': 'Snatch Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')) , 'Snatch Pull', 3)}, 
+                                {'exercise': 'Clean Pull', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')) , 'Clean Pull', 3)}, 
+                                {'exercise': 'Front Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')) , 'Front Squat', 3)}, 
+                                {'exercise': 'Back Squat', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')) , 'Back Squat', 3)}, 
+                                {'exercise': 'Power Snatch', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')) , 'Power Snatch', 3)}, 
+                                {'exercise': 'Power Clean', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')) , 'Power Clean', 3)}, 
+                                {'exercise': 'Snatch Balance', 'actual': dh.getExerciseMaxAverage(dh.getSessions(allData, datetime.strptime('2021-5-1', '%Y-%m-%d'), datetime.strptime('2021-7-31', '%Y-%m-%d')) , 'Snatch Balance', 3)}
                             ]
                 }
 
