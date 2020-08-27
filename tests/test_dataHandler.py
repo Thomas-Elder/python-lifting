@@ -8,7 +8,6 @@ from data.models.session import Session
 from data.models.exercise import Exercise
 from data.models.set import Set
 
-import pandas
 import numpy
 from datetime import datetime
 
@@ -19,7 +18,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 def test_data():
     testSessions = []
 
-    testSessions.append(Session(pandas.to_datetime('2020-04-01')))
+    testSessions.append(Session(datetime.strptime('2020-04-01', '%Y-%m-%d')))
 
     exercises = []
 
@@ -32,7 +31,7 @@ def test_data():
     testSessions[0].addExercise(exercises[0])
     testSessions[0].addExercise(exercises[1])
 
-    testSessions.append(Session(pandas.to_datetime('2020-05-01')))
+    testSessions.append(Session(datetime.strptime('2020-05-01', '%Y-%m-%d')))
     testSessions[1].competition = True
 
     exercises = []
