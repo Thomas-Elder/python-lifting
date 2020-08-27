@@ -27,8 +27,8 @@ class DataHandler:
         Parameters
         ----------
         sessions: a list of Session objects
-        fromDate: a pandas.datetime
-        toDate: a pandas.datetime
+        fromDate: a datetime
+        toDate: a datetime
         competition: whether the sessions returned are competition sessions, default False
 
         Returns
