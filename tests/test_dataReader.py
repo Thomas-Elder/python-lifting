@@ -28,7 +28,7 @@ class Test_DataReader():
 
     def test_dataReaderContent(self):
 
-        expectedDate = numpy.datetime64('2020-07-18')
+        expectedDate = datetime.strptime('2020-07-14', '%Y-%m-%d')
         actual = self.dr.sessions
 
         assert actual[0].date == expectedDate
@@ -37,9 +37,9 @@ class Test_DataReader():
 
         data = self.dr.getData()
         
-        expectedDate = numpy.datetime64('2020-07-18')
-        expectedExerciseName = 'Snatch'
-        expectedWeight = 30
+        expectedDate = datetime.strptime('2020-07-14', '%Y-%m-%d')
+        expectedExerciseName = 'Front Squat'
+        expectedWeight = 50
 
         actual = self.dr.translateData(data, self.dr.translateRepetitions)
 
@@ -47,7 +47,7 @@ class Test_DataReader():
         assert actual[0].exercises[0].name == expectedExerciseName
         assert actual[0].exercises[0].sets[0].weight == expectedWeight
         assert actual[0].exercises[0].sets[0].totalRepetitions == 3
-        assert len(actual[0].exercises[0].sets) == 13
+        assert len(actual[0].exercises[0].sets) == 7
 
     def test_translateRepetitions(self):
 
