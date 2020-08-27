@@ -185,7 +185,7 @@ class DataHandler:
 
         Returns
         -------
-        A list of pandas datetime objects
+        A list of datetime objects
         '''
 
         competitionDates = []
