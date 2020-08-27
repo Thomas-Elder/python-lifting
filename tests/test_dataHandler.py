@@ -93,18 +93,18 @@ class Test_DataHandler():
         assert self.dh.getExerciseMax(test_data, exercise, rep) == weight
 
     def test_getExerciseMaxes(self, test_data):
-        exercise, rep, weight = 'Snatch', 3, [{'date':pandas.to_datetime('2020-04-01'), 'weight': 30.0}]
+        exercise, rep, weight = 'Snatch', 3, [{'date':datetime.strptime('2020-04-01', '%Y-%m-%d'), 'weight': 30.0}]
         assert self.dh.getExerciseMaxes(test_data, exercise, rep) == weight
 
     def test_getCompetitionDates(self, test_data):
-        expected = [pandas.to_datetime('2020-05-01')]
+        expected = [datetime.strptime('2020-05-01', '%Y-%m-%d')]
         assert self.dh.getCompetitionDates(test_data) == expected
 
     def test_getCompetitionPeriodDates(self, test_data):
-        competitionDates = [pandas.to_datetime('2020-04-01'), pandas.to_datetime('2020-07-01')]
-        expected = [(pandas.to_datetime('1986-03-24'), pandas.to_datetime('2020-03-31')), 
-                    (pandas.to_datetime('2020-04-02'), pandas.to_datetime('2020-06-30')), 
-                    (pandas.to_datetime('2020-07-02'), pandas.to_datetime('2030-12-31'))]
+        competitionDates = [datetime.strptime('2020-04-01', '%Y-%m-%d'), datetime.strptime('2020-07-01', '%Y-%m-%d')]
+        expected = [(datetime.strptime('1986-03-24', '%Y-%m-%d'), datetime.strptime('2020-03-31', '%Y-%m-%d')), 
+                    (datetime.strptime('2020-04-02', '%Y-%m-%d'), datetime.strptime('2020-06-30', '%Y-%m-%d')), 
+                    (datetime.strptime('2020-07-02', '%Y-%m-%d'), datetime.strptime('2030-12-31', '%Y-%m-%d'))]
         
         result = self.dh.getCompetitionPeriodDates(competitionDates)
         assert result == expected
