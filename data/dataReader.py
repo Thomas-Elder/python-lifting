@@ -44,26 +44,26 @@ class DataReader:
         '''
 
         dates = list(set([x[0] for x in dataset]))
-
-        sessions = [Session(date) for date in dates]
+        dates.sort()
+        sessions = [Session(datetime.strptime(date, '%Y-%m-%d')) for date in dates]
 
         for session in sessions:
 
             # Get all the exercises for this date
-            exercisesForDate = list(set([data[1] for data in dataset if data[0] == session.date]))
-
+            exercisesForDate = list(set([data[1] for data in dataset if datetime.strptime(data[0], '%Y-%m-%d') == session.date]))
+            exercisesForDate.sort()
             # Add them to the sessions' exercise list
             session.exercises = [Exercise(exercise) for exercise in exercisesForDate]
         
             for exercise in session.exercises:
                 
                 # Get all the sets for this session's date, for this exercise               
-                exerciseSets = [data for data in dataset if data[0] == session.date and data[1] == exercise.name]
+                exerciseSets = [data for data in dataset if datetime.strptime(data[0], '%Y-%m-%d') == session.date and data[1] == exercise.name]
 
                 # add set to the exercise for each row with this exercise and date
                 for exerciseSet in exerciseSets:
                     totalRepetitions, successfulRepetitions, failedRepetitions = repetitionTranslator(exerciseSet[2])
-                    exercise.sets.append(Set(totalRepetitions, successfulRepetitions, failedRepetitions, exerciseSet[3]))
+                    exercise.sets.append(Set(totalRepetitions, successfulRepetitions, failedRepetitions, int(exerciseSet[3])))
 
                     # while we're here, let's check if any sets have an attempt value, if so, mark this session as a competition one
                     if exerciseSet[4] != 0:
