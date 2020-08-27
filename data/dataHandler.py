@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 
 class DataHandler:
 
-    def getSessions(self, sessions: list, fromDate: pandas.datetime, toDate:pandas.datetime, competition=False):
+    def getSessions(self, sessions: list, fromDate: datetime, toDate: datetime, competition=False):
 
         '''Returns a list of sessions between the toDate and fromDate or a session on the fromDate from the given session list. 
 
