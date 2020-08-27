@@ -204,35 +204,34 @@ class DataHandler:
 
         Parameters
         ----------
-        competitionDates: a list of pandas.datetime objects representing competition dates
+        competitionDates: a list of datetime objects representing competition dates
 
         Returns
         -------
-        A list of tuples of two pandas datetime objects for the start and end date
+        A list of tuples of two datetime objects for the start and end date
         '''
 
         trainingPeriods = []
-
+ 
         # First we need the earliest and latest date in the list.
-        start = pandas.to_datetime('1986-03-24') 
-        end = pandas.to_datetime('2030-12-31')
-
-        print('competitionDates[0] - pandas.Timedelta(1): {}'.format(competitionDates[0] - pandas.Timedelta(days=1)))
+        start = datetime.strptime('1986-03-24', '%Y-%m-%d') 
+        end = datetime.strptime('2030-12-31', '%Y-%m-%d')
+        day = timedelta(days=1)
 
         # The first period will be from the start to the first comp:
-        trainingPeriods.append((start, competitionDates[0] - pandas.Timedelta(days=1)))
+        trainingPeriods.append((start, competitionDates[0] - day))
 
         # If there's only one comp, we can just toss on the last period now
         if len(competitionDates) == 1:
-            trainingPeriods.append((competitionDates[0] + pandas.Timedelta(days=1), end))
+            trainingPeriods.append((competitionDates[0] + day, end))
 
         # Otherwise we need to loop over dates to get all the periods
         else:
             for i in range(len(competitionDates) - 1):
                 # Then we need to loop over compdates:
-                trainingPeriods.append((competitionDates[i] + pandas.Timedelta(days=1), competitionDates[i + 1] - pandas.Timedelta(days=1)))
+                trainingPeriods.append((competitionDates[i] + day, competitionDates[i + 1] - day))
 
             # Then add the last period from last comp to end.
-            trainingPeriods.append((competitionDates[len(competitionDates) - 1] + pandas.Timedelta(days=1), end))
+            trainingPeriods.append((competitionDates[len(competitionDates) - 1] + day, end))
 
         return trainingPeriods
