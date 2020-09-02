@@ -6,7 +6,7 @@ from data.models.set import Set
 
 import os 
 import statistics
-import numpy
+
 from datetime import datetime, timedelta
 
 import logging

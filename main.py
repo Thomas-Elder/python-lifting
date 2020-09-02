@@ -4,7 +4,6 @@ from data.dataReader import DataReader
 from data.dataHandler import DataHandler
 
 from datetime import datetime
-import pandas
 
 dr = DataReader('data\\data.csv')
 dh = DataHandler()
