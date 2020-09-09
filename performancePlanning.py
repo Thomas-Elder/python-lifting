@@ -118,11 +118,16 @@ startingPoint = {'dates': [datetime.strptime('2020-5-1', '%Y-%m-%d'), datetime.s
                 }
 
 print()
+print('Printing the average maximum weight lifted in each session, for 3 reps for the target exercises.')
+print('First initial averages:')
+print()
 print('For training period: {} - {}'.format(datetime.strftime(startingPoint['dates'][0], '%Y-%m-%d'), datetime.strftime(startingPoint['dates'][1], '%Y-%m-%d')))
 print('{:15}{:>10}'.format('Exercise', 'Actual'))
 for exercise in startingPoint['exercises']:
     print('{:15}{:10}'.format(exercise['exercise'], exercise['actual']))
 
+print()
+print('Now printing the actual and target averages for the training periods over the year.')
 # Print all the training period data
 for period in trainingPeriods:
     print()
