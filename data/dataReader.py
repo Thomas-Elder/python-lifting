@@ -15,6 +15,7 @@ class DataReader:
 
     def __init__(self, file: str):
         
+        logging.debug('initialising DataReader... ')
         logging.debug('cwd: %s' % (os.getcwd()))
         self.file = file
         self.dataset = []
@@ -26,6 +27,7 @@ class DataReader:
                 self.dataset.append(data)
 
         self.sessions = self.translateData(self.dataset, self.translateRepetitions)
+        logging.debug('DataReader initialised')
     
     def translateData(self, dataset: list, repetitionTranslator):
         ''' Converts a pandas DataFrame into a list of session objects
@@ -42,6 +44,7 @@ class DataReader:
         -------
         A list of session objects
         '''
+        logging.debug('translating data... ')
 
         dates = list(set([x[0] for x in dataset]))
         dates.sort()
@@ -69,6 +72,7 @@ class DataReader:
                     if exerciseSet[4] != '':
                         session.competition = True
 
+        logging.debug('data translated')
         return sessions
 
     def translateRepetitions(self, repetitionString: str):
@@ -82,6 +86,7 @@ class DataReader:
         -------
         tuple of 3 values, totalRepetitions, successfulRepetitions, failedRepetitions
         '''
+        logging.debug('translating repetitions... ')
 
         total, successful, failed = 0, 0, 0
 
@@ -99,6 +104,7 @@ class DataReader:
                     successful += int(char)
                     total += int(char)
 
+        logging.debug('repetitions translated')
         return (total, successful, failed)
 
     def getData(self, fromDate=None, toDate=None):
