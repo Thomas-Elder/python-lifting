@@ -10,12 +10,26 @@ dh = DataHandler()
 
 allSessions = dr.sessions
 
-monthsA = []
+startYear = datetime.today().year
+endYear = datetime.today().year
+years = []
+
 for session in allSessions:
-    if session.date.month not in monthsA:
-        monthsA.append(session.date.month)
+    if session.date.year not in years:
+        years.append(session.date.year)
 
-months = [session.date.month for session in allSessions if session.date.month not in months]
+    if session.date.year > endYear:
+        endYear = session.date.year
 
-print(monthsA)
-print(months)
+    if session.date.year < startYear:
+        startYear = session.date.year
+
+periods = {2019: [], 2020: []}
+
+for year in range(startYear, endYear + 1):
+
+    for session in allSessions:
+        if session.date.year == year and session.date.month not in periods[year]:
+            periods[year].append(session.date.month)
+
+print(periods)
