@@ -24,12 +24,22 @@ for session in allSessions:
     if session.date.year < startYear:
         startYear = session.date.year
 
-periods = {2019: [], 2020: []}
+sessions = []
 
 for year in range(startYear, endYear + 1):
 
-    for session in allSessions:
-        if session.date.year == year and session.date.month not in periods[year]:
-            periods[year].append(session.date.month)
+    yearSessions = [session for session in allSessions if session.date.year == year]
 
-print(periods)
+    months = []
+    for session in yearSessions:
+        if session.date.month not in months:
+            months.append(session.date.month)
+
+    monthlySessions = []
+    for month in months:
+        monthlySessions.append({month: [session for session in yearSessions if session.date.month == month]})
+
+    sessions.append({year: monthlySessions})
+
+for s in sessions:
+    print(s)
