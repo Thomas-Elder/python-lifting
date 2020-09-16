@@ -11,41 +11,59 @@ dh = DataHandler()
 
 allSessions = dr.sessions
 
-startYear = datetime.today().year
-endYear = datetime.today().year
-years = []
+def monthlyStats(allSessions):
 
-for session in allSessions:
-    if session.date.year not in years:
-        years.append(session.date.year)
+    monthlyStatsList = []
 
-    if session.date.year > endYear:
-        endYear = session.date.year
+    startYear = datetime.today().year
+    endYear = datetime.today().year
+    years = []
 
-    if session.date.year < startYear:
-        startYear = session.date.year
+    for session in allSessions:
+        if session.date.year not in years:
+            years.append(session.date.year)
 
-for year in range(startYear, endYear + 1):
+        if session.date.year > endYear:
+            endYear = session.date.year
 
-    print(f'{year}')
-    for month in range(1, 13):       
+        if session.date.year < startYear:
+            startYear = session.date.year
 
-        sessions = dh.getSessions(allSessions, datetime(year, month, 1), datetime(year, month, calendar.monthrange(year, month)[1]))
-        if len(sessions) != 0:
+    for year in range(startYear, endYear + 1):
 
-            numberOfSessions = len(sessions)
-            reps = 0
-            sets = 0
-            for session in sessions:
-                for exercise in session.exercises:
-                    sets += len(exercise.sets)
-                    for s in exercise.sets:
-                        reps += s.totalRepetitions
+        print(f'{year}')
+        for month in range(1, 13):       
 
-            print(f'{calendar.month_name[month]}:')
-            print(f'Number of sessions:{numberOfSessions}')
-            print(f'Total reps:{reps}')
-            print(f'Total sets:{sets}')
-            print(f'Average reps per session:{round(reps/numberOfSessions,2)}')
-            print(f'Average sets per session:{round(sets/numberOfSessions,2)}')
-            print()
+            sessions = dh.getSessions(allSessions, datetime(year, month, 1), datetime(year, month, calendar.monthrange(year, month)[1]))
+            if len(sessions) != 0:
+
+                numberOfSessions = len(sessions)
+                reps = 0
+                sets = 0
+                for session in sessions:
+                    for exercise in session.exercises:
+                        sets += len(exercise.sets)
+                        for s in exercise.sets:
+                            reps += s.totalRepetitions
+
+                monthlyStatsList.append({'year': year, 
+                                         'month': calendar.month_name[month],
+                                         'numberOfSessions': numberOfSessions,
+                                         'numberOfReps': reps,
+                                         'numberOfSets': sets,
+                                         'averageReps': round(reps/numberOfSessions,2),
+                                         'averageSets': round(sets/numberOfSessions,2)})
+
+    return monthlyStatsList
+
+stats = monthlyStats(allSessions)
+
+for stat in stats:
+    year = stat['year']
+    print(f'{stat["year"]}/{stat["month"]}:')
+    print(f'Number of sessions:{stat["numberOfSessions"]}')
+    print(f'Total reps:{stat["numberOfReps"]}')
+    print(f'Total sets:{stat["numberOfSets"]}')
+    print(f'Average reps per session:{stat["averageReps"]}')
+    print(f'Average sets per session:{stat["averageSets"]}')
+    print()
