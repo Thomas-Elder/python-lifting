@@ -32,9 +32,16 @@ for year in range(startYear, endYear + 1):
 
         sessions = dh.getSessions(allSessions, datetime(year, month, 1), datetime(year, month, calendar.monthrange(year, month)[1]))
         if len(sessions) != 0:
+
+            reps = 0
+            for session in sessions:
+                for exercise in session.exercises:
+                    for s in exercise.sets:
+                        reps += s.totalRepetitions
+
             print(f'{calendar.month_name[month]}:')
             print(f'Number of sessions:{len(sessions)}')
-            print('Total reps:{}')
+            print(f'Total reps:{reps}')
             print('Total sets:{}')
             print('Average reps per session:{}')
             print('Average sets per session:{}')
