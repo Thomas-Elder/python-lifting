@@ -37,7 +37,11 @@ class Test_Exercise():
         assert result == expected
 
     def test_numberOfReps(self):
-        pass
+        
+        expected = 9
+        result = self.exercise.numberOfReps()
+
+        assert result == expected
 
     def test_topSet(self):
         pass

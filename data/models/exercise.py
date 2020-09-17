@@ -21,7 +21,12 @@ class Exercise:
         return len(self.sets)
 
     def numberOfReps(self):
-        pass
+        
+        total = 0
+        for s in self.sets:
+            total += s.totalRepetitions
+
+        return total
 
     def topSet(self):
         pass
