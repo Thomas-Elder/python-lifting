@@ -8,7 +8,6 @@ from data.models.session import Session
 from data.models.exercise import Exercise
 from data.models.set import Set
 
-import numpy
 from datetime import datetime
 
 import logging

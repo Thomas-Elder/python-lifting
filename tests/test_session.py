@@ -3,7 +3,7 @@
 from data.models.session import Session
 from data.models.exercise import Exercise
 
-import pandas
+from datetime import datetime
 
 # logging
 import logging
@@ -13,7 +13,7 @@ class Test_Session():
 
     def setup_method(self):
         logging.info('Setting up before test... ')
-        self.session = Session(pandas.to_datetime('2020-04-01'))
+        self.session = Session(datetime(2020, 4, 1))
         self.session.addExercise(Exercise('Snatch'))
 
     def teardown_method(self):

@@ -21,3 +21,15 @@ class Test_Exercise():
     def test_exercise(self):
         assert self.exercise.name == 'Snatch'
         #assert self.exercise.sets[0].totalRepetitions == 3
+
+    def test_totalWeight(self):
+        pass
+
+    def test_numberOfSets(self):
+        pass
+
+    def test_numberOfReps(self):
+        pass
+
+    def test_topSet(self):
+        pass

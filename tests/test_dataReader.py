@@ -8,8 +8,7 @@ from data.models.set import Set
 from data.models.session import Session
 
 from datetime import datetime
-import pandas
-import numpy
+
 import logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
