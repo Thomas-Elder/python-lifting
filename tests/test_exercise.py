@@ -11,8 +11,9 @@ class Test_Exercise():
 
     def setup_method(self):
         logging.info('Setting up before test... ')
-        # , [Set(3, 2, 1, 30)]
+        
         self.exercise = Exercise('Snatch')
+        self.exercise.sets = [Set(3, 2, 1, 30), Set(3, 3, 3, 30), Set(3, 3, 3, 60)]
 
     def teardown_method(self):
         logging.info('Tearing down after test... ')
@@ -23,7 +24,11 @@ class Test_Exercise():
         #assert self.exercise.sets[0].totalRepetitions == 3
 
     def test_totalWeight(self):
-        pass
+        
+        expected = 360
+        result = self.exercise.totalWeight()
+
+        assert result == expected
 
     def test_numberOfSets(self):
         pass
