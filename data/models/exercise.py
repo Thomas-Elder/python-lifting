@@ -8,8 +8,14 @@ class Exercise:
         self.sets = []
 
     def totalWeight(self):
-        pass
+        
+        total = 0
+        if len(self.sets):
+            for s in self.sets:
+                total += s.totalRepetitions * s.weight
 
+        return total
+        
     def numberOfReps(self):
         pass
 
