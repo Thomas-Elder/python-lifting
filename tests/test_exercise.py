@@ -44,4 +44,8 @@ class Test_Exercise():
         assert result == expected
 
     def test_topSet(self):
-        pass
+        
+        expected = 60
+        result = self.exercise.topSet().weight
+
+        assert result == expected

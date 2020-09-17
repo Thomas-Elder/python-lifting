@@ -29,4 +29,10 @@ class Exercise:
         return total
 
     def topSet(self):
-        pass
+        
+        top = Set(0,0,0,0)
+        for s in self.sets:
+            if s.weight > top.weight:
+                top = s
+
+        return top
