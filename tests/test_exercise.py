@@ -21,7 +21,6 @@ class Test_Exercise():
 
     def test_exercise(self):
         assert self.exercise.name == 'Snatch'
-        #assert self.exercise.sets[0].totalRepetitions == 3
 
     def test_totalWeight(self):
         
@@ -31,7 +30,11 @@ class Test_Exercise():
         assert result == expected
 
     def test_numberOfSets(self):
-        pass
+        
+        expected = 3
+        result = self.exercise.numberOfSets()
+
+        assert result == expected
 
     def test_numberOfReps(self):
         pass

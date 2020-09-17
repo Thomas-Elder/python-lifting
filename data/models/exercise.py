@@ -15,11 +15,12 @@ class Exercise:
                 total += s.totalRepetitions * s.weight
 
         return total
-        
-    def numberOfReps(self):
-        pass
 
     def numberOfSets(self):
+        
+        return len(self.sets)
+
+    def numberOfReps(self):
         pass
 
     def topSet(self):
