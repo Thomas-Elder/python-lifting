@@ -30,19 +30,15 @@ class DataReader:
         logging.debug('DataReader initialised')
     
     def translateData(self, dataset: list, repetitionTranslator):
-        ''' Converts a pandas DataFrame into a list of session objects
-
-        Uses dubious pandas anti-patterns to convert the dataframe into a more
-        comprehensible (for me) list of session objects, with associated
-        exercise and set objects.
+        ''' Converts a list of csv data into a list of Session objects
 
         Parameters
         ----------
-        dataset: a pandas dataFrame
+        dataset: a list
 
         Returns
         -------
-        A list of session objects
+        A list of Session objects
         '''
         logging.debug('translating data... ')
 
