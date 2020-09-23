@@ -4,8 +4,9 @@ from data.dataReader import DataReader
 from data.dataHandler import DataHandler
 
 from datetime import datetime
+import os
 
-dr = DataReader('data\\data.csv')
+dr = DataReader('data/data.csv')
 dh = DataHandler()
 
 allData = dr.sessions
@@ -135,6 +136,9 @@ for period in trainingPeriods:
     print('{:15}{:>10}{:>10}'.format('Exercise', 'Actual', 'Target'))
     for exercise in period['exercises']:
         print('{:15}{:10}{:10}'.format(exercise['exercise'], exercise['actual'], exercise['target']))
+
+if not os.path.exists('log'):
+    os.makedirs('log')
 
 file = open('log/training.txt', 'a')
 file.write('\n')
