@@ -3,8 +3,9 @@ from data.models.set import Set
 
 class Exercise:
 
-    def __init__(self, name: str):
+    def __init__(self, name: str, exType: str):
         self.name = name
+        self.type = exType
         self.sets = []
 
     def totalWeight(self):

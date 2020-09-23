@@ -14,7 +14,7 @@ class Test_Session():
     def setup_method(self):
         logging.info('Setting up before test... ')
         self.session = Session(datetime(2020, 4, 1))
-        self.session.addExercise(Exercise('Snatch'))
+        self.session.addExercise(Exercise('Snatch', 'Snatch'))
 
     def teardown_method(self):
         logging.info('Tearing down after test... ')

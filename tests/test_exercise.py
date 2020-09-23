@@ -12,7 +12,7 @@ class Test_Exercise():
     def setup_method(self):
         logging.info('Setting up before test... ')
         
-        self.exercise = Exercise('Snatch')
+        self.exercise = Exercise('Snatch', 'Snatch')
         self.exercise.sets = [Set(3, 2, 1, 30), Set(3, 3, 3, 30), Set(3, 3, 3, 60)]
 
     def teardown_method(self):
