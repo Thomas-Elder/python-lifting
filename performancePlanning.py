@@ -137,6 +137,10 @@ for period in trainingPeriods:
         print('{:15}{:10}{:10}'.format(exercise['exercise'], exercise['actual'], exercise['target']))
 
 file = open('log/training.txt', 'a')
+file.write('\n')
+file.write('======================================================\n')
+file.write('Date of printing: {}\n'.format(datetime.strftime(datetime.today(), '%Y-%m-%d')))
+
 for period in trainingPeriods:
     file.write('\n')
     file.write('For training period: {} - {}\n'.format(datetime.strftime(period['dates'][0], '%Y-%m-%d'), datetime.strftime(period['dates'][1], '%Y-%m-%d')))
