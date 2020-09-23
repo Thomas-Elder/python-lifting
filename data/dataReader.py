@@ -53,8 +53,7 @@ class DataReader:
 
             # this sort of does nothing rn, I'm not sure sort on strings is alphabetical by default or not? 
             uniqueExercisesForDate.sort(key=lambda x: x[1], reverse=True)
-            #exercisesForDate = [data for data in dataset if datetime.strptime(data[0], '%Y-%m-%d') == session.date]
-            #exercisesForDate.sort()
+
             # Add them to the sessions' exercise list
             session.exercises = [Exercise(exercise[1], exercise[5]) for exercise in uniqueExercisesForDate]
         
