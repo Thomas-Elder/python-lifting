@@ -135,3 +135,13 @@ for period in trainingPeriods:
     print('{:15}{:>10}{:>10}'.format('Exercise', 'Actual', 'Target'))
     for exercise in period['exercises']:
         print('{:15}{:10}{:10}'.format(exercise['exercise'], exercise['actual'], exercise['target']))
+
+file = open('log/training.txt', 'a')
+for period in trainingPeriods:
+    file.write('\n')
+    file.write('For training period: {} - {}\n'.format(datetime.strftime(period['dates'][0], '%Y-%m-%d'), datetime.strftime(period['dates'][1], '%Y-%m-%d')))
+    file.write('{:15}{:>10}{:>10}\n'.format('Exercise', 'Actual', 'Target'))
+    for exercise in period['exercises']:
+        file.write('{:15}{:10}{:10}\n'.format(exercise['exercise'], exercise['actual'], exercise['target']))
+
+file.close()
