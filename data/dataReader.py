@@ -49,10 +49,10 @@ class DataReader:
         for session in sessions:
 
             # Get all the exercises for this date
-            uniqueExercisesForDate = {data[1]: data for data in dataset if datetime.strptime(data[0], '%Y/%m/%d') == session.date}.values()
-            print()
-            print(session.date)
-            print(uniqueExercisesForDate)
+            uniqueExercisesForDate = list({data[1]: data for data in dataset if datetime.strptime(data[0], '%Y/%m/%d') == session.date}.values())
+
+            # this sort of does nothing rn, I'm not sure sort on strings is alphabetical by default or not? 
+            uniqueExercisesForDate.sort(key=lambda x: x[1], reverse=True)
             #exercisesForDate = [data for data in dataset if datetime.strptime(data[0], '%Y-%m-%d') == session.date]
             #exercisesForDate.sort()
             # Add them to the sessions' exercise list
