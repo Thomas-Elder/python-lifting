@@ -44,20 +44,24 @@ class DataReader:
 
         dates = list(set([x[0] for x in dataset]))
         dates.sort()
-        sessions = [Session(datetime.strptime(date, '%Y-%m-%d')) for date in dates]
+        sessions = [Session(datetime.strptime(date, '%Y/%m/%d')) for date in dates]
 
         for session in sessions:
 
             # Get all the exercises for this date
-            exercisesForDate = list(set([data[1] for data in dataset if datetime.strptime(data[0], '%Y-%m-%d') == session.date]))
-            exercisesForDate.sort()
+            uniqueExercisesForDate = {data[1]: data for data in dataset if datetime.strptime(data[0], '%Y/%m/%d') == session.date}.values()
+            print()
+            print(session.date)
+            print(uniqueExercisesForDate)
+            #exercisesForDate = [data for data in dataset if datetime.strptime(data[0], '%Y-%m-%d') == session.date]
+            #exercisesForDate.sort()
             # Add them to the sessions' exercise list
-            session.exercises = [Exercise(exercise, exercise) for exercise in exercisesForDate]
+            session.exercises = [Exercise(exercise[1], exercise[5]) for exercise in uniqueExercisesForDate]
         
             for exercise in session.exercises:
                 
                 # Get all the sets for this session's date, for this exercise               
-                exerciseSets = [data for data in dataset if datetime.strptime(data[0], '%Y-%m-%d') == session.date and data[1] == exercise.name]
+                exerciseSets = [data for data in dataset if datetime.strptime(data[0], '%Y/%m/%d') == session.date and data[1] == exercise.name]
 
                 # add set to the exercise for each row with this exercise and date
                 for exerciseSet in exerciseSets:
