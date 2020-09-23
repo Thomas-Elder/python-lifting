@@ -52,7 +52,7 @@ class DataReader:
             exercisesForDate = list(set([data[1] for data in dataset if datetime.strptime(data[0], '%Y-%m-%d') == session.date]))
             exercisesForDate.sort()
             # Add them to the sessions' exercise list
-            session.exercises = [Exercise(exercise) for exercise in exercisesForDate]
+            session.exercises = [Exercise(exercise, exercise) for exercise in exercisesForDate]
         
             for exercise in session.exercises:
                 

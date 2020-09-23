@@ -21,8 +21,8 @@ def test_data():
 
     exercises = []
 
-    exercises.append(Exercise('Snatch'))
-    exercises.append(Exercise('Clean and Jerk'))
+    exercises.append(Exercise('Snatch', 'Snatch'))
+    exercises.append(Exercise('Clean and Jerk', 'Clean and Jerk'))
 
     exercises[0].sets = [Set(3, 2, 1, 30), Set(1, 1, 0, 10), Set(2, 2, 0, 20), Set(3, 3, 0, 15)]
     exercises[1].sets = [Set(3, 2, 1, 50), Set(3, 3, 0, 20), Set(3, 3, 0, 30), Set(3, 3, 0, 45)]
@@ -35,8 +35,8 @@ def test_data():
 
     exercises = []
 
-    exercises.append(Exercise('Snatch'))
-    exercises.append(Exercise('Clean and Jerk'))
+    exercises.append(Exercise('Snatch', 'Snatch'))
+    exercises.append(Exercise('Clean and Jerk', 'Clean and Jerk'))
 
     exercises[0].sets = [Set(1, 0, 1, 50), Set(1, 1, 0, 50), Set(1, 1, 0, 40), Set(1, 1, 0, 30)]
     exercises[1].sets = [Set(1, 0, 1, 70), Set(1, 1, 0, 60), Set(1, 1, 0, 50), Set(1, 1, 0, 40)]
