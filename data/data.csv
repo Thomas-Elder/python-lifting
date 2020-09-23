@@ -1,1565 +1,1697 @@
-2019-04-06,Snatch,1,68,
-2019-05-31,Snatch,1,74,
-2019-07-12,Snatch,1,77,
-2019-07-16,Snatch,1,79,
-2019-05-08,Power Snatch,1,61,
-2019-06-11,Power Snatch,1,64,
-2019-07-10,Power Snatch,1,69,
-2019-10-20,Power Snatch,1,73,
-2019-06-06,Snatch Balance,1,70,
-2019-06-18,Snatch Balance,1,78,
-2019-07-24,Snatch Balance,1,85,
-2019-08-13,Snatch Balance,1,90,
-2019-04-30,Overhead Squat,1,80,
-2019-04-06,Clean and Jerk,1,92,
-2019-05-31,Clean and Jerk,1,94,
-2019-07-12,Clean and Jerk,1,97,
-2019-07-16,Clean and Jerk,1,100,
-2019-10-10,Clean and Jerk,1,104,
-2019-05-08,Power Clean and Jerk,1,81,
-2019-07-02,Power Clean and Jerk,1,85,
-2019-08-13,Power Clean and Jerk,1,86,
-2019-04-16,Power Clean,1,82,
-2019-04-23,Power Clean,1,84,
-2019-11-05,Power Clean,1,92,
-2019-10-30,Clean Pull,1,130,
-2019-06-16,Front Squat,1,98,
-2019-06-16,Front Squat,1,104,
-2019-12-20,Front Squat,1,110,
-2019-05-20,Back Squat,1,113,
-2019-10-20,Back Squat,1,120,
-2019-11-10,Back Squat,1,124,
-2020-04-20,Back Squat,1,125,
-2019-05-16,Snatch,2,66,
-2019-06-20,Snatch,2,67,
-2019-07-12,Snatch,2,70,
-2019-08-22,Snatch,2,71,
-2019-05-08,Power Snatch,2,60,
-2019-06-11,Power Snatch,2,62,
-2019-07-10,Power Snatch,2,63,
-2019-11-15,Power Snatch,2,66,
-2019-06-16,Snatch Balance,2,75,
-2019-06-24,Snatch Balance,2,78,
-2019-07-02,Snatch Balance,2,80,
-2019-08-13,Snatch Balance,2,86,
-2019-04-30,Overhead Squat,2,73,
-2019-05-16,Clean and Jerk,2,75,
-2019-06-20,Clean and Jerk,2,77,
-2019-07-12,Clean and Jerk,2,80,
-2019-08-22,Clean and Jerk,2,83,
-2019-11-10,Clean and Jerk,2,87,
-2019-05-08,Power Clean and Jerk,2,78,
-2019-06-24,Power Clean and Jerk,2,80,
-2019-08-13,Power Clean and Jerk,2,83,
-2019-10-31,Power Clean and Jerk,2,87,
-2019-04-30,Front Squat,2,95,
-2019-06-16,Front Squat,2,96,
-2019-10-24,Front Squat,2,103,
-2019-04-18,Back Squat,2,98,
-2019-05-09,Back Squat,2,110,
-2019-07-12,Back Squat,2,113,
-2019-10-15,Clean,2,92,
-2019-05-16,Snatch,3,55,
-2019-07-16,Snatch,3,60,
-2019-08-22,Snatch,3,61,
-2019-10-29,Snatch,3,67,
-2019-04-14,Power Snatch,3,55,
-2019-05-08,Power Snatch,3,57,
-2019-06-11,Power Snatch,3,58,
-2019-06-11,Power Snatch,3,60,
-2019-06-06,Snatch Balance,3,67,
-2019-06-16,Snatch Balance,3,72,
-2019-08-13,Snatch Balance,3,75,
-2019-04-30,Overhead Squat,3,64,
-2019-05-30,Overhead Squat,3,70,
-2019-05-16,Clean and Jerk,3,60,
-2019-06-24,Power Clean and Jerk,3,65,
-2019-10-31,Power Clean and Jerk,3,70,
-2019-11-26,Power Clean and Jerk,3,75,
-2019-04-25,Front Squat,3,88,
-2019-06-16,Front Squat,3,93,
-2019-09-26,Front Squat,3,95,
-2019-10-24,Front Squat,3,100,
-2019-05-02,Back Squat,3,100,
-2019-06-20,Back Squat,3,105,
-2019-08-20,Back Squat,3,109,
-2019-10-20,Back Squat,3,110,
-2019-06-06,Power Clean,3,76,
-2019-06-06,Jerk From Rack,3,66,
-2019-06-11,Jerk From Rack,3,70,
-2019-07-04,Jerk From Rack,3,72,
-2019-10-10,Jerk From Rack,3,80,
-2019-10-15,Jerk From Rack,3,85,
-2019-06-11,Snatch Pull,3,95,
-2019-06-20,Clean Pull,3,105,
-2019-07-04,Clean,3,75,
-2019-10-10,Clean,3,80,
-2019-10-15,Clean,3,83,
-2019-10-24,Clean,3,91,
-2020-04-07,F Squat SD,3,40,
-2020-04-07,Front Squat Slow Descent,3,50,
-2020-04-07,Front Squat Slow Descent,3,60,
-2020-04-07,Front Squat Slow Descent,3,70,
-2020-04-07,Front Squat Slow Descent,8,76,
-2020-04-07,Front Squat Slow Descent,7,79,
-2020-04-07,Front Squat Slow Descent,6,81,
-2020-04-07,Front Squat Slow Descent,5,83,
-2020-04-07,Front Squat Slow Descent,4,85,
-2020-04-07,Power Snatch Pause,3,30,
-2020-04-07,Power Snatch Pause,3,40,
-2020-04-07,Power Snatch Pause,3,50,
-2020-04-07,Power Snatch Pause,3,53,
-2020-04-07,Power Snatch Pause,3,54,
-2020-04-07,Power Snatch Pause,3,56,
-2020-04-07,Power Snatch Pause,3,57,
-2020-04-07,Power Snatch Pause,3,59,
-2020-04-07,S Pull Hover,6,62,
-2020-04-07,Snatch Pull Hover,6,64,
-2020-04-07,Snatch Pull Hover,5,65,
-2020-04-07,Snatch Pull Hover,5,67,
-2020-04-07,Snatch Pull Hover,5,69,
-2020-04-07,Seated Press,5,41,
-2020-04-07,S Press,5,42,
-2020-04-07,Seated Press,5,44,
-2020-04-07,Seated Press,5,45,
-2020-04-07,Seated Press,5,47,
-2020-04-09,Overhead Squatuat,3,30,
-2020-04-09,Overhead Squatuat,3,40,
-2020-04-09,Overhead Squatuat,3,50,
-2020-04-09,Overhead Squatuat,3,56,
-2020-04-09,Overhead Squatuat,3,57,
-2020-04-09,Overhead Squatuat,3,59,
-2020-04-09,Overhead Squatuat,3,61,
-2020-04-09,Overhead Squatuat,3,62,
-2020-04-09,Jerk LH,3,66,
-2020-04-09,Jerk Long Hold,3,67,
-2020-04-09,Jerk Long Hold,3,69,
-2020-04-09,Jerk Long Hold,3,71,
-2020-04-09,Jerk Long Hold,3,73,
-2020-04-09,Clean Pull SL,5,73,
-2020-04-09,Clean Pull Slow Lower,5,75,
-2020-04-09,Clean Pull Slow Lower,5,77,
-2020-04-09,Clean Pull Slow Lower,5,79,
-2020-04-09,Clean Pull Slow Lower,5,81,
-2020-04-09,B Sq Rapid,10,60,
-2020-04-09,Back Squat Rapid,8,60,
-2020-04-09,Back Squat Rapid,7,62,
-2020-04-09,Back Squat Rapid,6,63,
-2020-04-09,Back Squat Rapid,5,65,
-2020-04-12,Power Snatch,3,30,
-2020-04-12,Power Snatch,3,40,
-2020-04-12,Power Snatch,3,50,
-2020-04-12,Power Snatch,3,55,
-2020-04-12,Power Snatch,3,56,
-2020-04-12,Power Snatch,3,58,
-2020-04-12,Power Snatch,3,59,
-2020-04-12,Power Snatch,3,61,
-2020-04-12,Power Clean and Jerk,3,50,
-2020-04-12,Power Clean and Jerk,3,60,
-2020-04-12,Power Clean and Jerk,3,65,
-2020-04-12,Power Clean and Jerk,3,68,
-2020-04-12,Power Clean and Jerk,3,70,
-2020-04-12,Power Clean and Jerk,3,72,
-2020-04-12,Power Clean and Jerk,2,74,
-2020-04-12,Power Clean and Jerk,2,75,
-2020-04-12,Back Squat,5,50,
-2020-04-12,Back Squat,5,60,
-2020-04-12,Back Squat,5,70,
-2020-04-12,Back Squat,5,80,
-2020-04-12,Back Squat,5,84,
-2020-04-12,Back Squat,5,86,
-2020-04-12,Back Squat,5,89,
-2020-04-12,Back Squat,5,90,
-2020-04-12,Back Squat,5,83,
-2020-04-12,Seated Press,7,36,
-2020-04-12,Seated Press,6,37,
-2020-04-12,Seated Press,5,38,
-2020-04-12,Seated Press,5,40,
-2020-04-12,Seated Press,5,41,
-2020-04-16,Front Squat,5,20,
-2020-04-16,Front Squat,5,40,
-2020-04-16,Front Squat,5,50,
-2020-04-16,Front Squat,5,60,
-2020-04-16,Front Squat,5,60,
-2020-04-16,Front Squat,5,60,
-2020-04-16,Front Squat,5,60,
-2020-04-16,Front Squat,5,60,
-2020-04-16,Snatch Pull Hover,5,60,
-2020-04-16,Snatch Pull Hover,5,60,
-2020-04-16,Snatch Pull Hover,5,60,
-2020-04-16,Snatch Pull Hover,5,60,
-2020-04-16,Snatch Pull Hover,5,60,
-2020-04-16,Seated Press,5,45,
-2020-04-16,Seated Press,5,45,
-2020-04-16,Seated Press,5,45,
-2020-04-16,Seated Press,5,45,
-2020-04-16,Seated Press,5,45,
-2020-04-19,Squat,5,20,
-2020-04-19,Squat,5,40,
-2020-04-19,Squat,5,60,
-2020-04-19,Squat,5,70,
-2020-04-19,Squat,5,80,
-2020-04-19,Squat,5,80,
-2020-04-19,Squat,5,80,
-2020-04-19,Squat,5,80,
-2020-04-19,Squat,5,80,
-2020-04-19,Clean Pull,5,60,
-2020-04-19,Clean Pull,5,80,
-2020-04-19,Clean Pull,5,80,
-2020-04-19,Clean Pull,5,80,
-2020-04-19,Clean Pull,5,80,
-2020-04-19,Clean Pull,5,80,
-2020-04-19,Seated Press,5,45,
-2020-04-19,Seated Press,5,45,
-2020-04-19,Seated Press,5,45,
-2020-04-19,Seated Press,5,45,
-2020-04-19,Seated Press,5,45,
-2020-04-21,Front Squat,3,20,
-2020-04-21,Front Squat,3,40,
-2020-04-21,Front Squat,3,60,
-2020-04-21,Front Squat,3,80,
-2020-04-21,Front Squat,3,100,
-2020-04-21,Front Squat,1,105,
-2020-04-21,Snatch Pull Hover,3,60,
-2020-04-21,Snatch Pull Hover,3,80,
-2020-04-21,Snatch Pull Hover,3,80,
-2020-04-21,Snatch Pull Hover,3,80,
-2020-04-21,Snatch Pull Hover,3,80,
-2020-04-21,Snatch Pull Hover,3,80,
-2020-04-21,Seated Press,5,46,
-2020-04-21,Seated Press,5,46,
-2020-04-21,Seated Press,5,46,
-2020-04-21,Seated Press,5,46,
-2020-04-21,Seated Press,5,46,
-2020-04-21,Good Morning,5,40,
-2020-04-21,Good Morning,5,40,
-2020-04-21,Good Morning,5,40,
-2020-04-21,Good Morning,5,40,
-2020-04-21,Good Morning,5,40,
-2020-04-23,Squat,5,20,
-2020-04-23,Squat,5,40,
-2020-04-23,Squat,5,60,
-2020-04-23,Squat,5,80,
-2020-04-23,Squat,3,90,
-2020-04-23,Squat,3,92,
-2020-04-23,Squat,3,94,
-2020-04-23,Squat,3,96,
-2020-04-23,Squat,3,98,
-2020-04-23,Squat,3,100,
-2020-04-23,Squat,5,90,
-2020-04-23,Clean Pull,5,60,
-2020-04-23,Clean Pull,5,80,
-2020-04-23,Clean Pull,5,90,
-2020-04-23,Clean Pull,5,90,
-2020-04-23,Clean Pull,5,90,
-2020-04-23,Clean Pull,5,90,
-2020-04-23,Clean Pull,5,90,
-2020-04-23,Seated Press,5,47,
-2020-04-23,Seated Press,5,47,
-2020-04-23,Seated Press,5,47,
-2020-04-23,Seated Press,5,47,
-2020-04-23,Seated Press,5,47,
-2020-04-26,Front Squat,3,20,
-2020-04-26,Front Squat,3,40,
-2020-04-26,Front Squat,3,60,
-2020-04-26,Front Squat,3,80,
-2020-04-26,Front Squat,3,80,
-2020-04-26,Front Squat,3,80,
-2020-04-26,Front Squat,3,80,
-2020-04-26,Front Squat,3,80,
-2020-04-26,Front Squat,1,90,
-2020-04-26,Front Squat,1,100,
-2020-04-26,Snatch Pull Hover,3,60,
-2020-04-26,Snatch Pull Hover,3,70,
-2020-04-26,Snatch Pull Hover,3,80,
-2020-04-26,Snatch Pull Hover,3,80,
-2020-04-26,Snatch Pull Hover,3,80,
-2020-04-26,Snatch Pull Hover,3,80,
-2020-04-26,Snatch Pull Hover,3,80,
-2020-04-26,Snatch Balance,3,20,
-2020-04-26,Snatch Balance,3,40,
-2020-04-26,Snatch Balance,3,50,
-2020-04-26,Snatch Balance,3,60,
-2020-04-26,Snatch Balance,3,60,
-2020-04-26,Snatch Balance,3,60,
-2020-04-26,Snatch Balance,3,60,
-2020-04-26,Snatch Balance,3,60,
-2020-04-26,Seated Press,5,48,
-2020-04-26,Seated Press,5,48,
-2020-04-26,Seated Press,5,48,
-2020-04-26,Seated Press,5,48,
-2020-04-26,Seated Press,5,48,
-2020-04-27,Squat,5,20,
-2020-04-27,Squat,5,40,
-2020-04-27,Squat,5,60,
-2020-04-27,Squat,5,60,
-2020-04-27,Squat,5,60,
-2020-04-27,Squat,5,60,
-2020-04-27,Squat,5,60,
-2020-04-27,Squat,5,70,
-2020-04-28,Squat,3,20,
-2020-04-28,Squat,3,40,
-2020-04-28,Squat,3,60,
-2020-04-28,Squat,3,80,
-2020-04-28,Squat,3,100,
-2020-04-28,Squat,3,105,
-2020-04-28,Squat,3,110,
-2020-04-28,Squat,3,115,
-2020-04-28,Clean Pull,3,60,
-2020-04-28,Clean Pull,3,80,
-2020-04-28,Clean Pull,3,100,
-2020-04-28,Clean Pull,3,110,
-2020-04-28,Clean Pull,3,110,
-2020-04-28,Clean Pull,3,110,
-2020-04-28,Seated Press,5,48,
-2020-04-28,Seated Press,5,48,
-2020-04-28,Seated Press,5,48,
-2020-04-28,Seated Press,5,48,
-2020-04-28,Seated Press,5,48,
-2020-04-28,Seated Press,10,40,
-2020-04-29,Front Squat,3,20,
-2020-04-29,Front Squat,3,40,
-2020-04-29,Front Squat,3,50,
-2020-04-29,Front Squat,3,60,
-2020-04-29,Front Squat,3,60,
-2020-04-29,Front Squat,3,60,
-2020-04-29,Front Squat,3,60,
-2020-04-29,Front Squat,3,60,
-2020-04-30,Front Squat,3,20,
-2020-04-30,Front Squat,3,40,
-2020-04-30,Front Squat,3,60,
-2020-04-30,Front Squat,3,80,
-2020-04-30,Front Squat,3,90,
-2020-04-30,Front Squat,3,100,
-2020-04-30,Front Squat,1,105,
-2020-04-30,Snatch Pull,3,60,
-2020-04-30,Snatch Pull,3,70,
-2020-04-30,Snatch Pull,3,80,
-2020-04-30,Snatch Pull,3,90,
-2020-04-30,Snatch Pull,3,100,
-2020-04-30,Snatch Pull,3,100,
-2020-04-30,Snatch Pull,3,100,
-2020-04-30,Seated Press,10,20,
-2020-04-30,Seated Press,10,20,
-2020-04-30,Seated Press,10,20,
-2020-04-30,Russian Twist,15,5,
-2020-04-30,Russian Twist,15,5,
-2020-04-30,Russian Twist,15,5,
-2020-05-02,Squat,3,20,
-2020-05-02,Squat,3,40,
-2020-05-02,Squat,3,60,
-2020-05-02,Squat,3,80,
-2020-05-02,Squat,3,90,
-2020-05-02,Squat,3,90,
-2020-05-02,Squat,3,90,
-2020-05-02,Squat,3,90,
-2020-05-02,Squat,3,90,
-2020-05-05,Snatch,3,20,
-2020-05-05,Snatch,3,30,
-2020-05-05,Snatch,3,40,
-2020-05-05,Snatch,3,50,
-2020-05-05,Snatch,3,60,
-2020-05-05,Snatch,1,65,
-2020-05-05,Snatch,1,70,
-2020-05-05,Snatch,1,75,
-2020-05-05,Snatch,1,80,
-2020-05-05,Snatch,1,85,
-2020-05-05,Snatch Pull,3,80,
-2020-05-05,Snatch Pull,3,80,
-2020-05-05,Snatch Pull,3,80,
-2020-05-05,Snatch Pull,3,80,
-2020-05-05,Snatch Pull,3,80,
-2020-05-05,Back Squat,3,50,
-2020-05-05,Back Squat,3,60,
-2020-05-05,Squat,3,70,
-2020-05-05,Squat,3,80,
-2020-05-05,Squat,3,80,
-2020-05-05,Squat,3,80,
-2020-05-05,Squat,3,80,
-2020-05-05,Squat,3,80,
-2020-05-07,Clean,2,30,
-2020-05-07,Clean,2,50,
-2020-05-07,Clean,2,70,
-2020-05-07,Clean,1,80,
-2020-05-07,Clean,1,90,
-2020-05-07,Clean,1,100,
-2020-05-07,Clean Pull,3,100,
-2020-05-07,Clean Pull,3,100,
-2020-05-07,Clean Pull,3,100,
-2020-05-07,Clean Pull,3,100,
-2020-05-07,Clean Pull,3,100,
-2020-05-07,Front Squat,3,50,
-2020-05-07,Front Squat,3,60,
-2020-05-07,Front Squat,3,70,
-2020-05-07,Front Squat,3,70,
-2020-05-07,Front Squat,3,70,
-2020-05-07,Front Squat,3,70,
-2020-05-07,Front Squat,3,70,
-2020-05-12,Snatch Balance,3,20,
-2020-05-12,Snatch Balance,3,40,
-2020-05-12,Snatch Balance,3,50,
-2020-05-12,Snatch Balance,3,60,
-2020-05-12,Snatch Balance,3,70,
-2020-05-12,Snatch Balance,3,70,
-2020-05-12,Snatch Balance,3,70,
-2020-05-12,Snatch Balance,3,70,
-2020-05-12,Snatch Balance,3,70,
-2020-05-12,Snatch Pull,3,50,
-2020-05-12,Snatch Pull,3,70,
-2020-05-12,Snatch Pull,3,90,
-2020-05-12,Snatch Pull,3,90,
-2020-05-12,Snatch Pull,3,90,
-2020-05-12,Snatch Pull,3,90,
-2020-05-12,Snatch Pull,3,90,
-2020-05-12,Back Squat,3,50,
-2020-05-12,Back Squat,3,70,
-2020-05-12,Back Squat,3,90,
-2020-05-12,Back Squat,3,100,
-2020-05-12,Back Squat,3,110,
-2020-05-12,Back Squat,1,115,
-2020-05-12,Back Squat,1,120,
-2020-05-12,Back Squat,1,125,
-2020-05-15,Front Squat,3,20,
-2020-05-15,Front Squat,3,40,
-2020-05-15,Front Squat,3,60,
-2020-05-15,Front Squat,3,70,
-2020-05-15,Front Squat,3,70,
-2020-05-15,Front Squat,3,70,
-2020-05-15,Front Squat,3,70,
-2020-05-15,Front Squat,3,70,
-2020-05-15,Clean Pull,3,70,
-2020-05-15,Clean Pull,3,70,
-2020-05-15,Clean Pull,3,70,
-2020-05-15,Clean Pull,3,70,
-2020-05-15,Clean Pull,3,70,
-2020-05-15,Press in Split,5,20,
-2020-05-15,Press in Split,5,40,
-2020-05-15,Press in Split,5,40,
-2020-05-15,Press in Split,5,40,
-2020-05-15,Press in Split,5,40,
-2020-05-15,Press in Split,5,40,
-2020-05-17,Back Squat,3,40,
-2020-05-17,Back Squat,3,60,
-2020-05-17,Back Squat,3,70,
-2020-05-17,Back Squat,3,70,
-2020-05-17,Back Squat,3,70,
-2020-05-17,Back Squat,3,70,
-2020-05-17,Back Squat,3,70,
-2020-05-17,Clean Pull Hover,3,70,
-2020-05-17,Clean Pull Hover,3,70,
-2020-05-17,Clean Pull Hover,3,70,
-2020-05-17,Clean Pull Hover,3,70,
-2020-05-17,Clean Pull Hover,3,70,
-2020-05-20,Back Squat,3,20,
-2020-05-20,Back Squat,3,40,
-2020-05-20,Back Squat,3,60,
-2020-05-20,Back Squat,3,80,
-2020-05-20,Back Squat,3,90,
-2020-05-20,Back Squat,3,90,
-2020-05-20,Back Squat,3,90,
-2020-05-20,Back Squat,3,90,
-2020-05-20,Back Squat,3,90,
-2020-05-20,Snatch Pull,3,60,
-2020-05-20,Snatch Pull,3,90,
-2020-05-20,Snatch Pull,3,90,
-2020-05-20,Snatch Pull,3,90,
-2020-05-20,Snatch Pull,3,90,
-2020-05-20,Snatch Pull,3,90,
-2020-05-20,Seated Press,5,50,
-2020-05-20,Seated Press,5,50,
-2020-05-20,Seated Press,5,50,
-2020-05-20,Seated Press,5,50,
-2020-05-20,Seated Press,5,50,
-2020-05-22,Front Squat,3,20,
-2020-05-22,Front Squat,3,40,
-2020-05-22,Front Squat,3,60,
-2020-05-22,Front Squat,3,80,
-2020-05-22,Front Squat,3,90,
-2020-05-22,Front Squat,1,100,
-2020-05-22,Front Squat,1,105,
-2020-05-22,Front Squat,1,107,
-2020-05-22,Front Squat,1,108,
-2020-05-22,Clean Pull,3,60,
-2020-05-22,Clean Pull,3,90,
-2020-05-22,Clean Pull,3,100,
-2020-05-22,Clean Pull,3,110,
-2020-05-22,Clean Pull,3,115,
-2020-05-22,Clean Pull,3,115,
-2020-05-22,Clean Pull,3,115,
-2020-05-22,Clean Pull,1,120,
-2020-05-22,Clean Pull,1,130,
-2020-05-24,Snatch Balance,3,20,
-2020-05-24,Snatch Balance,3,40,
-2020-05-24,Snatch Balance,3,50,
-2020-05-24,Snatch Balance,3,60,
-2020-05-24,Snatch Balance,3,80,
-2020-05-24,Snatch Balance,1,85,
-2020-05-24,Snatch Balance,1,90,
-2020-05-24,Snatch Pull,3,60,
-2020-05-24,Snatch Pull,3,80,
-2020-05-24,Snatch Pull,3,90,
-2020-05-24,Snatch Pull,3,90,
-2020-05-24,Snatch Pull,3,90,
-2020-05-24,Snatch Pull,3,90,
-2020-05-24,Snatch Pull,3,90,
-2020-05-24,Seated Press,5,50,
-2020-05-24,Seated Press,5,50,
-2020-05-24,Seated Press,5,50,
-2020-05-24,Seated Press,5,50,
-2020-05-24,Seated Press,5,50,
-2020-06-06,Front Squat,3,20,
-2020-06-06,Front Squat,3,50,
-2020-06-06,Front Squat,3,60,
-2020-06-06,Front Squat,3,70,
-2020-06-06,Front Squat,3,80,
-2020-06-06,Front Squat,3,90,
-2020-06-06,Front Squat,1,95,
-2020-06-06,Front Squat,1,100,
-2020-06-06,Clean Pull,3,90,
-2020-06-06,Clean Pull,3,90,
-2020-06-06,Clean Pull,3,90,
-2020-06-06,Clean Pull,3,90,
-2020-06-06,Clean Pull,3,90,
-2020-06-06,Seated Press,5,50,
-2020-06-06,Seated Press,5,50,
-2020-06-06,Seated Press,5,50,
-2020-06-06,Seated Press,5,50,
-2020-06-06,Seated Press,5,50,
-2020-06-09,Power Snatch,3,20,
-2020-06-09,Power Snatch,3,40,
-2020-06-09,Power Snatch,3,45,
-2020-06-09,Power Snatch,3,45,
-2020-06-09,Power Snatch,3,50,
-2020-06-09,Power Snatch,3,50,
-2020-06-09,Power Snatch,3,55,
-2020-06-09,Power Snatch,3,55,
-2020-06-09,Snatch Pull,3,60,
-2020-06-09,Snatch Pull,3,70,
-2020-06-09,Snatch Pull,3,70,
-2020-06-09,Snatch Pull,3,70,
-2020-06-09,Snatch Pull,3,75,
-2020-06-09,Snatch Pull,3,75,
-2020-06-09,Snatch Pull,3,80,
-2020-06-11,Overhead Squatuat,3,20,
-2020-06-11,Overhead Squatuat,3,40,
-2020-06-11,Overhead Squatuat,3,50,
-2020-06-11,Overhead Squatuat,3,60,
-2020-06-11,Overhead Squatuat,3,64,
-2020-06-11,Overhead Squatuat,3,67,
-2020-06-11,Overhead Squatuat,2,70,
-2020-06-11,Overhead Squatuat,2,70,
-2020-06-11,Clean,3,40,
-2020-06-11,Clean,3,50,
-2020-06-11,Clean,3,60,
-2020-06-11,Clean,3,70,
-2020-06-11,Clean,3,75,
-2020-06-11,Clean,3,77,
-2020-06-11,Clean,3,78,
-2020-06-11,Jerk Long Hold,3,40,
-2020-06-11,Jerk Long Hold,3,45,
-2020-06-11,Jerk Long Hold,3,50,
-2020-06-11,Jerk Long Hold,3,50,
-2020-06-11,Jerk Long Hold,3,55,
-2020-06-11,Push Press,3,40,
-2020-06-11,Push Press,3,50,
-2020-06-11,Push Press,3,55,
-2020-06-11,Push Press,3,58,
-2020-06-11,Push Press,3,60,
-2020-06-11,Push Press,3,60,
-2020-06-11,Front Squat,3,50,
-2020-06-11,Front Squat,3,70,
-2020-06-11,Front Squat,3,75,
-2020-06-11,Front Squat,3,80,
-2020-06-11,Front Squat,3,85,
-2020-06-11,Front Squat,2,80,
-2020-06-11,Front Squat,2,80,
-2020-06-16,Snatch Balance,3,20,
-2020-06-16,Snatch Balance,3,40,
-2020-06-16,Snatch Balance,3,50,
-2020-06-16,Snatch Balance,3,60,
-2020-06-16,Snatch Balance,2,70,
-2020-06-16,Snatch Balance,2,75,
-2020-06-16,Snatch Balance,2,77,
-2020-06-16,Snatch Balance,2,79,
-2020-06-16,Power Clean and Jerk,2,50,
-2020-06-16,Power Clean and Jerk,2,60,
-2020-06-16,Power Clean and Jerk,2,70,
-2020-06-16,Power Clean and Jerk,2,75,
-2020-06-16,Power Clean and Jerk,2,78,
-2020-06-16,Power Clean and Jerk,2,82,
-2020-06-16,Power Clean and Jerk,2,85,
-2020-06-16,Power Clean and Jerk,2,87,
-2020-06-16,Clean Pull Blk,5,90,
-2020-06-16,Clean Pull From Block,5,100,
-2020-06-16,Clean Pull From Block,5,110,
-2020-06-16,Clean Pull From Block,5,115,
-2020-06-16,Clean Pull From Block,5,120,
-2020-06-16,Clean Pull From Block,5,120,
-2020-06-16,Clean Pull From Block,5,125,
-2020-06-16,Front Squat,3,50,
-2020-06-16,Front Squat,3,70,
-2020-06-16,Front Squat,3,80,
-2020-06-16,Front Squat,3,85,
-2020-06-16,Front Squat,3,90,
-2020-06-16,Front Squat,3,90,
-2020-06-16,Front Squat,3,90,
-2020-06-16,Good Morning,5,20,
-2020-06-16,Good Morning,5,30,
-2020-06-16,Good Morning,5,40,
-2020-06-16,Good Morning,5,40,
-2020-06-16,Good Morning,5,40,
-2020-06-16,Good Morning,5,40,
-2020-06-16,Good Morning,5,40,
-2020-06-18,Power Snatch,3,30,
-2020-06-18,Power Snatch,3,40,
-2020-06-18,Power Snatch,3,50,
-2020-06-18,Power Snatch,2,55,
-2020-06-18,Power Snatch,2,60,
-2020-06-18,Power Snatch,2,62,
-2020-06-18,Power Snatch,2,63,
-2020-06-18,Power Snatch,2,64,
-2020-06-18,Power Snatch,2,65,
-2020-06-18,Snatch Pull,3,65,
-2020-06-18,Snatch Pull,3,75,
-2020-06-18,Snatch Pull,3,80,
-2020-06-18,Snatch Pull,3,85,
-2020-06-18,Snatch Pull,3,90,
-2020-06-18,Snatch Pull,3,93,
-2020-06-18,Snatch Pull,3,95,
-2020-06-18,Jerk From Rack,3,50,
-2020-06-18,Jerk From Rack,3,60,
-2020-06-18,Jerk From Rack,3,70,
-2020-06-18,Jerk From Rack,3,74,
-2020-06-18,Jerk From Rack,3,77,
-2020-06-18,Jerk From Rack,3,80,
-2020-06-18,Clean,3,50,
-2020-06-18,Clean,3,60,
-2020-06-18,Clean,3,64,
-2020-06-18,Clean,3,68,
-2020-06-18,Clean,3,72,
-2020-06-18,Clean,3,76,
-2020-06-18,Clean,3,79,
-2020-06-18,Clean,3,81,
-2020-06-18,Jerk Long Hold,3,20,
-2020-06-18,Jerk Long Hold,3,30,
-2020-06-18,Jerk Long Hold,3,40,
-2020-06-18,Jerk Long Hold,3,45,
-2020-06-18,Jerk Long Hold,3,50,
-2020-06-18,Jerk Long Hold,3,55,
-2020-06-18,Jerk Long Hold,3,60,
-2020-06-21,Snatch,3,20,
-2020-06-21,Snatch,2,40,
-2020-06-21,Snatch,2,50,
-2020-06-21,Snatch,2,60,
-2020-06-21,Snatch,2,65,
-2020-06-21,Snatch,2,70,
-2020-06-21,Clean,2,70,
-2020-06-21,Clean,2,80,
-2020-06-21,Clean,2,85,
-2020-06-21,Clean,2,85,
-2020-06-21,Clean,2,85,
-2020-06-21,Clean Pull,3,90,
-2020-06-21,Clean Pull,3,100,
-2020-06-21,Clean Pull,3,110,
-2020-06-21,Clean Pull,3,115,
-2020-06-21,Squat,3,50,
-2020-06-21,Squat,3,70,
-2020-06-21,Squat,3,90,
-2020-06-21,Squat,3,100,
-2020-06-21,Squat,3,105,
-2020-06-21,Squat,3,105,
-2020-06-21,Squat,3,105,
-2020-06-22,Half Front Squat,3,20,
-2020-06-22,Half Front Squat,3,40,
-2020-06-22,Half Front Squat,3,50,
-2020-06-22,Half Front Squat,3,50,
-2020-06-22,Half Front Squat,3,50,
-2020-06-22,Half Front Squat,3,50,
-2020-06-22,Half Front Squat,3,50,
-2020-06-22,Front Squat,3,60,
-2020-06-22,Front Squat,3,70,
-2020-06-22,Front Squat,3,80,
-2020-06-22,Front Squat,3,90,
-2020-06-23,Snatch Balance,3,20,
-2020-06-23,Snatch Balance,3,40,
-2020-06-23,Snatch Balance,3,50,
-2020-06-23,Snatch Balance,2,60,
-2020-06-23,Snatch Balance,2,65,
-2020-06-23,Snatch Balance,2,70,
-2020-06-23,Snatch Balance,2,75,
-2020-06-23,Snatch Balance,2,80,
-2020-06-23,Snatch Balance,2,82,
-2020-06-23,Snatch Balance,2,84,
-2020-06-23,Snatch Balance,2,88,
-2020-06-23,Power Clean and Jerk,2,50,
-2020-06-23,Power Clean and Jerk,2,70,
-2020-06-23,Power Clean and Jerk,2,75,
-2020-06-23,Power Clean and Jerk,2,80,
-2020-06-23,Power Clean and Jerk,2,83,
-2020-06-23,Power Clean and Jerk,2,86,
-2020-06-23,Power Clean and Jerk,2,88,
-2020-06-23,Power Clean and Jerk,2,90,
-2020-06-23,Snatch Pull,3,70,
-2020-06-23,Snatch Pull,3,80,
-2020-06-23,Snatch Pull,3,90,
-2020-06-23,Snatch Pull,3,95,
-2020-06-23,Snatch Pull,3,100,
-2020-06-23,Snatch Pull,3,102,
-2020-06-23,Snatch Pull,3,95,
-2020-06-23,Back Squat,3,50,
-2020-06-23,Back Squat,3,70,
-2020-06-23,Back Squat,3,80,
-2020-06-23,Back Squat,3,90,
-2020-06-23,Back Squat,3,95,
-2020-06-23,Back Squat,3,100,
-2020-06-23,Back Squat,3,105,
-2020-06-23,Back Squat,3,107,
-2020-06-23,Press Behind the Neck,3,20,
-2020-06-23,Press Behind the Neck,3,40,
-2020-06-23,Press Behind the Neck,3,40,
-2020-06-23,Press Behind the Neck,3,40,
-2020-06-23,Press Behind the Neck,3,40,
-2020-06-23,Press Behind the Neck,3,40,
-2020-06-25,Snatch,2,20,
-2020-06-25,Snatch,2,40,
-2020-06-25,Snatch,2,50,
-2020-06-25,Snatch,2,60,
-2020-06-25,Snatch,2,65,
-2020-06-25,Snatch,2,70,
-2020-06-25,Snatch,2,75,
-2020-06-25,Snatch,2,77,
-2020-06-25,Snatch,2,80,
-2020-06-25,Clean and Jerk,2,50,
-2020-06-25,Clean and Jerk,2,70,
-2020-06-25,Clean and Jerk,2,80,
-2020-06-25,Clean and Jerk,2,85,
-2020-06-25,Clean and Jerk,2,90,
-2020-06-25,Clean and Jerk,2,92,
-2020-06-25,Clean and Jerk,2,94,
-2020-06-25,Clean Pull,3,90,
-2020-06-25,Clean Pull,3,100,
-2020-06-25,Clean Pull,3,110,
-2020-06-25,Clean Pull,3,115,
-2020-06-25,Clean Pull,3,115,
-2020-06-25,Clean Pull,3,115,
-2020-06-25,Back Squat,3,50,
-2020-06-25,Back Squat,3,70,
-2020-06-25,Back Squat,3,90,
-2020-06-25,Back Squat,3,100,
-2020-06-25,Back Squat,3,105,
-2020-06-25,Back Squat,3,110,
-2020-06-25,Back Squat,3,115,
-2020-06-25,Back Squat,3,118,
-2020-06-25,Good Morning,5,40,
-2020-06-25,Good Morning,5,40,
-2020-06-28,Half Front Squat,3,20,
-2020-06-28,Half Front Squat,3,40,
-2020-06-28,Half Front Squat,3,50,
-2020-06-28,Half Front Squat,3,50,
-2020-06-28,Half Front Squat,3,50,
-2020-06-28,Half Front Squat,3,50,
-2020-06-28,Half Front Squat,3,50,
-2020-06-28,Hang Clean Pull ,5,50,
-2020-06-28,Hang Clean Pull ,5,90,
-2020-06-28,Hang Clean Pull ,5,100,
-2020-06-28,Hang Clean Pull ,5,105,
-2020-06-28,Hang Clean Pull ,5,105,
-2020-06-28,Hang Clean Pull ,5,105,
-2020-06-28,Back Squat,3,50,
-2020-06-28,Back Squat,2,90,
-2020-06-28,Back Squat,2,100,
-2020-06-28,Back Squat,2,110,
-2020-06-28,Back Squat,2,115,
-2020-06-28,Back Squat,2,120,
-2020-06-28,Press in Split,5,45,
-2020-06-28,Press in Split,5,45,
-2020-06-28,Press in Split,5,45,
-2020-06-28,Press in Split,5,45,
-2020-06-28,Press in Split,5,45,
-2020-06-30,Snatch,3,20,
-2020-06-30,Snatch,2,40,
-2020-06-30,Snatch,2,50,
-2020-06-30,Snatch,2,60,
-2020-06-30,Snatch,2,70,
-2020-06-30,Snatch,1,75,
-2020-06-30,Snatch,1,80,
-2020-06-30,Snatch,1,83,
-2020-06-30,Snatch,1,85,
-2020-06-30,Snatch,1,87,
-2020-06-30,Snatch,1,88,
-2020-06-30,Clean and Jerk,2,50,
-2020-06-30,Clean and Jerk,2,70,
-2020-06-30,Clean and Jerk,1,90,
-2020-06-30,Clean and Jerk,1,100,
-2020-06-30,Clean and Jerk,1,103,
-2020-06-30,Clean and Jerk,1,105,
-2020-06-30,Clean Pull,3,100,
-2020-06-30,Clean Pull,3,110,
-2020-06-30,Clean Pull,3,115,
-2020-06-30,Clean Pull,3,115,
-2020-06-30,Clean Pull,3,115,
-2020-06-30,Back Squat,3,50,
-2020-06-30,Back Squat,3,70,
-2020-06-30,Back Squat,2,90,
-2020-06-30,Back Squat,2,100,
-2020-06-30,Back Squat,2,105,
-2020-06-30,Back Squat,2,110,
-2020-06-30,Back Squat,3,110,
-2020-06-30,Back Squat,3,110,
-2020-07-02,Power Snatch,3,40,
-2020-07-02,Power Snatch,3,50,
-2020-07-02,Power Snatch,3,60,
-2020-07-02,Power Snatch,3,63,
-2020-07-02,Power Snatch,2,68,
-2020-07-02,Power Snatch,2,65,
-2020-07-02,Power Snatch,2,65,
-2020-07-02,Power Snatch,2,65,
-2020-07-02,Power Clean,3,60,
-2020-07-02,Power Clean,3,70,
-2020-07-02,Power Clean,3,80,
-2020-07-02,Power Clean,3,85,
-2020-07-02,Power Clean,2,88,
-2020-07-02,Power Clean,2,90,
-2020-07-02,Power Clean,2,92,
-2020-07-02,Power Clean,1,94,
-2020-07-02,Power Clean,1,96,
-2020-07-02,Power Clean,1,98,
-2020-07-02,Jerk from Rack,3,50,
-2020-07-02,Jerk from Rack,3,60,
-2020-07-02,Jerk from Rack,3,70,
-2020-07-02,Jerk from Rack,3,80,
-2020-07-02,Jerk from Rack,3,85,
-2020-07-02,Jerk from Rack,3,90,
-2020-07-02,Jerk from Rack,3,95,
-2020-07-02,Front Squat,5,50,
-2020-07-02,Front Squat,3,70,
-2020-07-02,Front Squat,3,80,
-2020-07-02,Front Squat,3,90,
-2020-07-02,Front Squat,3,95,
-2020-07-02,Front Squat,2,100,
-2020-07-02,Front Squat,1,103,
-2020-07-02,Front Squat,1,105,
-2020-07-02,Press Behind the Neck,3,20,
-2020-07-02,Press Behind the Neck,3,45,
-2020-07-02,Press Behind the Neck,3,45,
-2020-07-02,Press Behind the Neck,3,45,
-2020-07-02,Press Behind the Neck,3,45,
-2020-07-02,Press Behind the Neck,3,45,
-2020-07-07,Power Snatch,5,20,
-2020-07-07,Power Snatch,4,40,
-2020-07-07,Power Snatch,3,50,
-2020-07-07,Power Snatch,2,60,
-2020-07-07,Power Snatch,2,65,
-2020-07-07,Power Snatch,2,65,
-2020-07-07,Power Snatch,2,65,
-2020-07-07,Power Snatch,2,65,
-2020-07-07,Power Clean,3,50,
-2020-07-07,Power Clean,2,70,
-2020-07-07,Power Clean,2,80,
-2020-07-07,Power Clean,2,83,
-2020-07-07,Power Clean,2,83,
-2020-07-07,Power Clean,2,83,
-2020-07-07,Power Clean,2,83,
-2020-07-07,Jerk from Rack,3,50,
-2020-07-07,Jerk from Rack,3,70,
-2020-07-07,Jerk from Rack,3,75,
-2020-07-07,Jerk from Rack,3,78,
-2020-07-07,Jerk from Rack,3,78,
-2020-07-07,Jerk from Rack,3,78,
-2020-07-07,Front Squat,3,70,
-2020-07-07,Front Squat,3,80,
-2020-07-07,Front Squat,3,90,
-2020-07-07,Front Squat,3,95,
-2020-07-07,Front Squat,3,98,
-2020-07-07,Front Squat,3,101,
-2020-07-07,Press Behind the Neck,3,45,
-2020-07-07,Press Behind the Neck,3,45,
-2020-07-07,Press Behind the Neck,3,45,
-2020-07-07,Press Behind the Neck,3,45,
-2020-07-07,Press Behind the Neck,3,45,
-2020-07-09,Snatch,5,20,
-2020-07-09,Snatch,3,40,
-2020-07-09,Snatch,3,50,
-2020-07-09,Snatch,2,60,
-2020-07-09,Snatch,2,70,
-2020-07-09,Snatch,1,75,
-2020-07-09,Snatch,1,78,
-2020-07-09,Snatch,1,80,
-2020-07-09,Clean and Jerk,3,50,
-2020-07-09,Clean and Jerk,2,60,
-2020-07-09,Clean and Jerk,2,70,
-2020-07-09,Clean and Jerk,2,80,
-2020-07-09,Clean and Jerk,2,90,
-2020-07-09,Clean and Jerk,1,95,
-2020-07-09,Clean and Jerk,1,98,
-2020-07-09,Clean and Jerk,1,100,
-2020-07-09,Clean Pull,3,105,
-2020-07-09,Clean Pull,3,110,
-2020-07-09,Clean Pull,3,110,
-2020-07-09,Clean Pull,3,115,
-2020-07-09,Clean Pull,3,115,
-2020-07-09,Back Squat,3,50,
-2020-07-09,Back Squat,3,70,
-2020-07-09,Back Squat,3,90,
-2020-07-09,Back Squat,3,100,
-2020-07-09,Back Squat,3,105,
-2020-07-09,Back Squat,2,110,
-2020-07-09,Back Squat,2,115,
-2020-07-12,Snatch Balance,5,20,
-2020-07-12,Snatch Balance,5,40,
-2020-07-12,Snatch Balance,5,50,
-2020-07-12,Snatch Balance,5,60,
-2020-07-12,Snatch Balance,2,65,
-2020-07-12,Snatch Balance,2,65,
-2020-07-12,Snatch Balance,2,65,
-2020-07-12,Clean,3,50,
-2020-07-12,Clean,3,60,
-2020-07-12,Clean,3,70,
-2020-07-12,Clean,2,80,
-2020-07-12,Clean,2,80,
-2020-07-12,Clean,2,80,
-2020-07-12,Front Squat,3,50,
-2020-07-12,Front Squat,3,60,
-2020-07-12,Front Squat,2,70,
-2020-07-12,Front Squat,2,80,
-2020-07-12,Front Squat,2,80,
-2020-07-12,Front Squat,2,80,
-2020-07-12,Press in Split,3,40,
-2020-07-12,Press in Split,3,40,
-2020-07-12,Press in Split,3,40,
-2020-07-12,Press in Split,3,40,
-2020-07-12,Press in Split,3,40,
-2020-07-14,Power Snatch,5,20,
-2020-07-14,Power Snatch,3,40,
-2020-07-14,Power Snatch,3,50,
-2020-07-14,Power Snatch,3,60,
-2020-07-14,Power Snatch,2,65,
-2020-07-14,Power Snatch,1,68,
-2020-07-14,Power Snatch,1,68,
-2020-07-14,Power Snatch,1,68,
-2020-07-14,Power Clean and Jerk,3,50,
-2020-07-14,Power Clean and Jerk,3,70,
-2020-07-14,Power Clean and Jerk,3,80,
-2020-07-14,Power Clean and Jerk,1,85,
-2020-07-14,Power Clean and Jerk,1,88,
-2020-07-14,Power Clean and Jerk,1,88,
-2020-07-14,Power Clean and Jerk,1,88,
-2020-07-14,Front Squat,3,50,
-2020-07-14,Front Squat,3,70,
-2020-07-14,Front Squat,3,90,
-2020-07-14,Front Squat,2,100,
-2020-07-14,Front Squat,1,105,
-2020-07-14,Front Squat,1,108,
-2020-07-14,Front Squat,1,110,
-2020-07-16,Power Snatch,3,20,
-2020-07-16,Power Snatch,3,30,
-2020-07-16,Power Snatch,3,40,
-2020-07-16,Power Snatch,3,50,
-2020-07-16,Power Snatch,3,50,
-2020-07-16,Power Snatch,3,50,
-2020-07-16,Power Clean,3,50,
-2020-07-16,Power Clean,3,60,
-2020-07-16,Power Clean,3,70,
-2020-07-16,Power Clean,3,70,
-2020-07-16,Power Clean,3,70,
-2020-07-16,Front Squat,3,70,
-2020-07-16,Front Squat,3,70,
-2020-07-16,Front Squat,3,70,
-2020-07-18,Snatch,3,30,
-2020-07-18,Snatch,3,40,
-2020-07-18,Snatch,2,50,
-2020-07-18,Snatch,2,60,
-2020-07-18,Snatch,2,65,
-2020-07-18,Snatch,1,70,
-2020-07-18,Snatch,1,74,
-2020-07-18,Snatch,1,76,
-2020-07-18,Snatch,1,78,
-2020-07-18,Snatch,1,80,
-2020-07-18,Snatch,1,82,1
-2020-07-18,Snatch,1,85,2
-2020-07-18,Snatch,1,88,3
-2020-07-18,Clean and Jerk,3,40,
-2020-07-18,Clean and Jerk,3,55,
-2020-07-18,Clean and Jerk,2,65,
-2020-07-18,Clean and Jerk,2,75,
-2020-07-18,Clean and Jerk,1,85,
-2020-07-18,Clean and Jerk,1,91,
-2020-07-18,Clean and Jerk,1,96,
-2020-07-18,Clean and Jerk,1,100,1
-2020-07-18,Clean and Jerk,1,105,2
-2020-07-18,Clean and Jerk,1,109,3
-2020-07-21,Power Snatch,5,20,
-2020-07-21,Power Snatch,3,40,
-2020-07-21,Power Snatch,3,50,
-2020-07-21,Power Snatch,3,55,
-2020-07-21,Power Snatch,3,60,
-2020-07-21,Power Snatch,3,65,
-2020-07-21,Power Snatch,3,60,
-2020-07-21,Power Snatch,3,60,
-2020-07-21,Snatch Pull,3,70,
-2020-07-21,Snatch Pull,3,80,
-2020-07-21,Snatch Pull,3,90,
-2020-07-21,Snatch Pull,3,90,
-2020-07-21,Snatch Pull,3,90,
-2020-07-21,Jerk from Rack,3,20,
-2020-07-21,Jerk from Rack,3,50,
-2020-07-21,Jerk from Rack,3,70,
-2020-07-21,Jerk from Rack,3,75,
-2020-07-21,Jerk from Rack,3,80,
-2020-07-21,Jerk from Rack,3,80,
-2020-07-21,Jerk from Rack,3,80,
-2020-07-21,Back Squat,5,20,
-2020-07-21,Back Squat,5,50,
-2020-07-21,Back Squat,5,70,
-2020-07-21,Back Squat,5,80,
-2020-07-21,Back Squat,5,90,
-2020-07-21,Back Squat,5,90,
-2020-07-21,Back Squat,5,90,
-2020-07-21,Push Press,3,40,
-2020-07-21,Push Press,3,50,
-2020-07-21,Push Press,3,55,
-2020-07-21,Push Press,3,60,
-2020-07-21,Push Press,3,65,
-2020-07-21,Push Press,1,70,
-2020-07-21,Push Press,1,80,
-2020-07-21,Push Press,1,90,
-2020-07-23,Snatch Balance,3,20,
-2020-07-23,Snatch Balance,3,40,
-2020-07-23,Snatch Balance,3,50,
-2020-07-23,Snatch Balance,3,60,
-2020-07-23,Snatch Balance,3,70,
-2020-07-23,Snatch Balance,3,80,
-2020-07-23,Snatch Balance,3,80,
-2020-07-23,Snatch Balance,3,83,
-2020-07-23,Clean,3,50,
-2020-07-23,Clean,3,70,
-2020-07-23,Clean,3,80,
-2020-07-23,Clean,3,90,
-2020-07-23,Clean,3,95,
-2020-07-23,Clean Pull,3,90,
-2020-07-23,Clean Pull,3,100,
-2020-07-23,Clean Pull,3,110,
-2020-07-23,Clean Pull,3,115,
-2020-07-23,Clean Pull,3,120,
-2020-07-23,Clean Pull,3,100,
-2020-07-23,Clean Pull,3,100,
-2020-07-23,Clean Pull,3,100,
-2020-07-23,Front Squat,3,50,
-2020-07-23,Front Squat,3,70,
-2020-07-23,Front Squat,3,90,
-2020-07-23,Front Squat,3,95,
-2020-07-23,Front Squat,3,100,
-2020-07-23,Front Squat,2,103,
-2020-07-23,Front Squat,3,90,
-2020-07-23,Front Squat,3,90,
-2020-07-23,Front Squat,3,90,
-2020-07-26,Snatch Balance,3,20,
-2020-07-26,Snatch Balance,3,40,
-2020-07-26,Snatch Balance,3,60,
-2020-07-26,Snatch Balance,3,80,
-2020-07-26,Snatch Balance,1,85,
-2020-07-26,Snatch Balance,1,90,
-2020-07-26,Snatch Balance,1,90,
-2020-07-26,Snatch Balance,1,90,
-2020-07-26,Clean,3,60,
-2020-07-26,Clean,3,80,
-2020-07-26,Clean,3,85,
-2020-07-26,Clean,3,85,
-2020-07-26,Clean,3,85,
-2020-07-26,Clean Pull,3,90,
-2020-07-26,Clean Pull,3,110,
-2020-07-26,Clean Pull,3,110,
-2020-07-26,Clean Pull,3,110,
-2020-07-26,Front Squat,3,60,
-2020-07-26,Front Squat,3,80,
-2020-07-26,Front Squat,3,90,
-2020-07-26,Front Squat,3,90,
-2020-07-26,Front Squat,3,90,
-2020-07-28,Power Snatch,3,20,
-2020-07-28,Power Snatch,3,40,
-2020-07-28,Power Snatch,3,50,
-2020-07-28,Power Snatch,3,60,
-2020-07-28,Power Snatch,2,65,
-2020-07-28,Power Snatch,2,68,
-2020-07-28,Power Snatch,2,70,
-2020-07-28,Power Snatch,2,70,
-2020-07-28,Power Snatch,2,70,
-2020-07-28,Power Snatch,3,50,
-2020-07-28,Power Snatch,3,50,
-2020-07-28,Power Clean and Jerk,3,50,
-2020-07-28,Power Clean and Jerk,3,70,
-2020-07-28,Power Clean and Jerk,3,80,
-2020-07-28,Power Clean and Jerk,3,85,
-2020-07-28,Power Clean and Jerk,3,88,
-2020-07-28,Power Clean and Jerk,2,90,
-2020-07-28,Power Clean and Jerk,1,93,
-2020-07-28,Snatch Pull,3,50,
-2020-07-28,Snatch Pull,3,70,
-2020-07-28,Snatch Pull,3,90,
-2020-07-28,Snatch Pull,3,95,
-2020-07-28,Snatch Pull,3,95,
-2020-07-28,Snatch Pull,3,95,
-2020-07-28,Back Squat,3,50,
-2020-07-28,Back Squat,3,70,
-2020-07-28,Back Squat,3,90,
-2020-07-28,Back Squat,3,100,
-2020-07-28,Back Squat,3,110,
-2020-07-28,Back Squat,2,115,
-2020-07-28,Back Squat,2,115,
-2020-07-28,Back Squat,2,115,
-2020-07-28,Press Behind the Neck,3,40,
-2020-07-28,Press Behind the Neck,3,45,
-2020-07-28,Press Behind the Neck,3,45,
-2020-07-28,Press Behind the Neck,3,45,
-2020-07-28,Press Behind the Neck,3,45,
-2020-07-28,Press Behind the Neck,3,45,
-2020-07-30,Snatch Balance,3,20,
-2020-07-30,Snatch Balance,3,50,
-2020-07-30,Snatch Balance,3,60,
-2020-07-30,Snatch Balance,3,70,
-2020-07-30,Snatch Balance,3,80,
-2020-07-30,Snatch Balance,3,85,
-2020-07-30,Snatch Balance,2,90,
-2020-07-30,Snatch Balance,2,95,
-2020-07-30,Snatch Balance,1,100,
-2020-07-30,Jerk From Rack,2,60,
-2020-07-30,Jerk From Rack,2,80,
-2020-07-30,Jerk From Rack,2,90,
-2020-07-30,Jerk From Rack,2,95,
-2020-07-30,Jerk From Rack,2,100,
-2020-07-30,Jerk From Rack,1,110,
-2020-07-30,Clean Pull From Block,5,60,
-2020-07-30,Clean Pull From Block,5,90,
-2020-07-30,Clean Pull From Block,5,110,
-2020-07-30,Clean Pull From Block,5,115,
-2020-07-30,Clean Pull From Block,5,120,
-2020-07-30,Clean Pull From Block,5,120,
-2020-07-30,Front Squat,3,60,
-2020-07-30,Front Squat,3,80,
-2020-07-30,Front Squat,3,90,
-2020-07-30,Front Squat,3,100,
-2020-07-30,Front Squat,3,103,
-2020-07-30,Front Squat,2,105,
-2020-07-30,Front Squat,1,108,
-2020-07-30,Press in Split,3,40,
-2020-07-30,Press in Split,3,45,
-2020-07-30,Press in Split,3,45,
-2020-07-30,Press in Split,3,45,
-2020-07-30,Press in Split,3,45,
-2020-07-30,Press in Split,3,45,
-2020-08-01,Snatch,3,20,
-2020-08-01,Snatch,3,40,
-2020-08-01,Snatch,3,50,
-2020-08-01,Snatch,2,60,
-2020-08-01,Snatch,2,70,
-2020-08-01,Snatch,2,75,
-2020-08-01,Snatch,1,80,
-2020-08-01,Snatch,1,80,
-2020-08-01,Snatch,1,82,
-2020-08-01,Snatch,1,84,
-2020-08-01,Clean and Jerk,2,50,
-2020-08-01,Clean and Jerk,3,60,
-2020-08-01,Clean and Jerk,2,70,
-2020-08-01,Clean and Jerk,2,80,
-2020-08-01,Clean and Jerk,2,90,
-2020-08-01,Clean and Jerk,2,95,
-2020-08-01,Clean and Jerk,1,98,
-2020-08-01,Clean and Jerk,1,100,
-2020-08-01,Clean and Jerk,1,102,
-2020-08-01,Clean Pull From Block,3,100,
-2020-08-01,Clean Pull From Block,3,110,
-2020-08-01,Clean Pull From Block,3,115,
-2020-08-01,Clean Pull From Block,3,120,
-2020-08-01,Clean Pull From Block,3,120,
-2020-08-01,Front Squat,5,50,
-2020-08-01,Front Squat,2,70,
-2020-08-01,Front Squat,2,90,
-2020-08-01,Front Squat,2,100,
-2020-08-01,Front Squat,2,102,
-2020-08-01,Front Squat,2,104,
-2020-08-01,Front Squat,2,106,
-2020-08-01,Front Squat,2,108,
-2020-08-04,Power Snatch,2,20,
-2020-08-04,Power Snatch,2,30,
-2020-08-04,Power Snatch,2,40,
-2020-08-04,Power Snatch,2,50,
-2020-08-04,Power Snatch,2,60,
-2020-08-04,Power Snatch,2,65,
-2020-08-04,Power Snatch,2,65,
-2020-08-04,Power Snatch,2,65,
-2020-08-04,Power Clean,2,50,
-2020-08-04,Power Clean,2,70,
-2020-08-04,Power Clean,2,75,
-2020-08-04,Power Clean,2,80,
-2020-08-04,Power Clean,2,80,
-2020-08-04,Power Clean,2,80,
-2020-08-04,Clean Pull,3,90,
-2020-08-04,Clean Pull,3,90,
-2020-08-04,Clean Pull,3,90,
-2020-08-04,Clean Pull,3,90,
-2020-08-04,Clean Pull,3,90,
-2020-08-04,Front Squat,2,50,
-2020-08-04,Front Squat,2,70,
-2020-08-04,Front Squat,2,80,
-2020-08-04,Front Squat,2,90,
-2020-08-04,Front Squat,2,90,
-2020-08-04,Front Squat,2,90,
-2020-08-06,Snatch,3,20,
-2020-08-06,Snatch,3,40,
-2020-08-06,Snatch,3,50,
-2020-08-06,Snatch,2,60,
-2020-08-06,Snatch,2,70,
-2020-08-06,Snatch,1,75,
-2020-08-06,Snatch,1,78,
-2020-08-06,Snatch,1,80,
-2020-08-06,Snatch,1,82,
-2020-08-06,Clean and Jerk,2,50,
-2020-08-06,Clean and Jerk,2,70,
-2020-08-06,Clean and Jerk,2,80,
-2020-08-06,Clean and Jerk,1,90,
-2020-08-06,Clean and Jerk,1,95,
-2020-08-06,Clean and Jerk,1,98,
-2020-08-06,Clean and Jerk,1,100,
-2020-08-06,Clean Pull,3,100,
-2020-08-06,Clean Pull,3,110,
-2020-08-06,Clean Pull,3,115,
-2020-08-06,Clean Pull,3,115,
-2020-08-06,Clean Pull,3,118,
-2020-08-06,Clean Pull,3,110,
-2020-08-06,Squat,3,50,
-2020-08-06,Squat,3,70,
-2020-08-06,Squat,3,90,
-2020-08-06,Squat,2,100,
-2020-08-06,Squat,2,105,
-2020-08-06,Squat,2,110,
-2020-08-06,Squat,2,110,
-2020-08-06,Squat,2,110,
-2020-08-11,Power Snatch,3,20,
-2020-08-11,Power Snatch,3,40,
-2020-08-11,Power Snatch,3,50,
-2020-08-11,Power Snatch,2,60,
-2020-08-11,Power Snatch,2,65,
-2020-08-11,Power Snatch,1,70,
-2020-08-11,Power Snatch,1,73,
-2020-08-11,Power Clean and Jerk,3,50,
-2020-08-11,Power Clean and Jerk,2,70,
-2020-08-11,Power Clean and Jerk,2,80,
-2020-08-11,Power Clean and Jerk,1,90,
-2020-08-11,Power Clean and Jerk,1,93,
-2020-08-11,Power Clean and Jerk,1,95,
-2020-08-11,Front Squat,3,50,
-2020-08-11,Front Squat,3,70,
-2020-08-11,Front Squat,2,90,
-2020-08-11,Front Squat,1,100,
-2020-08-11,Front Squat,1,105,
-2020-08-11,Front Squat,1,110,
-2020-08-15,Snatch,3,20,
-2020-08-15,Snatch,3,30,
-2020-08-15,Snatch,3,40,
-2020-08-15,Snatch,2,50,
-2020-08-15,Snatch,2,60,
-2020-08-15,Snatch,2,70,
-2020-08-15,Snatch,1,75,
-2020-08-15,Snatch,1,78,
-2020-08-15,Snatch,1,82,1
-2020-08-15,Snatch,1,86,2
-2020-08-15,Snatch,X,89,3
-2020-08-15,Clean and Jerk,3,20,
-2020-08-15,Clean and Jerk,3,40,
-2020-08-15,Clean and Jerk,2,50,
-2020-08-15,Clean and Jerk,2,60,
-2020-08-15,Clean and Jerk,2,70,
-2020-08-15,Clean and Jerk,2,80,
-2020-08-15,Clean and Jerk,1,85,
-2020-08-15,Clean and Jerk,1,89,
-2020-08-15,Clean and Jerk,1,95,
-2020-08-15,Clean and Jerk,1,101,1
-2020-08-15,Clean and Jerk,1,106,2
-2020-08-15,Clean and Jerk,1,110,3
-2020-08-17,Power Snatch,3,20,
-2020-08-17,Power Snatch,3,40,
-2020-08-17,Power Snatch,3,50,
-2020-08-17,Power Snatch,3,55,
-2020-08-17,Power Snatch,3,60,
-2020-08-17,Power Snatch,3,60,
-2020-08-17,Power Snatch,3,60,
-2020-08-17,Good Morning,5,40,
-2020-08-17,Good Morning,5,50,
-2020-08-17,Good Morning,5,60,
-2020-08-17,Good Morning,5,60,
-2020-08-17,Good Morning,5,60,
-2020-08-17,Good Morning,5,60,
-2020-08-17,Clean Pull,3,60,
-2020-08-17,Clean Pull,3,80,
-2020-08-17,Clean Pull,3,100,
-2020-08-17,Clean Pull,3,110,
-2020-08-17,Clean Pull,3,110,
-2020-08-17,Clean Pull,3,110,
-2020-08-17,Seated Press,5,20,
-2020-08-17,Seated Press,3,40,
-2020-08-17,Seated Press,3,50,
-2020-08-17,Seated Press,3,50,
-2020-08-17,Seated Press,3,50,
-2020-08-17,Seated Press,1,55,
-2020-08-17,Seated Press,1,60,
-2020-08-17,Back Squat,5,40,
-2020-08-17,Back Squat,5,60,
-2020-08-17,Back Squat,5,80,
-2020-08-17,Back Squat,5,90,
-2020-08-17,Back Squat,5,95,
-2020-08-17,Back Squat,5,95,
-2020-08-18,Power Clean + Front Squat,3,40,
-2020-08-18,Power Clean + Front Squat,3,50,
-2020-08-18,Power Clean + Front Squat,3,60,
-2020-08-18,Power Clean + Front Squat,3,66,
-2020-08-18,Power Clean + Front Squat,3,68,
-2020-08-18,Power Clean + Front Squat,3,70,
-2020-08-18,Clean Pull Mid Range,5,60,
-2020-08-18,Clean Pull Mid Range,5,80,
-2020-08-18,Clean Pull Mid Range,5,90,
-2020-08-18,Clean Pull Mid Range,5,90,
-2020-08-18,Clean Pull Mid Range,5,90,
-2020-08-18,Split Squat,5,50,
-2020-08-18,Split Squat,5,50,
-2020-08-18,Split Squat,5,50,
-2020-08-18,Split Squat,5,50,
-2020-08-18,Split Squat,5,50,
-2020-08-18,Power Jerk,3,20,
-2020-08-18,Power Jerk,3,40,
-2020-08-18,Power Jerk,3,50,
-2020-08-18,Power Jerk,3,60,
-2020-08-18,Power Jerk,3,65,
-2020-08-18,Power Jerk,3,70,
-2020-08-18,Power Jerk,3,65,
-2020-08-18,Back Squat Slow Descent,3,60,
-2020-08-18,Back Squat Slow Descent,3,80,
-2020-08-18,Back Squat Slow Descent,3,80,
-2020-08-18,Back Squat Slow Descent,3,80,
-2020-08-18,Back Squat Slow Descent,3,80,
-2020-08-18,Back Squat Slow Descent,3,83,
-2020-08-20,Power Snatch,3,20,
-2020-08-20,Power Snatch,3,40,
-2020-08-20,Power Snatch,3,40,
-2020-08-20,Power Snatch,3,45,
-2020-08-20,Power Snatch,3,50,
-2020-08-20,Power Snatch,3,55,
-2020-08-20,Power Snatch,3,57,
-2020-08-20,Power Snatch,3,59,
-2020-08-20,Snatch Pull Slow Lower,3,50,
-2020-08-20,Snatch Pull Slow Lower,3,70,
-2020-08-20,Snatch Pull Slow Lower,3,80,
-2020-08-20,Snatch Pull Slow Lower,3,80,
-2020-08-20,Snatch Pull Slow Lower,3,80,
-2020-08-20,Snatch Pull Slow Lower,3,85,
-2020-08-20,Push Press,5,50,
-2020-08-20,Push Press,3,60,
-2020-08-20,Push Press,3,70,
-2020-08-20,Push Press,3,70,
-2020-08-20,Push Press,3,70,
-2020-08-20,Press in Split,5,40,
-2020-08-20,Press in Split,5,45,
-2020-08-20,Press in Split,5,40,
-2020-08-20,Press in Split,5,40,
-2020-08-20,Press in Split,5,40,
-2020-08-20,Back Squat Half,3,40,
-2020-08-20,Back Squat Half,3,50,
-2020-08-20,Back Squat Half,3,60,
-2020-08-20,Back Squat Half,3,70,
-2020-08-20,Back Squat Half,3,80,
-2020-08-20,Back Squat Half,3,90,
-2020-08-20,Back Squat Half,3,90,
-2020-08-20,Back Squat Half,3,90,
-2020-08-20,Front Squat Isometric Hold,2,90,
-2020-08-20,Front Squat Isometric Hold,2,95,
-2020-08-20,Front Squat Isometric Hold,2,95,
-2020-08-22,Power Snatch + Overhead Squat,3,20,
-2020-08-22,Power Snatch + Overhead Squat,3,30,
-2020-08-22,Power Snatch + Overhead Squat,3,40,
-2020-08-22,Power Snatch + Overhead Squat,3,50,
-2020-08-22,Power Snatch + Overhead Squat,3,50,
-2020-08-22,Power Snatch + Overhead Squat,3,50,
-2020-08-22,Clean Top Thigh,3,50,
-2020-08-22,Clean Top Thigh,3,50,
-2020-08-22,Clean Top Thigh,3,50,
-2020-08-22,Clean Top Thigh,3,50,
-2020-08-22,Clean Top Thigh,3,50,
-2020-08-22,Split Squat,3,50,
-2020-08-22,Split Squat,3,50,
-2020-08-22,Split Squat,3,50,
-2020-08-22,Split Squat,3,50,
-2020-08-22,Split Squat,3,50,
-2020-08-22,Front Squat Slow Descent,3,50,
-2020-08-22,Front Squat Slow Descent,3,50,
-2020-08-22,Front Squat Slow Descent,3,50,
-2020-08-22,Front Squat Slow Descent,3,50,
-2020-08-22,Front Squat Slow Descent,3,50,
-2020-08-25,Front Squat Warm Up,3,20,
-2020-08-25,Front Squat Warm Up,3,50,
-2020-08-25,Front Squat Warm Up,3,70,
-2020-08-25,Front Squat Warm Up,3,70,
-2020-08-25,Front Squat Warm Up,3,70,
-2020-08-25,Power Clean,3,50,
-2020-08-25,Power Clean,3,70,
-2020-08-25,Power Clean,3,80,
-2020-08-25,Power Clean,3,86,
-2020-08-25,Power Clean,3,90,
-2020-08-25,Power Clean,3,93,
-2020-08-25,Clean Pull Slow Start,3,90,
-2020-08-25,Clean Pull Slow Start,3,100,
-2020-08-25,Clean Pull Slow Start,3,100,
-2020-08-25,Clean Pull Slow Start,3,100,
-2020-08-25,Clean Pull Slow Start,3,100,
-2020-08-25,Press in Split,5,20,
-2020-08-25,Press in Split,5,40,
-2020-08-25,Press in Split,5,40,
-2020-08-25,Press in Split,5,40,
-2020-08-25,Press in Split,5,40,
-2020-08-25,Jerk No Dip,3,20,
-2020-08-25,Jerk No Dip,3,30,
-2020-08-25,Jerk No Dip,3,40,
-2020-08-25,Jerk No Dip,3,50,
-2020-08-25,Jerk No Dip,2X,50,
-2020-08-25,Jerk,3,50,
-2020-08-25,Jerk,3,70,
-2020-08-25,Jerk,3,80,
-2020-08-25,Jerk,3,80,
-2020-08-25,Jerk,3,80,
-2020-08-27,Power Snatch + Overhead Squat,3,30,
-2020-08-27,Power Snatch + Overhead Squat,3,40,
-2020-08-27,Power Snatch + Overhead Squat,3,50,
-2020-08-27,Power Snatch + Overhead Squat,3,55,
-2020-08-27,Power Snatch + Overhead Squat,3,60,
-2020-08-27,Snatch,3,62,
-2020-08-27,Snatch,3,62,
-2020-08-27,Power Clean and Jerk,2,50,
-2020-08-27,Power Clean and Jerk,2,60,
-2020-08-27,Power Clean and Jerk,2,65,
-2020-08-27,Power Clean and Jerk,2,70,
-2020-08-27,Power Clean and Jerk,2,70,
-2020-08-27,Power Clean and Jerk,2,70,
-2020-08-27,Clean Pull Slow Start,3,70,
-2020-08-27,Clean Pull Slow Start,3,100,
-2020-08-27,Clean Pull Slow Start,3,100,
-2020-08-27,Clean Pull Slow Start,3,100,
-2020-08-27,Clean Pull Slow Start,3,100,
-2020-08-27,Clean Pull Slow Start,3,100,
-2020-08-27,Back Squat,3,20,
-2020-08-27,Back Squat,3,50,
-2020-08-27,Back Squat,3,70,
-2020-08-27,Back Squat,3,90,
-2020-08-27,Back Squat,3,100,
-2020-08-27,Back Squat,3,100,
-2020-08-27,Back Squat,3,100,
-2020-09-01,Overhead Squat,2,20,
-2020-09-01,Overhead Squat,2,40,
-2020-09-01,Overhead Squat,2,50,
-2020-09-01,Overhead Squat,2,60,
-2020-09-01,Overhead Squat,2,70,
-2020-09-01,Overhead Squat,2,70,
-2020-09-01,Overhead Squat,2,70,
-2020-09-01,Rapid Drop Down Snatch,5,0,
-2020-09-01,Rapid Drop Down Snatch,5,0,
-2020-09-01,Rapid Drop Down Snatch,5,10,
-2020-09-01,Rapid Drop Down Snatch,5,20,
-2020-09-01,Rapid Drop Down Snatch,5,20,
-2020-09-01,Power Snatch,3,20,
-2020-09-01,Power Snatch,3,40,
-2020-09-01,Power Snatch,3,50,
-2020-09-01,Power Snatch,3,55,
-2020-09-01,Power Snatch,3,55,
-2020-09-01,Power Snatch,3,55,
-2020-09-01,Power Snatch,3,55,
-2020-09-01,Jerk Balance,3,20,
-2020-09-01,Jerk Balance,3,40,
-2020-09-01,Jerk Balance,3,45,
-2020-09-01,Jerk Balance,3,45,
-2020-09-01,Jerk Balance,3,45,
-2020-09-01,Press in Split,3,45,
-2020-09-01,Press in Split,3,45,
-2020-09-01,Press in Split,3,45,
-2020-09-01,Press in Split,3,45,
-2020-09-01,Press in Split,3,45,
-2020-09-01,Front Squat Pause,3,40,
-2020-09-01,Front Squat Pause,3,50,
-2020-09-01,Front Squat Pause,3,70,
-2020-09-01,Front Squat Pause,3,75,
-2020-09-01,Front Squat Pause,3,75,
-2020-09-01,Front Squat Pause,3,75,
-2020-09-01,Front Squat Pause,3,75,
-2020-09-01,Front Squat Pause,3,75,
-2020-09-03,Power Clean + Front Squat,3,40,
-2020-09-03,Power Clean + Front Squat,3,50,
-2020-09-03,Power Clean + Front Squat,3,60,
-2020-09-03,Power Clean + Front Squat,3,70,
-2020-09-03,Power Clean + Front Squat,2,80,
-2020-09-03,Power Clean + Front Squat,2,80,
-2020-09-03,Power Clean + Front Squat,2,85,
-2020-09-03,Clean Pull Mid Range,5,80,
-2020-09-03,Clean Pull Mid Range,5,80,
-2020-09-03,Clean Pull Mid Range,5,80,
-2020-09-03,Split Squat,3,50,
-2020-09-03,Split Squat,3,70,
-2020-09-03,Split Squat,3,80,
-2020-09-03,Split Squat,3,80,
-2020-09-03,Split Squat,3,80,
-2020-09-03,Power Jerk,3,20,
-2020-09-03,Power Jerk,3,50,
-2020-09-03,Power Jerk,3,70,
-2020-09-03,Power Jerk,3,75,
-2020-09-03,Power Jerk,3,80,
-2020-09-03,Power Jerk,3,80,
-2020-09-03,Back Squat Slow Descent,3,50,
-2020-09-03,Back Squat Slow Descent,3,70,
-2020-09-03,Back Squat Slow Descent,3,90,
-2020-09-03,Back Squat Slow Descent,3,90,
-2020-09-03,Back Squat Slow Descent,3,90,
-2020-09-07,Snatch Balance,3,20,
-2020-09-07,Snatch Balance,3,40,
-2020-09-07,Snatch Balance,3,50,
-2020-09-07,Snatch Balance,3,60,
-2020-09-07,Snatch Balance,3,60,
-2020-09-07,Snatch Balance,3,60,
-2020-09-07,Snatch Pull,3,50,
-2020-09-07,Snatch Pull,3,70,
-2020-09-07,Snatch Pull,3,70,
-2020-09-07,Snatch Pull,3,70,
-2020-09-07,Snatch Pull,3,70,
-2020-09-07,Snatch Pull,3,70,
-2020-09-07,Back Squat,3,50,
-2020-09-07,Back Squat,3,70,
-2020-09-07,Back Squat,3,70,
-2020-09-07,Back Squat,3,70,
-2020-09-07,Back Squat,3,70,
-2020-09-07,Back Squat,3,70,
-2020-09-09,Press in Split,5,20,
-2020-09-09,Press in Split,5,30,
-2020-09-09,Press in Split,5,40,
-2020-09-09,Press in Split,5,45,
-2020-09-09,Power Clean and Jerk,3,40,
-2020-09-09,Power Clean and Jerk,3,50,
-2020-09-09,Power Clean and Jerk,3,60,
-2020-09-09,Power Clean and Jerk,3,70,
-2020-09-09,Power Clean and Jerk,3,80,
-2020-09-09,Power Clean and Jerk,3,90,
-2020-09-09,Power Clean and Jerk,3,92,
-2020-09-09,Power Clean and Jerk,2,95,
-2020-09-09,Snatch Pull High,3,40,
-2020-09-09,Snatch Pull High,3,50,
-2020-09-09,Snatch Pull High,3,60,
-2020-09-09,Snatch Pull High,3,70,
-2020-09-09,Snatch Pull High,3,80,
-2020-09-09,Snatch Pull High,3,90,
-2020-09-09,Snatch Pull High,3,92,
-2020-09-09,Back Squat,3,20,
-2020-09-09,Back Squat,3,50,
-2020-09-09,Back Squat,3,70,
-2020-09-09,Back Squat,3,90,
-2020-09-09,Back Squat,3,110,
-2020-09-09,Back Squat,3,115,
-2020-09-09,Back Squat,3,120,
-2020-09-09,Seated Press,5,20,
-2020-09-09,Seated Press,5,40,
-2020-09-09,Seated Press,5,40,
-2020-09-09,Seated Press,5,40,
-2020-09-09,Seated Press,5,40,
-2020-09-09,Seated Press,5,40,
+6/04/2019,Snatch,1,68,,Snatch
+31/05/2019,Snatch,1,74,,Snatch
+12/07/2019,Snatch,1,77,,Snatch
+16/07/2019,Snatch,1,79,,Snatch
+8/05/2029,Power Snatch,1,61,,Snatch
+11/06/2019,Power Snatch,1,64,,Snatch
+10/07/2019,Power Snatch,1,69,,Snatch
+20/10/2019,Power Snatch,1,73,,Snatch
+6/06/2019,Snatch Balance,1,70,,Snatch
+18/06/2019,Snatch Balance,1,78,,Snatch
+24/07/2019,Snatch Balance,1,85,,Snatch
+13/08/2019,Snatch Balance,1,90,,Snatch
+30/04/2019,Overhead Squat,1,80,,Snatch
+6/04/2019,Clean and Jerk,1,92,,Clean and Jerk
+31/05/2019,Clean and Jerk,1,94,,Clean and Jerk
+12/07/2019,Clean and Jerk,1,97,,Clean and Jerk
+16/07/2019,Clean and Jerk,1,100,,Clean and Jerk
+10/10/2019,Clean and Jerk,1,104,,Clean and Jerk
+8/05/2019,Power Clean and Jerk,1,81,,Clean and Jerk
+2/07/2019,Power Clean and Jerk,1,85,,Clean and Jerk
+13/08/2019,Power Clean and Jerk,1,86,,Clean and Jerk
+16/04/2019,Power Clean,1,82,,Clean and Jerk
+23/04/2019,Power Clean,1,84,,Clean and Jerk
+5/11/2019,Power Clean,1,92,,Clean and Jerk
+30/10/2019,Clean Pull,1,130,,Clean and Jerk
+16/06/2019,Front Squat,1,98,,Clean and Jerk
+16/06/2019,Front Squat,1,104,,Clean and Jerk
+20/12/2019,Front Squat,1,110,,Clean and Jerk
+20/05/2019,Back Squat,1,113,,Clean and Jerk
+20/10/2019,Back Squat,1,120,,Clean and Jerk
+10/11/2019,Back Squat,1,124,,Clean and Jerk
+20/04/2020,Back Squat,1,125,,Clean and Jerk
+16/05/2019,Snatch,2,66,,Snatch
+20/06/2019,Snatch,2,67,,Snatch
+12/07/2019,Snatch,2,70,,Snatch
+22/08/2019,Snatch,2,71,,Snatch
+8/05/2019,Power Snatch,2,60,,Snatch
+11/06/2019,Power Snatch,2,62,,Snatch
+10/07/2019,Power Snatch,2,63,,Snatch
+15/11/2019,Power Snatch,2,66,,Snatch
+16/06/2019,Snatch Balance,2,75,,Snatch
+24/06/2019,Snatch Balance,2,78,,Snatch
+2/07/2019,Snatch Balance,2,80,,Snatch
+13/08/2019,Snatch Balance,2,86,,Snatch
+30/04/2019,Overhead Squat,2,73,,Snatch
+16/05/2019,Clean and Jerk,2,75,,Clean and Jerk
+20/06/2019,Clean and Jerk,2,77,,Clean and Jerk
+12/07/2019,Clean and Jerk,2,80,,Clean and Jerk
+22/08/2019,Clean and Jerk,2,83,,Clean and Jerk
+10/11/2019,Clean and Jerk,2,87,,Clean and Jerk
+8/05/2019,Power Clean and Jerk,2,78,,Clean and Jerk
+24/06/2019,Power Clean and Jerk,2,80,,Clean and Jerk
+13/08/2019,Power Clean and Jerk,2,83,,Clean and Jerk
+31/10/2019,Power Clean and Jerk,2,87,,Clean and Jerk
+30/04/2019,Front Squat,2,95,,Clean and Jerk
+16/06/2019,Front Squat,2,96,,Clean and Jerk
+24/10/2019,Front Squat,2,103,,Clean and Jerk
+18/04/2019,Back Squat,2,98,,Clean and Jerk
+9/05/2019,Back Squat,2,110,,Clean and Jerk
+12/07/2019,Back Squat,2,113,,Clean and Jerk
+15/10/2019,Clean,2,92,,Clean and Jerk
+16/05/2019,Snatch,3,55,,Snatch
+16/07/2019,Snatch,3,60,,Snatch
+22/08/2019,Snatch,3,61,,Snatch
+29/10/2019,Snatch,3,67,,Snatch
+14/04/2019,Power Snatch,3,55,,Snatch
+8/05/2019,Power Snatch,3,57,,Snatch
+11/06/2019,Power Snatch,3,58,,Snatch
+11/06/2019,Power Snatch,3,60,,Snatch
+6/06/2019,Snatch Balance,3,67,,Snatch
+16/06/2019,Snatch Balance,3,72,,Snatch
+13/08/2019,Snatch Balance,3,75,,Snatch
+30/04/2019,Overhead Squat,3,64,,Snatch
+30/05/2019,Overhead Squat,3,70,,Snatch
+16/05/2019,Clean and Jerk,3,60,,Clean and Jerk
+24/06/2019,Power Clean and Jerk,3,65,,Clean and Jerk
+31/10/2019,Power Clean and Jerk,3,70,,Clean and Jerk
+26/11/2019,Power Clean and Jerk,3,75,,Clean and Jerk
+25/04/2019,Front Squat,3,88,,Clean and Jerk
+16/06/2019,Front Squat,3,93,,Clean and Jerk
+26/09/2019,Front Squat,3,95,,Clean and Jerk
+24/10/2019,Front Squat,3,100,,Clean and Jerk
+2/05/2019,Back Squat,3,100,,Clean and Jerk
+20/06/2019,Back Squat,3,105,,Clean and Jerk
+20/08/2019,Back Squat,3,109,,Clean and Jerk
+20/10/2019,Back Squat,3,110,,Clean and Jerk
+6/06/2019,Power Clean,3,76,,Clean and Jerk
+6/06/2019,Jerk From Rack,3,66,,Clean and Jerk
+11/06/2019,Jerk From Rack,3,70,,Clean and Jerk
+4/07/2019,Jerk From Rack,3,72,,Clean and Jerk
+10/10/2019,Jerk From Rack,3,80,,Clean and Jerk
+15/10/2019,Jerk From Rack,3,85,,Clean and Jerk
+11/06/2019,Snatch Pull,3,95,,Snatch
+20/06/2019,Clean Pull,3,105,,Clean and Jerk
+4/07/2019,Clean,3,75,,Clean and Jerk
+10/10/2019,Clean,3,80,,Clean and Jerk
+15/10/2019,Clean,3,83,,Clean and Jerk
+24/10/2019,Clean,3,91,,Clean and Jerk
+7/04/2020,F Squat SD,3,40,,Clean and Jerk
+7/04/2020,Front Squat Slow Descent,3,50,,Clean and Jerk
+7/04/2020,Front Squat Slow Descent,3,60,,Clean and Jerk
+7/04/2020,Front Squat Slow Descent,3,70,,Clean and Jerk
+7/04/2020,Front Squat Slow Descent,8,76,,Clean and Jerk
+7/04/2020,Front Squat Slow Descent,7,79,,Clean and Jerk
+7/04/2020,Front Squat Slow Descent,6,81,,Clean and Jerk
+7/04/2020,Front Squat Slow Descent,5,83,,Clean and Jerk
+7/04/2020,Front Squat Slow Descent,4,85,,Clean and Jerk
+7/04/2020,Power Snatch Pause,3,30,,Snatch
+7/04/2020,Power Snatch Pause,3,40,,Snatch
+7/04/2020,Power Snatch Pause,3,50,,Snatch
+7/04/2020,Power Snatch Pause,3,53,,Snatch
+7/04/2020,Power Snatch Pause,3,54,,Snatch
+7/04/2020,Power Snatch Pause,3,56,,Snatch
+7/04/2020,Power Snatch Pause,3,57,,Snatch
+7/04/2020,Power Snatch Pause,3,59,,Snatch
+7/04/2020,Snatch Pull Hover,6,62,,Snatch
+7/04/2020,Snatch Pull Hover,6,64,,Snatch
+7/04/2020,Snatch Pull Hover,5,65,,Snatch
+7/04/2020,Snatch Pull Hover,5,67,,Snatch
+7/04/2020,Snatch Pull Hover,5,69,,Snatch
+7/04/2020,Seated Press,5,41,,Snatch
+7/04/2020,Seated Press,5,42,,Snatch
+7/04/2020,Seated Press,5,44,,Snatch
+7/04/2020,Seated Press,5,45,,Snatch
+7/04/2020,Seated Press,5,47,,Snatch
+9/04/2020,Overhead Squat,3,30,,Snatch
+9/04/2020,Overhead Squat,3,40,,Snatch
+9/04/2020,Overhead Squat,3,50,,Snatch
+9/04/2020,Overhead Squat,3,56,,Snatch
+9/04/2020,Overhead Squat,3,57,,Snatch
+9/04/2020,Overhead Squat,3,59,,Snatch
+9/04/2020,Overhead Squat,3,61,,Snatch
+9/04/2020,Overhead Squat,3,62,,Snatch
+9/04/2020,Jerk Long Hold,3,66,,Clean and Jerk
+9/04/2020,Jerk Long Hold,3,67,,Clean and Jerk
+9/04/2020,Jerk Long Hold,3,69,,Clean and Jerk
+9/04/2020,Jerk Long Hold,3,71,,Clean and Jerk
+9/04/2020,Jerk Long Hold,3,73,,Clean and Jerk
+9/04/2020,Clean Pull Slow Lower,5,73,,Clean and Jerk
+9/04/2020,Clean Pull Slow Lower,5,75,,Clean and Jerk
+9/04/2020,Clean Pull Slow Lower,5,77,,Clean and Jerk
+9/04/2020,Clean Pull Slow Lower,5,79,,Clean and Jerk
+9/04/2020,Clean Pull Slow Lower,5,81,,Clean and Jerk
+9/04/2020,Back Squat Rapid,10,60,,Clean and Jerk
+9/04/2020,Back Squat Rapid,8,60,,Clean and Jerk
+9/04/2020,Back Squat Rapid,7,62,,Clean and Jerk
+9/04/2020,Back Squat Rapid,6,63,,Clean and Jerk
+9/04/2020,Back Squat Rapid,5,65,,Clean and Jerk
+12/04/2020,Power Snatch,3,30,,Snatch
+12/04/2020,Power Snatch,3,40,,Snatch
+12/04/2020,Power Snatch,3,50,,Snatch
+12/04/2020,Power Snatch,3,55,,Snatch
+12/04/2020,Power Snatch,3,56,,Snatch
+12/04/2020,Power Snatch,3,58,,Snatch
+12/04/2020,Power Snatch,3,59,,Snatch
+12/04/2020,Power Snatch,3,61,,Snatch
+12/04/2020,Power Clean and Jerk,3,50,,Clean and Jerk
+12/04/2020,Power Clean and Jerk,3,60,,Clean and Jerk
+12/04/2020,Power Clean and Jerk,3,65,,Clean and Jerk
+12/04/2020,Power Clean and Jerk,3,68,,Clean and Jerk
+12/04/2020,Power Clean and Jerk,3,70,,Clean and Jerk
+12/04/2020,Power Clean and Jerk,3,72,,Clean and Jerk
+12/04/2020,Power Clean and Jerk,2,74,,Clean and Jerk
+12/04/2020,Power Clean and Jerk,2,75,,Clean and Jerk
+12/04/2020,Back Squat,5,50,,Clean and Jerk
+12/04/2020,Back Squat,5,60,,Clean and Jerk
+12/04/2020,Back Squat,5,70,,Clean and Jerk
+12/04/2020,Back Squat,5,80,,Clean and Jerk
+12/04/2020,Back Squat,5,84,,Clean and Jerk
+12/04/2020,Back Squat,5,86,,Clean and Jerk
+12/04/2020,Back Squat,5,89,,Clean and Jerk
+12/04/2020,Back Squat,5,90,,Clean and Jerk
+12/04/2020,Back Squat,5,83,,Clean and Jerk
+12/04/2020,Seated Press,7,36,,Clean and Jerk
+12/04/2020,Seated Press,6,37,,Clean and Jerk
+12/04/2020,Seated Press,5,38,,Clean and Jerk
+12/04/2020,Seated Press,5,40,,Clean and Jerk
+12/04/2020,Seated Press,5,41,,Clean and Jerk
+16/04/2020,Front Squat,5,20,,Clean and Jerk
+16/04/2020,Front Squat,5,40,,Clean and Jerk
+16/04/2020,Front Squat,5,50,,Clean and Jerk
+16/04/2020,Front Squat,5,60,,Clean and Jerk
+16/04/2020,Front Squat,5,60,,Clean and Jerk
+16/04/2020,Front Squat,5,60,,Clean and Jerk
+16/04/2020,Front Squat,5,60,,Clean and Jerk
+16/04/2020,Front Squat,5,60,,Clean and Jerk
+16/04/2020,Snatch Pull Hover,5,60,,Snatch
+16/04/2020,Snatch Pull Hover,5,60,,Snatch
+16/04/2020,Snatch Pull Hover,5,60,,Snatch
+16/04/2020,Snatch Pull Hover,5,60,,Snatch
+16/04/2020,Snatch Pull Hover,5,60,,Snatch
+16/04/2020,Seated Press,5,45,,Clean and Jerk
+16/04/2020,Seated Press,5,45,,Clean and Jerk
+16/04/2020,Seated Press,5,45,,Clean and Jerk
+16/04/2020,Seated Press,5,45,,Clean and Jerk
+16/04/2020,Seated Press,5,45,,Clean and Jerk
+19/04/2020,Squat,5,20,,Clean and Jerk
+19/04/2020,Squat,5,40,,Clean and Jerk
+19/04/2020,Squat,5,60,,Clean and Jerk
+19/04/2020,Squat,5,70,,Clean and Jerk
+19/04/2020,Squat,5,80,,Clean and Jerk
+19/04/2020,Squat,5,80,,Clean and Jerk
+19/04/2020,Squat,5,80,,Clean and Jerk
+19/04/2020,Squat,5,80,,Clean and Jerk
+19/04/2020,Squat,5,80,,Clean and Jerk
+19/04/2020,Clean Pull,5,60,,Clean and Jerk
+19/04/2020,Clean Pull,5,80,,Clean and Jerk
+19/04/2020,Clean Pull,5,80,,Clean and Jerk
+19/04/2020,Clean Pull,5,80,,Clean and Jerk
+19/04/2020,Clean Pull,5,80,,Clean and Jerk
+19/04/2020,Clean Pull,5,80,,Clean and Jerk
+19/04/2020,Seated Press,5,45,,Clean and Jerk
+19/04/2020,Seated Press,5,45,,Clean and Jerk
+19/04/2020,Seated Press,5,45,,Clean and Jerk
+19/04/2020,Seated Press,5,45,,Clean and Jerk
+19/04/2020,Seated Press,5,45,,Clean and Jerk
+21/04/2020,Front Squat,3,20,,Clean and Jerk
+21/04/2020,Front Squat,3,40,,Clean and Jerk
+21/04/2020,Front Squat,3,60,,Clean and Jerk
+21/04/2020,Front Squat,3,80,,Clean and Jerk
+21/04/2020,Front Squat,3,100,,Clean and Jerk
+21/04/2020,Front Squat,1,105,,Clean and Jerk
+21/04/2020,Snatch Pull Hover,3,60,,Snatch
+21/04/2020,Snatch Pull Hover,3,80,,Snatch
+21/04/2020,Snatch Pull Hover,3,80,,Snatch
+21/04/2020,Snatch Pull Hover,3,80,,Snatch
+21/04/2020,Snatch Pull Hover,3,80,,Snatch
+21/04/2020,Snatch Pull Hover,3,80,,Snatch
+21/04/2020,Seated Press,5,46,,Clean and Jerk
+21/04/2020,Seated Press,5,46,,Clean and Jerk
+21/04/2020,Seated Press,5,46,,Clean and Jerk
+21/04/2020,Seated Press,5,46,,Clean and Jerk
+21/04/2020,Seated Press,5,46,,Clean and Jerk
+21/04/2020,Good Morning,5,40,,Clean and Jerk
+21/04/2020,Good Morning,5,40,,Clean and Jerk
+21/04/2020,Good Morning,5,40,,Clean and Jerk
+21/04/2020,Good Morning,5,40,,Clean and Jerk
+21/04/2020,Good Morning,5,40,,Clean and Jerk
+23/04/2020,Back Squat,5,20,,Clean and Jerk
+23/04/2020,Back Squat,5,40,,Clean and Jerk
+23/04/2020,Back Squat,5,60,,Clean and Jerk
+23/04/2020,Back Squat,5,80,,Clean and Jerk
+23/04/2020,Back Squat,3,90,,Clean and Jerk
+23/04/2020,Back Squat,3,92,,Clean and Jerk
+23/04/2020,Back Squat,3,94,,Clean and Jerk
+23/04/2020,Back Squat,3,96,,Clean and Jerk
+23/04/2020,Back Squat,3,98,,Clean and Jerk
+23/04/2020,Back Squat,3,100,,Clean and Jerk
+23/04/2020,Back Squat,5,90,,Clean and Jerk
+23/04/2020,Clean Pull,5,60,,Clean and Jerk
+23/04/2020,Clean Pull,5,80,,Clean and Jerk
+23/04/2020,Clean Pull,5,90,,Clean and Jerk
+23/04/2020,Clean Pull,5,90,,Clean and Jerk
+23/04/2020,Clean Pull,5,90,,Clean and Jerk
+23/04/2020,Clean Pull,5,90,,Clean and Jerk
+23/04/2020,Clean Pull,5,90,,Clean and Jerk
+23/04/2020,Seated Press,5,47,,Clean and Jerk
+23/04/2020,Seated Press,5,47,,Clean and Jerk
+23/04/2020,Seated Press,5,47,,Clean and Jerk
+23/04/2020,Seated Press,5,47,,Clean and Jerk
+23/04/2020,Seated Press,5,47,,Clean and Jerk
+26/04/2020,Front Squat,3,20,,Clean and Jerk
+26/04/2020,Front Squat,3,40,,Clean and Jerk
+26/04/2020,Front Squat,3,60,,Clean and Jerk
+26/04/2020,Front Squat,3,80,,Clean and Jerk
+26/04/2020,Front Squat,3,80,,Clean and Jerk
+26/04/2020,Front Squat,3,80,,Clean and Jerk
+26/04/2020,Front Squat,3,80,,Clean and Jerk
+26/04/2020,Front Squat,3,80,,Clean and Jerk
+26/04/2020,Front Squat,1,90,,Clean and Jerk
+26/04/2020,Front Squat,1,100,,Clean and Jerk
+26/04/2020,Snatch Pull Hover,3,60,,Snatch
+26/04/2020,Snatch Pull Hover,3,70,,Snatch
+26/04/2020,Snatch Pull Hover,3,80,,Snatch
+26/04/2020,Snatch Pull Hover,3,80,,Snatch
+26/04/2020,Snatch Pull Hover,3,80,,Snatch
+26/04/2020,Snatch Pull Hover,3,80,,Snatch
+26/04/2020,Snatch Pull Hover,3,80,,Snatch
+26/04/2020,Snatch Balance,3,20,,Snatch
+26/04/2020,Snatch Balance,3,40,,Snatch
+26/04/2020,Snatch Balance,3,50,,Snatch
+26/04/2020,Snatch Balance,3,60,,Snatch
+26/04/2020,Snatch Balance,3,60,,Snatch
+26/04/2020,Snatch Balance,3,60,,Snatch
+26/04/2020,Snatch Balance,3,60,,Snatch
+26/04/2020,Snatch Balance,3,60,,Snatch
+26/04/2020,Seated Press,5,48,,Clean and Jerk
+26/04/2020,Seated Press,5,48,,Clean and Jerk
+26/04/2020,Seated Press,5,48,,Clean and Jerk
+26/04/2020,Seated Press,5,48,,Clean and Jerk
+26/04/2020,Seated Press,5,48,,Clean and Jerk
+27/04/2020,Back Squat,5,20,,Clean and Jerk
+27/04/2020,Back Squat,5,40,,Clean and Jerk
+27/04/2020,Back Squat,5,60,,Clean and Jerk
+27/04/2020,Back Squat,5,60,,Clean and Jerk
+27/04/2020,Back Squat,5,60,,Clean and Jerk
+27/04/2020,Back Squat,5,60,,Clean and Jerk
+27/04/2020,Back Squat,5,60,,Clean and Jerk
+27/04/2020,Back Squat,5,70,,Clean and Jerk
+28/04/2020,Back Squat,3,20,,Clean and Jerk
+28/04/2020,Back Squat,3,40,,Clean and Jerk
+28/04/2020,Back Squat,3,60,,Clean and Jerk
+28/04/2020,Back Squat,3,80,,Clean and Jerk
+28/04/2020,Back Squat,3,100,,Clean and Jerk
+28/04/2020,Back Squat,3,105,,Clean and Jerk
+28/04/2020,Back Squat,3,110,,Clean and Jerk
+28/04/2020,Back Squat,3,115,,Clean and Jerk
+28/04/2020,Clean Pull,3,60,,Clean and Jerk
+28/04/2020,Clean Pull,3,80,,Clean and Jerk
+28/04/2020,Clean Pull,3,100,,Clean and Jerk
+28/04/2020,Clean Pull,3,110,,Clean and Jerk
+28/04/2020,Clean Pull,3,110,,Clean and Jerk
+28/04/2020,Clean Pull,3,110,,Clean and Jerk
+28/04/2020,Seated Press,5,48,,Clean and Jerk
+28/04/2020,Seated Press,5,48,,Clean and Jerk
+28/04/2020,Seated Press,5,48,,Clean and Jerk
+28/04/2020,Seated Press,5,48,,Clean and Jerk
+28/04/2020,Seated Press,5,48,,Clean and Jerk
+28/04/2020,Seated Press,10,40,,Clean and Jerk
+29/04/2020,Front Squat,3,20,,Clean and Jerk
+29/04/2020,Front Squat,3,40,,Clean and Jerk
+29/04/2020,Front Squat,3,50,,Clean and Jerk
+29/04/2020,Front Squat,3,60,,Clean and Jerk
+29/04/2020,Front Squat,3,60,,Clean and Jerk
+29/04/2020,Front Squat,3,60,,Clean and Jerk
+29/04/2020,Front Squat,3,60,,Clean and Jerk
+29/04/2020,Front Squat,3,60,,Clean and Jerk
+30/04/2020,Front Squat,3,20,,Clean and Jerk
+30/04/2020,Front Squat,3,40,,Clean and Jerk
+30/04/2020,Front Squat,3,60,,Clean and Jerk
+30/04/2020,Front Squat,3,80,,Clean and Jerk
+30/04/2020,Front Squat,3,90,,Clean and Jerk
+30/04/2020,Front Squat,3,100,,Clean and Jerk
+30/04/2020,Front Squat,1,105,,Clean and Jerk
+30/04/2020,Snatch Pull,3,60,,Snatch
+30/04/2020,Snatch Pull,3,70,,Snatch
+30/04/2020,Snatch Pull,3,80,,Snatch
+30/04/2020,Snatch Pull,3,90,,Snatch
+30/04/2020,Snatch Pull,3,100,,Snatch
+30/04/2020,Snatch Pull,3,100,,Snatch
+30/04/2020,Snatch Pull,3,100,,Snatch
+30/04/2020,Seated Press,10,20,,Clean and Jerk
+30/04/2020,Seated Press,10,20,,Clean and Jerk
+30/04/2020,Seated Press,10,20,,Clean and Jerk
+30/04/2020,Russian Twist,15,5,,Accessory
+30/04/2020,Russian Twist,15,5,,Accessory
+30/04/2020,Russian Twist,15,5,,Accessory
+2/05/2020,Back Squat,3,20,,Clean and Jerk
+2/05/2020,Back Squat,3,40,,Clean and Jerk
+2/05/2020,Back Squat,3,60,,Clean and Jerk
+2/05/2020,Back Squat,3,80,,Clean and Jerk
+2/05/2020,Back Squat,3,90,,Clean and Jerk
+2/05/2020,Back Squat,3,90,,Clean and Jerk
+2/05/2020,Back Squat,3,90,,Clean and Jerk
+2/05/2020,Back Squat,3,90,,Clean and Jerk
+2/05/2020,Back Squat,3,90,,Clean and Jerk
+5/05/2020,Snatch,3,20,,Snatch
+5/05/2020,Snatch,3,30,,Snatch
+5/05/2020,Snatch,3,40,,Snatch
+5/05/2020,Snatch,3,50,,Snatch
+5/05/2020,Snatch,3,60,,Snatch
+5/05/2020,Snatch,1,65,,Snatch
+5/05/2020,Snatch,1,70,,Snatch
+5/05/2020,Snatch,1,75,,Snatch
+5/05/2020,Snatch,1,80,,Snatch
+5/05/2020,Snatch,1,85,,Snatch
+5/05/2020,Snatch Pull,3,80,,Snatch
+5/05/2020,Snatch Pull,3,80,,Snatch
+5/05/2020,Snatch Pull,3,80,,Snatch
+5/05/2020,Snatch Pull,3,80,,Snatch
+5/05/2020,Snatch Pull,3,80,,Snatch
+5/05/2020,Back Squat,3,50,,Clean and Jerk
+5/05/2020,Back Squat,3,60,,Clean and Jerk
+5/05/2020,Back Squat,3,70,,Clean and Jerk
+5/05/2020,Back Squat,3,80,,Clean and Jerk
+5/05/2020,Back Squat,3,80,,Clean and Jerk
+5/05/2020,Back Squat,3,80,,Clean and Jerk
+5/05/2020,Back Squat,3,80,,Clean and Jerk
+5/05/2020,Back Squat,3,80,,Clean and Jerk
+7/05/2020,Clean,2,30,,Clean and Jerk
+7/05/2020,Clean,2,50,,Clean and Jerk
+7/05/2020,Clean,2,70,,Clean and Jerk
+7/05/2020,Clean,1,80,,Clean and Jerk
+7/05/2020,Clean,1,90,,Clean and Jerk
+7/05/2020,Clean,1,100,,Clean and Jerk
+7/05/2020,Clean Pull,3,100,,Clean and Jerk
+7/05/2020,Clean Pull,3,100,,Clean and Jerk
+7/05/2020,Clean Pull,3,100,,Clean and Jerk
+7/05/2020,Clean Pull,3,100,,Clean and Jerk
+7/05/2020,Clean Pull,3,100,,Clean and Jerk
+7/05/2020,Front Squat,3,50,,Clean and Jerk
+7/05/2020,Front Squat,3,60,,Clean and Jerk
+7/05/2020,Front Squat,3,70,,Clean and Jerk
+7/05/2020,Front Squat,3,70,,Clean and Jerk
+7/05/2020,Front Squat,3,70,,Clean and Jerk
+7/05/2020,Front Squat,3,70,,Clean and Jerk
+7/05/2020,Front Squat,3,70,,Clean and Jerk
+12/05/2020,Snatch Balance,3,20,,Snatch
+12/05/2020,Snatch Balance,3,40,,Snatch
+12/05/2020,Snatch Balance,3,50,,Snatch
+12/05/2020,Snatch Balance,3,60,,Snatch
+12/05/2020,Snatch Balance,3,70,,Snatch
+12/05/2020,Snatch Balance,3,70,,Snatch
+12/05/2020,Snatch Balance,3,70,,Snatch
+12/05/2020,Snatch Balance,3,70,,Snatch
+12/05/2020,Snatch Balance,3,70,,Snatch
+12/05/2020,Snatch Pull,3,50,,Snatch
+12/05/2020,Snatch Pull,3,70,,Snatch
+12/05/2020,Snatch Pull,3,90,,Snatch
+12/05/2020,Snatch Pull,3,90,,Snatch
+12/05/2020,Snatch Pull,3,90,,Snatch
+12/05/2020,Snatch Pull,3,90,,Snatch
+12/05/2020,Snatch Pull,3,90,,Snatch
+12/05/2020,Back Squat,3,50,,Clean and Jerk
+12/05/2020,Back Squat,3,70,,Clean and Jerk
+12/05/2020,Back Squat,3,90,,Clean and Jerk
+12/05/2020,Back Squat,3,100,,Clean and Jerk
+12/05/2020,Back Squat,3,110,,Clean and Jerk
+12/05/2020,Back Squat,1,115,,Clean and Jerk
+12/05/2020,Back Squat,1,120,,Clean and Jerk
+12/05/2020,Back Squat,1,125,,Clean and Jerk
+15/05/2020,Front Squat,3,20,,Clean and Jerk
+15/05/2020,Front Squat,3,40,,Clean and Jerk
+15/05/2020,Front Squat,3,60,,Clean and Jerk
+15/05/2020,Front Squat,3,70,,Clean and Jerk
+15/05/2020,Front Squat,3,70,,Clean and Jerk
+15/05/2020,Front Squat,3,70,,Clean and Jerk
+15/05/2020,Front Squat,3,70,,Clean and Jerk
+15/05/2020,Front Squat,3,70,,Clean and Jerk
+15/05/2020,Clean Pull,3,70,,Clean and Jerk
+15/05/2020,Clean Pull,3,70,,Clean and Jerk
+15/05/2020,Clean Pull,3,70,,Clean and Jerk
+15/05/2020,Clean Pull,3,70,,Clean and Jerk
+15/05/2020,Clean Pull,3,70,,Clean and Jerk
+15/05/2020,Press in Split,5,20,,Clean and Jerk
+15/05/2020,Press in Split,5,40,,Clean and Jerk
+15/05/2020,Press in Split,5,40,,Clean and Jerk
+15/05/2020,Press in Split,5,40,,Clean and Jerk
+15/05/2020,Press in Split,5,40,,Clean and Jerk
+15/05/2020,Press in Split,5,40,,Clean and Jerk
+17/05/2020,Back Squat,3,40,,Clean and Jerk
+17/05/2020,Back Squat,3,60,,Clean and Jerk
+17/05/2020,Back Squat,3,70,,Clean and Jerk
+17/05/2020,Back Squat,3,70,,Clean and Jerk
+17/05/2020,Back Squat,3,70,,Clean and Jerk
+17/05/2020,Back Squat,3,70,,Clean and Jerk
+17/05/2020,Back Squat,3,70,,Clean and Jerk
+17/05/2020,Clean Pull Hover,3,70,,Clean and Jerk
+17/05/2020,Clean Pull Hover,3,70,,Clean and Jerk
+17/05/2020,Clean Pull Hover,3,70,,Clean and Jerk
+17/05/2020,Clean Pull Hover,3,70,,Clean and Jerk
+17/05/2020,Clean Pull Hover,3,70,,Clean and Jerk
+20/05/2020,Back Squat,3,20,,Clean and Jerk
+20/05/2020,Back Squat,3,40,,Clean and Jerk
+20/05/2020,Back Squat,3,60,,Clean and Jerk
+20/05/2020,Back Squat,3,80,,Clean and Jerk
+20/05/2020,Back Squat,3,90,,Clean and Jerk
+20/05/2020,Back Squat,3,90,,Clean and Jerk
+20/05/2020,Back Squat,3,90,,Clean and Jerk
+20/05/2020,Back Squat,3,90,,Clean and Jerk
+20/05/2020,Back Squat,3,90,,Clean and Jerk
+20/05/2020,Snatch Pull,3,60,,Snatch
+20/05/2020,Snatch Pull,3,90,,Snatch
+20/05/2020,Snatch Pull,3,90,,Snatch
+20/05/2020,Snatch Pull,3,90,,Snatch
+20/05/2020,Snatch Pull,3,90,,Snatch
+20/05/2020,Snatch Pull,3,90,,Snatch
+20/05/2020,Seated Press,5,50,,Clean and Jerk
+20/05/2020,Seated Press,5,50,,Clean and Jerk
+20/05/2020,Seated Press,5,50,,Clean and Jerk
+20/05/2020,Seated Press,5,50,,Clean and Jerk
+20/05/2020,Seated Press,5,50,,Clean and Jerk
+22/05/2020,Front Squat,3,20,,Clean and Jerk
+22/05/2020,Front Squat,3,40,,Clean and Jerk
+22/05/2020,Front Squat,3,60,,Clean and Jerk
+22/05/2020,Front Squat,3,80,,Clean and Jerk
+22/05/2020,Front Squat,3,90,,Clean and Jerk
+22/05/2020,Front Squat,1,100,,Clean and Jerk
+22/05/2020,Front Squat,1,105,,Clean and Jerk
+22/05/2020,Front Squat,1,107,,Clean and Jerk
+22/05/2020,Front Squat,1,108,,Clean and Jerk
+22/05/2020,Clean Pull,3,60,,Clean and Jerk
+22/05/2020,Clean Pull,3,90,,Clean and Jerk
+22/05/2020,Clean Pull,3,100,,Clean and Jerk
+22/05/2020,Clean Pull,3,110,,Clean and Jerk
+22/05/2020,Clean Pull,3,115,,Clean and Jerk
+22/05/2020,Clean Pull,3,115,,Clean and Jerk
+22/05/2020,Clean Pull,3,115,,Clean and Jerk
+22/05/2020,Clean Pull,1,120,,Clean and Jerk
+22/05/2020,Clean Pull,1,130,,Clean and Jerk
+24/05/2020,Snatch Balance,3,20,,Snatch
+24/05/2020,Snatch Balance,3,40,,Snatch
+24/05/2020,Snatch Balance,3,50,,Snatch
+24/05/2020,Snatch Balance,3,60,,Snatch
+24/05/2020,Snatch Balance,3,80,,Snatch
+24/05/2020,Snatch Balance,1,85,,Snatch
+24/05/2020,Snatch Balance,1,90,,Snatch
+24/05/2020,Snatch Pull,3,60,,Snatch
+24/05/2020,Snatch Pull,3,80,,Snatch
+24/05/2020,Snatch Pull,3,90,,Snatch
+24/05/2020,Snatch Pull,3,90,,Snatch
+24/05/2020,Snatch Pull,3,90,,Snatch
+24/05/2020,Snatch Pull,3,90,,Snatch
+24/05/2020,Snatch Pull,3,90,,Snatch
+24/05/2020,Seated Press,5,50,,Clean and Jerk
+24/05/2020,Seated Press,5,50,,Clean and Jerk
+24/05/2020,Seated Press,5,50,,Clean and Jerk
+24/05/2020,Seated Press,5,50,,Clean and Jerk
+24/05/2020,Seated Press,5,50,,Clean and Jerk
+6/06/2020,Front Squat,3,20,,Clean and Jerk
+6/06/2020,Front Squat,3,50,,Clean and Jerk
+6/06/2020,Front Squat,3,60,,Clean and Jerk
+6/06/2020,Front Squat,3,70,,Clean and Jerk
+6/06/2020,Front Squat,3,80,,Clean and Jerk
+6/06/2020,Front Squat,3,90,,Clean and Jerk
+6/06/2020,Front Squat,1,95,,Clean and Jerk
+6/06/2020,Front Squat,1,100,,Clean and Jerk
+6/06/2020,Clean Pull,3,90,,Clean and Jerk
+6/06/2020,Clean Pull,3,90,,Clean and Jerk
+6/06/2020,Clean Pull,3,90,,Clean and Jerk
+6/06/2020,Clean Pull,3,90,,Clean and Jerk
+6/06/2020,Clean Pull,3,90,,Clean and Jerk
+6/06/2020,Seated Press,5,50,,Clean and Jerk
+6/06/2020,Seated Press,5,50,,Clean and Jerk
+6/06/2020,Seated Press,5,50,,Clean and Jerk
+6/06/2020,Seated Press,5,50,,Clean and Jerk
+6/06/2020,Seated Press,5,50,,Clean and Jerk
+9/06/2020,Power Snatch,3,20,,Snatch
+9/06/2020,Power Snatch,3,40,,Snatch
+9/06/2020,Power Snatch,3,45,,Snatch
+9/06/2020,Power Snatch,3,45,,Snatch
+9/06/2020,Power Snatch,3,50,,Snatch
+9/06/2020,Power Snatch,3,50,,Snatch
+9/06/2020,Power Snatch,3,55,,Snatch
+9/06/2020,Power Snatch,3,55,,Snatch
+9/06/2020,Snatch Pull,3,60,,Snatch
+9/06/2020,Snatch Pull,3,70,,Snatch
+9/06/2020,Snatch Pull,3,70,,Snatch
+9/06/2020,Snatch Pull,3,70,,Snatch
+9/06/2020,Snatch Pull,3,75,,Snatch
+9/06/2020,Snatch Pull,3,75,,Snatch
+9/06/2020,Snatch Pull,3,80,,Snatch
+11/06/2020,Overhead Squat,3,20,,Snatch
+11/06/2020,Overhead Squat,3,40,,Snatch
+11/06/2020,Overhead Squat,3,50,,Snatch
+11/06/2020,Overhead Squat,3,60,,Snatch
+11/06/2020,Overhead Squat,3,64,,Snatch
+11/06/2020,Overhead Squat,3,67,,Snatch
+11/06/2020,Overhead Squat,2,70,,Snatch
+11/06/2020,Overhead Squat,2,70,,Snatch
+11/06/2020,Clean,3,40,,Clean and Jerk
+11/06/2020,Clean,3,50,,Clean and Jerk
+11/06/2020,Clean,3,60,,Clean and Jerk
+11/06/2020,Clean,3,70,,Clean and Jerk
+11/06/2020,Clean,3,75,,Clean and Jerk
+11/06/2020,Clean,3,77,,Clean and Jerk
+11/06/2020,Clean,3,78,,Clean and Jerk
+11/06/2020,Jerk Long Hold,3,40,,Clean and Jerk
+11/06/2020,Jerk Long Hold,3,45,,Clean and Jerk
+11/06/2020,Jerk Long Hold,3,50,,Clean and Jerk
+11/06/2020,Jerk Long Hold,3,50,,Clean and Jerk
+11/06/2020,Jerk Long Hold,3,55,,Clean and Jerk
+11/06/2020,Push Press,3,40,,Clean and Jerk
+11/06/2020,Push Press,3,50,,Clean and Jerk
+11/06/2020,Push Press,3,55,,Clean and Jerk
+11/06/2020,Push Press,3,58,,Clean and Jerk
+11/06/2020,Push Press,3,60,,Clean and Jerk
+11/06/2020,Push Press,3,60,,Clean and Jerk
+11/06/2020,Front Squat,3,50,,Clean and Jerk
+11/06/2020,Front Squat,3,70,,Clean and Jerk
+11/06/2020,Front Squat,3,75,,Clean and Jerk
+11/06/2020,Front Squat,3,80,,Clean and Jerk
+11/06/2020,Front Squat,3,85,,Clean and Jerk
+11/06/2020,Front Squat,2,80,,Clean and Jerk
+11/06/2020,Front Squat,2,80,,Clean and Jerk
+16/06/2020,Snatch Balance,3,20,,Snatch
+16/06/2020,Snatch Balance,3,40,,Snatch
+16/06/2020,Snatch Balance,3,50,,Snatch
+16/06/2020,Snatch Balance,3,60,,Snatch
+16/06/2020,Snatch Balance,2,70,,Snatch
+16/06/2020,Snatch Balance,2,75,,Snatch
+16/06/2020,Snatch Balance,2,77,,Snatch
+16/06/2020,Snatch Balance,2,79,,Snatch
+16/06/2020,Power Clean and Jerk,2,50,,Clean and Jerk
+16/06/2020,Power Clean and Jerk,2,60,,Clean and Jerk
+16/06/2020,Power Clean and Jerk,2,70,,Clean and Jerk
+16/06/2020,Power Clean and Jerk,2,75,,Clean and Jerk
+16/06/2020,Power Clean and Jerk,2,78,,Clean and Jerk
+16/06/2020,Power Clean and Jerk,2,82,,Clean and Jerk
+16/06/2020,Power Clean and Jerk,2,85,,Clean and Jerk
+16/06/2020,Power Clean and Jerk,2,87,,Clean and Jerk
+16/06/2020,Clean Pull From Block,5,90,,Clean and Jerk
+16/06/2020,Clean Pull From Block,5,100,,Clean and Jerk
+16/06/2020,Clean Pull From Block,5,110,,Clean and Jerk
+16/06/2020,Clean Pull From Block,5,115,,Clean and Jerk
+16/06/2020,Clean Pull From Block,5,120,,Clean and Jerk
+16/06/2020,Clean Pull From Block,5,120,,Clean and Jerk
+16/06/2020,Clean Pull From Block,5,125,,Clean and Jerk
+16/06/2020,Front Squat,3,50,,Clean and Jerk
+16/06/2020,Front Squat,3,70,,Clean and Jerk
+16/06/2020,Front Squat,3,80,,Clean and Jerk
+16/06/2020,Front Squat,3,85,,Clean and Jerk
+16/06/2020,Front Squat,3,90,,Clean and Jerk
+16/06/2020,Front Squat,3,90,,Clean and Jerk
+16/06/2020,Front Squat,3,90,,Clean and Jerk
+16/06/2020,Good Morning,5,20,,Clean and Jerk
+16/06/2020,Good Morning,5,30,,Clean and Jerk
+16/06/2020,Good Morning,5,40,,Clean and Jerk
+16/06/2020,Good Morning,5,40,,Clean and Jerk
+16/06/2020,Good Morning,5,40,,Clean and Jerk
+16/06/2020,Good Morning,5,40,,Clean and Jerk
+16/06/2020,Good Morning,5,40,,Clean and Jerk
+18/06/2020,Power Snatch,3,30,,Snatch
+18/06/2020,Power Snatch,3,40,,Snatch
+18/06/2020,Power Snatch,3,50,,Snatch
+18/06/2020,Power Snatch,2,55,,Snatch
+18/06/2020,Power Snatch,2,60,,Snatch
+18/06/2020,Power Snatch,2,62,,Snatch
+18/06/2020,Power Snatch,2,63,,Snatch
+18/06/2020,Power Snatch,2,64,,Snatch
+18/06/2020,Power Snatch,2,65,,Snatch
+18/06/2020,Snatch Pull,3,65,,Snatch
+18/06/2020,Snatch Pull,3,75,,Snatch
+18/06/2020,Snatch Pull,3,80,,Snatch
+18/06/2020,Snatch Pull,3,85,,Snatch
+18/06/2020,Snatch Pull,3,90,,Snatch
+18/06/2020,Snatch Pull,3,93,,Snatch
+18/06/2020,Snatch Pull,3,95,,Snatch
+18/06/2020,Jerk From Rack,3,50,,Clean and Jerk
+18/06/2020,Jerk From Rack,3,60,,Clean and Jerk
+18/06/2020,Jerk From Rack,3,70,,Clean and Jerk
+18/06/2020,Jerk From Rack,3,74,,Clean and Jerk
+18/06/2020,Jerk From Rack,3,77,,Clean and Jerk
+18/06/2020,Jerk From Rack,3,80,,Clean and Jerk
+18/06/2020,Clean,3,50,,Clean and Jerk
+18/06/2020,Clean,3,60,,Clean and Jerk
+18/06/2020,Clean,3,64,,Clean and Jerk
+18/06/2020,Clean,3,68,,Clean and Jerk
+18/06/2020,Clean,3,72,,Clean and Jerk
+18/06/2020,Clean,3,76,,Clean and Jerk
+18/06/2020,Clean,3,79,,Clean and Jerk
+18/06/2020,Clean,3,81,,Clean and Jerk
+18/06/2020,Jerk Long Hold,3,20,,Clean and Jerk
+18/06/2020,Jerk Long Hold,3,30,,Clean and Jerk
+18/06/2020,Jerk Long Hold,3,40,,Clean and Jerk
+18/06/2020,Jerk Long Hold,3,45,,Clean and Jerk
+18/06/2020,Jerk Long Hold,3,50,,Clean and Jerk
+18/06/2020,Jerk Long Hold,3,55,,Clean and Jerk
+18/06/2020,Jerk Long Hold,3,60,,Clean and Jerk
+21/06/2020,Snatch,3,20,,Snatch
+21/06/2020,Snatch,2,40,,Snatch
+21/06/2020,Snatch,2,50,,Snatch
+21/06/2020,Snatch,2,60,,Snatch
+21/06/2020,Snatch,2,65,,Snatch
+21/06/2020,Snatch,2,70,,Snatch
+21/06/2020,Clean,2,70,,Clean and Jerk
+21/06/2020,Clean,2,80,,Clean and Jerk
+21/06/2020,Clean,2,85,,Clean and Jerk
+21/06/2020,Clean,2,85,,Clean and Jerk
+21/06/2020,Clean,2,85,,Clean and Jerk
+21/06/2020,Clean Pull,3,90,,Clean and Jerk
+21/06/2020,Clean Pull,3,100,,Clean and Jerk
+21/06/2020,Clean Pull,3,110,,Clean and Jerk
+21/06/2020,Clean Pull,3,115,,Clean and Jerk
+21/06/2020,Back Squat,3,50,,Clean and Jerk
+21/06/2020,Back Squat,3,70,,Clean and Jerk
+21/06/2020,Back Squat,3,90,,Clean and Jerk
+21/06/2020,Back Squat,3,100,,Clean and Jerk
+21/06/2020,Back Squat,3,105,,Clean and Jerk
+21/06/2020,Back Squat,3,105,,Clean and Jerk
+21/06/2020,Back Squat,3,105,,Clean and Jerk
+22/06/2020,Half Front Squat,3,20,,Clean and Jerk
+22/06/2020,Half Front Squat,3,40,,Clean and Jerk
+22/06/2020,Half Front Squat,3,50,,Clean and Jerk
+22/06/2020,Half Front Squat,3,50,,Clean and Jerk
+22/06/2020,Half Front Squat,3,50,,Clean and Jerk
+22/06/2020,Half Front Squat,3,50,,Clean and Jerk
+22/06/2020,Half Front Squat,3,50,,Clean and Jerk
+22/06/2020,Front Squat,3,60,,Clean and Jerk
+22/06/2020,Front Squat,3,70,,Clean and Jerk
+22/06/2020,Front Squat,3,80,,Clean and Jerk
+22/06/2020,Front Squat,3,90,,Clean and Jerk
+23/06/2020,Snatch Balance,3,20,,Snatch
+23/06/2020,Snatch Balance,3,40,,Snatch
+23/06/2020,Snatch Balance,3,50,,Snatch
+23/06/2020,Snatch Balance,2,60,,Snatch
+23/06/2020,Snatch Balance,2,65,,Snatch
+23/06/2020,Snatch Balance,2,70,,Snatch
+23/06/2020,Snatch Balance,2,75,,Snatch
+23/06/2020,Snatch Balance,2,80,,Snatch
+23/06/2020,Snatch Balance,2,82,,Snatch
+23/06/2020,Snatch Balance,2,84,,Snatch
+23/06/2020,Snatch Balance,2,88,,Snatch
+23/06/2020,Power Clean and Jerk,2,50,,Clean and Jerk
+23/06/2020,Power Clean and Jerk,2,70,,Clean and Jerk
+23/06/2020,Power Clean and Jerk,2,75,,Clean and Jerk
+23/06/2020,Power Clean and Jerk,2,80,,Clean and Jerk
+23/06/2020,Power Clean and Jerk,2,83,,Clean and Jerk
+23/06/2020,Power Clean and Jerk,2,86,,Clean and Jerk
+23/06/2020,Power Clean and Jerk,2,88,,Clean and Jerk
+23/06/2020,Power Clean and Jerk,2,90,,Clean and Jerk
+23/06/2020,Snatch Pull,3,70,,Snatch
+23/06/2020,Snatch Pull,3,80,,Snatch
+23/06/2020,Snatch Pull,3,90,,Snatch
+23/06/2020,Snatch Pull,3,95,,Snatch
+23/06/2020,Snatch Pull,3,100,,Snatch
+23/06/2020,Snatch Pull,3,102,,Snatch
+23/06/2020,Snatch Pull,3,95,,Snatch
+23/06/2020,Back Squat,3,50,,Clean and Jerk
+23/06/2020,Back Squat,3,70,,Clean and Jerk
+23/06/2020,Back Squat,3,80,,Clean and Jerk
+23/06/2020,Back Squat,3,90,,Clean and Jerk
+23/06/2020,Back Squat,3,95,,Clean and Jerk
+23/06/2020,Back Squat,3,100,,Clean and Jerk
+23/06/2020,Back Squat,3,105,,Clean and Jerk
+23/06/2020,Back Squat,3,107,,Clean and Jerk
+23/06/2020,Press Behind the Neck,3,20,,Clean and Jerk
+23/06/2020,Press Behind the Neck,3,40,,Clean and Jerk
+23/06/2020,Press Behind the Neck,3,40,,Clean and Jerk
+23/06/2020,Press Behind the Neck,3,40,,Clean and Jerk
+23/06/2020,Press Behind the Neck,3,40,,Clean and Jerk
+23/06/2020,Press Behind the Neck,3,40,,Clean and Jerk
+25/06/2020,Snatch,2,20,,Snatch
+25/06/2020,Snatch,2,40,,Snatch
+25/06/2020,Snatch,2,50,,Snatch
+25/06/2020,Snatch,2,60,,Snatch
+25/06/2020,Snatch,2,65,,Snatch
+25/06/2020,Snatch,2,70,,Snatch
+25/06/2020,Snatch,2,75,,Snatch
+25/06/2020,Snatch,2,77,,Snatch
+25/06/2020,Snatch,2,80,,Snatch
+25/06/2020,Clean and Jerk,2,50,,Clean and Jerk
+25/06/2020,Clean and Jerk,2,70,,Clean and Jerk
+25/06/2020,Clean and Jerk,2,80,,Clean and Jerk
+25/06/2020,Clean and Jerk,2,85,,Clean and Jerk
+25/06/2020,Clean and Jerk,2,90,,Clean and Jerk
+25/06/2020,Clean and Jerk,2,92,,Clean and Jerk
+25/06/2020,Clean and Jerk,2,94,,Clean and Jerk
+25/06/2020,Clean Pull,3,90,,Clean and Jerk
+25/06/2020,Clean Pull,3,100,,Clean and Jerk
+25/06/2020,Clean Pull,3,110,,Clean and Jerk
+25/06/2020,Clean Pull,3,115,,Clean and Jerk
+25/06/2020,Clean Pull,3,115,,Clean and Jerk
+25/06/2020,Clean Pull,3,115,,Clean and Jerk
+25/06/2020,Back Squat,3,50,,Clean and Jerk
+25/06/2020,Back Squat,3,70,,Clean and Jerk
+25/06/2020,Back Squat,3,90,,Clean and Jerk
+25/06/2020,Back Squat,3,100,,Clean and Jerk
+25/06/2020,Back Squat,3,105,,Clean and Jerk
+25/06/2020,Back Squat,3,110,,Clean and Jerk
+25/06/2020,Back Squat,3,115,,Clean and Jerk
+25/06/2020,Back Squat,3,118,,Clean and Jerk
+25/06/2020,Good Morning,5,40,,Clean and Jerk
+25/06/2020,Good Morning,5,40,,Clean and Jerk
+28/06/2020,Half Front Squat,3,20,,Clean and Jerk
+28/06/2020,Half Front Squat,3,40,,Clean and Jerk
+28/06/2020,Half Front Squat,3,50,,Clean and Jerk
+28/06/2020,Half Front Squat,3,50,,Clean and Jerk
+28/06/2020,Half Front Squat,3,50,,Clean and Jerk
+28/06/2020,Half Front Squat,3,50,,Clean and Jerk
+28/06/2020,Half Front Squat,3,50,,Clean and Jerk
+28/06/2020,Hang Clean Pull ,5,50,,Clean and Jerk
+28/06/2020,Hang Clean Pull ,5,90,,Clean and Jerk
+28/06/2020,Hang Clean Pull ,5,100,,Clean and Jerk
+28/06/2020,Hang Clean Pull ,5,105,,Clean and Jerk
+28/06/2020,Hang Clean Pull ,5,105,,Clean and Jerk
+28/06/2020,Hang Clean Pull ,5,105,,Clean and Jerk
+28/06/2020,Back Squat,3,50,,Clean and Jerk
+28/06/2020,Back Squat,2,90,,Clean and Jerk
+28/06/2020,Back Squat,2,100,,Clean and Jerk
+28/06/2020,Back Squat,2,110,,Clean and Jerk
+28/06/2020,Back Squat,2,115,,Clean and Jerk
+28/06/2020,Back Squat,2,120,,Clean and Jerk
+28/06/2020,Press in Split,5,45,,Clean and Jerk
+28/06/2020,Press in Split,5,45,,Clean and Jerk
+28/06/2020,Press in Split,5,45,,Clean and Jerk
+28/06/2020,Press in Split,5,45,,Clean and Jerk
+28/06/2020,Press in Split,5,45,,Clean and Jerk
+30/06/2020,Snatch,3,20,,Snatch
+30/06/2020,Snatch,2,40,,Snatch
+30/06/2020,Snatch,2,50,,Snatch
+30/06/2020,Snatch,2,60,,Snatch
+30/06/2020,Snatch,2,70,,Snatch
+30/06/2020,Snatch,1,75,,Snatch
+30/06/2020,Snatch,1,80,,Snatch
+30/06/2020,Snatch,1,83,,Snatch
+30/06/2020,Snatch,1,85,,Snatch
+30/06/2020,Snatch,1,87,,Snatch
+30/06/2020,Snatch,1,88,,Snatch
+30/06/2020,Clean and Jerk,2,50,,Clean and Jerk
+30/06/2020,Clean and Jerk,2,70,,Clean and Jerk
+30/06/2020,Clean and Jerk,1,90,,Clean and Jerk
+30/06/2020,Clean and Jerk,1,100,,Clean and Jerk
+30/06/2020,Clean and Jerk,1,103,,Clean and Jerk
+30/06/2020,Clean and Jerk,1,105,,Clean and Jerk
+30/06/2020,Clean Pull,3,100,,Clean and Jerk
+30/06/2020,Clean Pull,3,110,,Clean and Jerk
+30/06/2020,Clean Pull,3,115,,Clean and Jerk
+30/06/2020,Clean Pull,3,115,,Clean and Jerk
+30/06/2020,Clean Pull,3,115,,Clean and Jerk
+30/06/2020,Back Squat,3,50,,Clean and Jerk
+30/06/2020,Back Squat,3,70,,Clean and Jerk
+30/06/2020,Back Squat,2,90,,Clean and Jerk
+30/06/2020,Back Squat,2,100,,Clean and Jerk
+30/06/2020,Back Squat,2,105,,Clean and Jerk
+30/06/2020,Back Squat,2,110,,Clean and Jerk
+30/06/2020,Back Squat,3,110,,Clean and Jerk
+30/06/2020,Back Squat,3,110,,Clean and Jerk
+2/07/2020,Power Snatch,3,40,,Snatch
+2/07/2020,Power Snatch,3,50,,Snatch
+2/07/2020,Power Snatch,3,60,,Snatch
+2/07/2020,Power Snatch,3,63,,Snatch
+2/07/2020,Power Snatch,2,68,,Snatch
+2/07/2020,Power Snatch,2,65,,Snatch
+2/07/2020,Power Snatch,2,65,,Snatch
+2/07/2020,Power Snatch,2,65,,Snatch
+2/07/2020,Power Clean,3,60,,Clean and Jerk
+2/07/2020,Power Clean,3,70,,Clean and Jerk
+2/07/2020,Power Clean,3,80,,Clean and Jerk
+2/07/2020,Power Clean,3,85,,Clean and Jerk
+2/07/2020,Power Clean,2,88,,Clean and Jerk
+2/07/2020,Power Clean,2,90,,Clean and Jerk
+2/07/2020,Power Clean,2,92,,Clean and Jerk
+2/07/2020,Power Clean,1,94,,Clean and Jerk
+2/07/2020,Power Clean,1,96,,Clean and Jerk
+2/07/2020,Power Clean,1,98,,Clean and Jerk
+2/07/2020,Jerk from Rack,3,50,,Clean and Jerk
+2/07/2020,Jerk from Rack,3,60,,Clean and Jerk
+2/07/2020,Jerk from Rack,3,70,,Clean and Jerk
+2/07/2020,Jerk from Rack,3,80,,Clean and Jerk
+2/07/2020,Jerk from Rack,3,85,,Clean and Jerk
+2/07/2020,Jerk from Rack,3,90,,Clean and Jerk
+2/07/2020,Jerk from Rack,3,95,,Clean and Jerk
+2/07/2020,Front Squat,5,50,,Clean and Jerk
+2/07/2020,Front Squat,3,70,,Clean and Jerk
+2/07/2020,Front Squat,3,80,,Clean and Jerk
+2/07/2020,Front Squat,3,90,,Clean and Jerk
+2/07/2020,Front Squat,3,95,,Clean and Jerk
+2/07/2020,Front Squat,2,100,,Clean and Jerk
+2/07/2020,Front Squat,1,103,,Clean and Jerk
+2/07/2020,Front Squat,1,105,,Clean and Jerk
+2/07/2020,Press Behind the Neck,3,20,,Clean and Jerk
+2/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+2/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+2/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+2/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+2/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+7/07/2020,Power Snatch,5,20,,Snatch
+7/07/2020,Power Snatch,4,40,,Snatch
+7/07/2020,Power Snatch,3,50,,Snatch
+7/07/2020,Power Snatch,2,60,,Snatch
+7/07/2020,Power Snatch,2,65,,Snatch
+7/07/2020,Power Snatch,2,65,,Snatch
+7/07/2020,Power Snatch,2,65,,Snatch
+7/07/2020,Power Snatch,2,65,,Snatch
+7/07/2020,Power Clean,3,50,,Clean and Jerk
+7/07/2020,Power Clean,2,70,,Clean and Jerk
+7/07/2020,Power Clean,2,80,,Clean and Jerk
+7/07/2020,Power Clean,2,83,,Clean and Jerk
+7/07/2020,Power Clean,2,83,,Clean and Jerk
+7/07/2020,Power Clean,2,83,,Clean and Jerk
+7/07/2020,Power Clean,2,83,,Clean and Jerk
+7/07/2020,Jerk from Rack,3,50,,Clean and Jerk
+7/07/2020,Jerk from Rack,3,70,,Clean and Jerk
+7/07/2020,Jerk from Rack,3,75,,Clean and Jerk
+7/07/2020,Jerk from Rack,3,78,,Clean and Jerk
+7/07/2020,Jerk from Rack,3,78,,Clean and Jerk
+7/07/2020,Jerk from Rack,3,78,,Clean and Jerk
+7/07/2020,Front Squat,3,70,,Clean and Jerk
+7/07/2020,Front Squat,3,80,,Clean and Jerk
+7/07/2020,Front Squat,3,90,,Clean and Jerk
+7/07/2020,Front Squat,3,95,,Clean and Jerk
+7/07/2020,Front Squat,3,98,,Clean and Jerk
+7/07/2020,Front Squat,3,101,,Clean and Jerk
+7/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+7/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+7/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+7/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+7/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+9/07/2020,Snatch,5,20,,Snatch
+9/07/2020,Snatch,3,40,,Snatch
+9/07/2020,Snatch,3,50,,Snatch
+9/07/2020,Snatch,2,60,,Snatch
+9/07/2020,Snatch,2,70,,Snatch
+9/07/2020,Snatch,1,75,,Snatch
+9/07/2020,Snatch,1,78,,Snatch
+9/07/2020,Snatch,1,80,,Snatch
+9/07/2020,Clean and Jerk,3,50,,Clean and Jerk
+9/07/2020,Clean and Jerk,2,60,,Clean and Jerk
+9/07/2020,Clean and Jerk,2,70,,Clean and Jerk
+9/07/2020,Clean and Jerk,2,80,,Clean and Jerk
+9/07/2020,Clean and Jerk,2,90,,Clean and Jerk
+9/07/2020,Clean and Jerk,1,95,,Clean and Jerk
+9/07/2020,Clean and Jerk,1,98,,Clean and Jerk
+9/07/2020,Clean and Jerk,1,100,,Clean and Jerk
+9/07/2020,Clean Pull,3,105,,Clean and Jerk
+9/07/2020,Clean Pull,3,110,,Clean and Jerk
+9/07/2020,Clean Pull,3,110,,Clean and Jerk
+9/07/2020,Clean Pull,3,115,,Clean and Jerk
+9/07/2020,Clean Pull,3,115,,Clean and Jerk
+9/07/2020,Back Squat,3,50,,Clean and Jerk
+9/07/2020,Back Squat,3,70,,Clean and Jerk
+9/07/2020,Back Squat,3,90,,Clean and Jerk
+9/07/2020,Back Squat,3,100,,Clean and Jerk
+9/07/2020,Back Squat,3,105,,Clean and Jerk
+9/07/2020,Back Squat,2,110,,Clean and Jerk
+9/07/2020,Back Squat,2,115,,Clean and Jerk
+12/07/2020,Snatch Balance,5,20,,Snatch
+12/07/2020,Snatch Balance,5,40,,Snatch
+12/07/2020,Snatch Balance,5,50,,Snatch
+12/07/2020,Snatch Balance,5,60,,Snatch
+12/07/2020,Snatch Balance,2,65,,Snatch
+12/07/2020,Snatch Balance,2,65,,Snatch
+12/07/2020,Snatch Balance,2,65,,Snatch
+12/07/2020,Clean,3,50,,Clean and Jerk
+12/07/2020,Clean,3,60,,Clean and Jerk
+12/07/2020,Clean,3,70,,Clean and Jerk
+12/07/2020,Clean,2,80,,Clean and Jerk
+12/07/2020,Clean,2,80,,Clean and Jerk
+12/07/2020,Clean,2,80,,Clean and Jerk
+12/07/2020,Front Squat,3,50,,Clean and Jerk
+12/07/2020,Front Squat,3,60,,Clean and Jerk
+12/07/2020,Front Squat,2,70,,Clean and Jerk
+12/07/2020,Front Squat,2,80,,Clean and Jerk
+12/07/2020,Front Squat,2,80,,Clean and Jerk
+12/07/2020,Front Squat,2,80,,Clean and Jerk
+12/07/2020,Press in Split,3,40,,Clean and Jerk
+12/07/2020,Press in Split,3,40,,Clean and Jerk
+12/07/2020,Press in Split,3,40,,Clean and Jerk
+12/07/2020,Press in Split,3,40,,Clean and Jerk
+12/07/2020,Press in Split,3,40,,Clean and Jerk
+14/07/2020,Power Snatch,5,20,,Snatch
+14/07/2020,Power Snatch,3,40,,Snatch
+14/07/2020,Power Snatch,3,50,,Snatch
+14/07/2020,Power Snatch,3,60,,Snatch
+14/07/2020,Power Snatch,2,65,,Snatch
+14/07/2020,Power Snatch,1,68,,Snatch
+14/07/2020,Power Snatch,1,68,,Snatch
+14/07/2020,Power Snatch,1,68,,Snatch
+14/07/2020,Power Clean and Jerk,3,50,,Clean and Jerk
+14/07/2020,Power Clean and Jerk,3,70,,Clean and Jerk
+14/07/2020,Power Clean and Jerk,3,80,,Clean and Jerk
+14/07/2020,Power Clean and Jerk,1,85,,Clean and Jerk
+14/07/2020,Power Clean and Jerk,1,88,,Clean and Jerk
+14/07/2020,Power Clean and Jerk,1,88,,Clean and Jerk
+14/07/2020,Power Clean and Jerk,1,88,,Clean and Jerk
+14/07/2020,Front Squat,3,50,,Clean and Jerk
+14/07/2020,Front Squat,3,70,,Clean and Jerk
+14/07/2020,Front Squat,3,90,,Clean and Jerk
+14/07/2020,Front Squat,2,100,,Clean and Jerk
+14/07/2020,Front Squat,1,105,,Clean and Jerk
+14/07/2020,Front Squat,1,108,,Clean and Jerk
+14/07/2020,Front Squat,1,110,,Clean and Jerk
+16/07/2020,Power Snatch,3,20,,Snatch
+16/07/2020,Power Snatch,3,30,,Snatch
+16/07/2020,Power Snatch,3,40,,Snatch
+16/07/2020,Power Snatch,3,50,,Snatch
+16/07/2020,Power Snatch,3,50,,Snatch
+16/07/2020,Power Snatch,3,50,,Snatch
+16/07/2020,Power Clean,3,50,,Clean and Jerk
+16/07/2020,Power Clean,3,60,,Clean and Jerk
+16/07/2020,Power Clean,3,70,,Clean and Jerk
+16/07/2020,Power Clean,3,70,,Clean and Jerk
+16/07/2020,Power Clean,3,70,,Clean and Jerk
+16/07/2020,Front Squat,3,70,,Clean and Jerk
+16/07/2020,Front Squat,3,70,,Clean and Jerk
+16/07/2020,Front Squat,3,70,,Clean and Jerk
+18/07/2020,Snatch,3,30,,Snatch
+18/07/2020,Snatch,3,40,,Snatch
+18/07/2020,Snatch,2,50,,Snatch
+18/07/2020,Snatch,2,60,,Snatch
+18/07/2020,Snatch,2,65,,Snatch
+18/07/2020,Snatch,1,70,,Snatch
+18/07/2020,Snatch,1,74,,Snatch
+18/07/2020,Snatch,1,76,,Snatch
+18/07/2020,Snatch,1,78,,Snatch
+18/07/2020,Snatch,1,80,,Snatch
+18/07/2020,Snatch,1,82,1,Snatch
+18/07/2020,Snatch,1,85,2,Snatch
+18/07/2020,Snatch,1,88,3,Snatch
+18/07/2020,Clean and Jerk,3,40,,Clean and Jerk
+18/07/2020,Clean and Jerk,3,55,,Clean and Jerk
+18/07/2020,Clean and Jerk,2,65,,Clean and Jerk
+18/07/2020,Clean and Jerk,2,75,,Clean and Jerk
+18/07/2020,Clean and Jerk,1,85,,Clean and Jerk
+18/07/2020,Clean and Jerk,1,91,,Clean and Jerk
+18/07/2020,Clean and Jerk,1,96,,Clean and Jerk
+18/07/2020,Clean and Jerk,1,100,1,Clean and Jerk
+18/07/2020,Clean and Jerk,1,105,2,Clean and Jerk
+18/07/2020,Clean and Jerk,1,109,3,Clean and Jerk
+21/07/2020,Power Snatch,5,20,,Snatch
+21/07/2020,Power Snatch,3,40,,Snatch
+21/07/2020,Power Snatch,3,50,,Snatch
+21/07/2020,Power Snatch,3,55,,Snatch
+21/07/2020,Power Snatch,3,60,,Snatch
+21/07/2020,Power Snatch,3,65,,Snatch
+21/07/2020,Power Snatch,3,60,,Snatch
+21/07/2020,Power Snatch,3,60,,Snatch
+21/07/2020,Snatch Pull,3,70,,Snatch
+21/07/2020,Snatch Pull,3,80,,Snatch
+21/07/2020,Snatch Pull,3,90,,Snatch
+21/07/2020,Snatch Pull,3,90,,Snatch
+21/07/2020,Snatch Pull,3,90,,Snatch
+21/07/2020,Jerk from Rack,3,20,,Clean and Jerk
+21/07/2020,Jerk from Rack,3,50,,Clean and Jerk
+21/07/2020,Jerk from Rack,3,70,,Clean and Jerk
+21/07/2020,Jerk from Rack,3,75,,Clean and Jerk
+21/07/2020,Jerk from Rack,3,80,,Clean and Jerk
+21/07/2020,Jerk from Rack,3,80,,Clean and Jerk
+21/07/2020,Jerk from Rack,3,80,,Clean and Jerk
+21/07/2020,Back Squat,5,20,,Clean and Jerk
+21/07/2020,Back Squat,5,50,,Clean and Jerk
+21/07/2020,Back Squat,5,70,,Clean and Jerk
+21/07/2020,Back Squat,5,80,,Clean and Jerk
+21/07/2020,Back Squat,5,90,,Clean and Jerk
+21/07/2020,Back Squat,5,90,,Clean and Jerk
+21/07/2020,Back Squat,5,90,,Clean and Jerk
+21/07/2020,Push Press,3,40,,Clean and Jerk
+21/07/2020,Push Press,3,50,,Clean and Jerk
+21/07/2020,Push Press,3,55,,Clean and Jerk
+21/07/2020,Push Press,3,60,,Clean and Jerk
+21/07/2020,Push Press,3,65,,Clean and Jerk
+21/07/2020,Push Press,1,70,,Clean and Jerk
+21/07/2020,Push Press,1,80,,Clean and Jerk
+21/07/2020,Push Press,1,90,,Clean and Jerk
+23/07/2020,Snatch Balance,3,20,,Snatch
+23/07/2020,Snatch Balance,3,40,,Snatch
+23/07/2020,Snatch Balance,3,50,,Snatch
+23/07/2020,Snatch Balance,3,60,,Snatch
+23/07/2020,Snatch Balance,3,70,,Snatch
+23/07/2020,Snatch Balance,3,80,,Snatch
+23/07/2020,Snatch Balance,3,80,,Snatch
+23/07/2020,Snatch Balance,3,83,,Snatch
+23/07/2020,Clean,3,50,,Clean and Jerk
+23/07/2020,Clean,3,70,,Clean and Jerk
+23/07/2020,Clean,3,80,,Clean and Jerk
+23/07/2020,Clean,3,90,,Clean and Jerk
+23/07/2020,Clean,3,95,,Clean and Jerk
+23/07/2020,Clean Pull,3,90,,Clean and Jerk
+23/07/2020,Clean Pull,3,100,,Clean and Jerk
+23/07/2020,Clean Pull,3,110,,Clean and Jerk
+23/07/2020,Clean Pull,3,115,,Clean and Jerk
+23/07/2020,Clean Pull,3,120,,Clean and Jerk
+23/07/2020,Clean Pull,3,100,,Clean and Jerk
+23/07/2020,Clean Pull,3,100,,Clean and Jerk
+23/07/2020,Clean Pull,3,100,,Clean and Jerk
+23/07/2020,Front Squat,3,50,,Clean and Jerk
+23/07/2020,Front Squat,3,70,,Clean and Jerk
+23/07/2020,Front Squat,3,90,,Clean and Jerk
+23/07/2020,Front Squat,3,95,,Clean and Jerk
+23/07/2020,Front Squat,3,100,,Clean and Jerk
+23/07/2020,Front Squat,2,103,,Clean and Jerk
+23/07/2020,Front Squat,3,90,,Clean and Jerk
+23/07/2020,Front Squat,3,90,,Clean and Jerk
+23/07/2020,Front Squat,3,90,,Clean and Jerk
+26/07/2020,Snatch Balance,3,20,,Snatch
+26/07/2020,Snatch Balance,3,40,,Snatch
+26/07/2020,Snatch Balance,3,60,,Snatch
+26/07/2020,Snatch Balance,3,80,,Snatch
+26/07/2020,Snatch Balance,1,85,,Snatch
+26/07/2020,Snatch Balance,1,90,,Snatch
+26/07/2020,Snatch Balance,1,90,,Snatch
+26/07/2020,Snatch Balance,1,90,,Snatch
+26/07/2020,Clean,3,60,,Clean and Jerk
+26/07/2020,Clean,3,80,,Clean and Jerk
+26/07/2020,Clean,3,85,,Clean and Jerk
+26/07/2020,Clean,3,85,,Clean and Jerk
+26/07/2020,Clean,3,85,,Clean and Jerk
+26/07/2020,Clean Pull,3,90,,Clean and Jerk
+26/07/2020,Clean Pull,3,110,,Clean and Jerk
+26/07/2020,Clean Pull,3,110,,Clean and Jerk
+26/07/2020,Clean Pull,3,110,,Clean and Jerk
+26/07/2020,Front Squat,3,60,,Clean and Jerk
+26/07/2020,Front Squat,3,80,,Clean and Jerk
+26/07/2020,Front Squat,3,90,,Clean and Jerk
+26/07/2020,Front Squat,3,90,,Clean and Jerk
+26/07/2020,Front Squat,3,90,,Clean and Jerk
+28/07/2020,Power Snatch,3,20,,Snatch
+28/07/2020,Power Snatch,3,40,,Snatch
+28/07/2020,Power Snatch,3,50,,Snatch
+28/07/2020,Power Snatch,3,60,,Snatch
+28/07/2020,Power Snatch,2,65,,Snatch
+28/07/2020,Power Snatch,2,68,,Snatch
+28/07/2020,Power Snatch,2,70,,Snatch
+28/07/2020,Power Snatch,2,70,,Snatch
+28/07/2020,Power Snatch,2,70,,Snatch
+28/07/2020,Power Snatch,3,50,,Snatch
+28/07/2020,Power Snatch,3,50,,Snatch
+28/07/2020,Power Clean and Jerk,3,50,,Clean and Jerk
+28/07/2020,Power Clean and Jerk,3,70,,Clean and Jerk
+28/07/2020,Power Clean and Jerk,3,80,,Clean and Jerk
+28/07/2020,Power Clean and Jerk,3,85,,Clean and Jerk
+28/07/2020,Power Clean and Jerk,3,88,,Clean and Jerk
+28/07/2020,Power Clean and Jerk,2,90,,Clean and Jerk
+28/07/2020,Power Clean and Jerk,1,93,,Clean and Jerk
+28/07/2020,Snatch Pull,3,50,,Snatch
+28/07/2020,Snatch Pull,3,70,,Snatch
+28/07/2020,Snatch Pull,3,90,,Snatch
+28/07/2020,Snatch Pull,3,95,,Snatch
+28/07/2020,Snatch Pull,3,95,,Snatch
+28/07/2020,Snatch Pull,3,95,,Snatch
+28/07/2020,Back Squat,3,50,,Clean and Jerk
+28/07/2020,Back Squat,3,70,,Clean and Jerk
+28/07/2020,Back Squat,3,90,,Clean and Jerk
+28/07/2020,Back Squat,3,100,,Clean and Jerk
+28/07/2020,Back Squat,3,110,,Clean and Jerk
+28/07/2020,Back Squat,2,115,,Clean and Jerk
+28/07/2020,Back Squat,2,115,,Clean and Jerk
+28/07/2020,Back Squat,2,115,,Clean and Jerk
+28/07/2020,Press Behind the Neck,3,40,,Clean and Jerk
+28/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+28/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+28/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+28/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+28/07/2020,Press Behind the Neck,3,45,,Clean and Jerk
+30/07/2020,Snatch Balance,3,20,,Snatch
+30/07/2020,Snatch Balance,3,50,,Snatch
+30/07/2020,Snatch Balance,3,60,,Snatch
+30/07/2020,Snatch Balance,3,70,,Snatch
+30/07/2020,Snatch Balance,3,80,,Snatch
+30/07/2020,Snatch Balance,3,85,,Snatch
+30/07/2020,Snatch Balance,2,90,,Snatch
+30/07/2020,Snatch Balance,2,95,,Snatch
+30/07/2020,Snatch Balance,1,100,,Snatch
+30/07/2020,Jerk From Rack,2,60,,Clean and Jerk
+30/07/2020,Jerk From Rack,2,80,,Clean and Jerk
+30/07/2020,Jerk From Rack,2,90,,Clean and Jerk
+30/07/2020,Jerk From Rack,2,95,,Clean and Jerk
+30/07/2020,Jerk From Rack,2,100,,Clean and Jerk
+30/07/2020,Jerk From Rack,1,110,,Clean and Jerk
+30/07/2020,Clean Pull From Block,5,60,,Clean and Jerk
+30/07/2020,Clean Pull From Block,5,90,,Clean and Jerk
+30/07/2020,Clean Pull From Block,5,110,,Clean and Jerk
+30/07/2020,Clean Pull From Block,5,115,,Clean and Jerk
+30/07/2020,Clean Pull From Block,5,120,,Clean and Jerk
+30/07/2020,Clean Pull From Block,5,120,,Clean and Jerk
+30/07/2020,Front Squat,3,60,,Clean and Jerk
+30/07/2020,Front Squat,3,80,,Clean and Jerk
+30/07/2020,Front Squat,3,90,,Clean and Jerk
+30/07/2020,Front Squat,3,100,,Clean and Jerk
+30/07/2020,Front Squat,3,103,,Clean and Jerk
+30/07/2020,Front Squat,2,105,,Clean and Jerk
+30/07/2020,Front Squat,1,108,,Clean and Jerk
+30/07/2020,Press in Split,3,40,,Clean and Jerk
+30/07/2020,Press in Split,3,45,,Clean and Jerk
+30/07/2020,Press in Split,3,45,,Clean and Jerk
+30/07/2020,Press in Split,3,45,,Clean and Jerk
+30/07/2020,Press in Split,3,45,,Clean and Jerk
+30/07/2020,Press in Split,3,45,,Clean and Jerk
+1/08/2020,Snatch,3,20,,Snatch
+1/08/2020,Snatch,3,40,,Snatch
+1/08/2020,Snatch,3,50,,Snatch
+1/08/2020,Snatch,2,60,,Snatch
+1/08/2020,Snatch,2,70,,Snatch
+1/08/2020,Snatch,2,75,,Snatch
+1/08/2020,Snatch,1,80,,Snatch
+1/08/2020,Snatch,1,80,,Snatch
+1/08/2020,Snatch,1,82,,Snatch
+1/08/2020,Snatch,1,84,,Snatch
+1/08/2020,Clean and Jerk,2,50,,Clean and Jerk
+1/08/2020,Clean and Jerk,3,60,,Clean and Jerk
+1/08/2020,Clean and Jerk,2,70,,Clean and Jerk
+1/08/2020,Clean and Jerk,2,80,,Clean and Jerk
+1/08/2020,Clean and Jerk,2,90,,Clean and Jerk
+1/08/2020,Clean and Jerk,2,95,,Clean and Jerk
+1/08/2020,Clean and Jerk,1,98,,Clean and Jerk
+1/08/2020,Clean and Jerk,1,100,,Clean and Jerk
+1/08/2020,Clean and Jerk,1,102,,Clean and Jerk
+1/08/2020,Clean Pull From Block,3,100,,Clean and Jerk
+1/08/2020,Clean Pull From Block,3,110,,Clean and Jerk
+1/08/2020,Clean Pull From Block,3,115,,Clean and Jerk
+1/08/2020,Clean Pull From Block,3,120,,Clean and Jerk
+1/08/2020,Clean Pull From Block,3,120,,Clean and Jerk
+1/08/2020,Front Squat,5,50,,Clean and Jerk
+1/08/2020,Front Squat,2,70,,Clean and Jerk
+1/08/2020,Front Squat,2,90,,Clean and Jerk
+1/08/2020,Front Squat,2,100,,Clean and Jerk
+1/08/2020,Front Squat,2,102,,Clean and Jerk
+1/08/2020,Front Squat,2,104,,Clean and Jerk
+1/08/2020,Front Squat,2,106,,Clean and Jerk
+1/08/2020,Front Squat,2,108,,Clean and Jerk
+4/08/2020,Power Snatch,2,20,,Snatch
+4/08/2020,Power Snatch,2,30,,Snatch
+4/08/2020,Power Snatch,2,40,,Snatch
+4/08/2020,Power Snatch,2,50,,Snatch
+4/08/2020,Power Snatch,2,60,,Snatch
+4/08/2020,Power Snatch,2,65,,Snatch
+4/08/2020,Power Snatch,2,65,,Snatch
+4/08/2020,Power Snatch,2,65,,Snatch
+4/08/2020,Power Clean,2,50,,Clean and Jerk
+4/08/2020,Power Clean,2,70,,Clean and Jerk
+4/08/2020,Power Clean,2,75,,Clean and Jerk
+4/08/2020,Power Clean,2,80,,Clean and Jerk
+4/08/2020,Power Clean,2,80,,Clean and Jerk
+4/08/2020,Power Clean,2,80,,Clean and Jerk
+4/08/2020,Clean Pull,3,90,,Clean and Jerk
+4/08/2020,Clean Pull,3,90,,Clean and Jerk
+4/08/2020,Clean Pull,3,90,,Clean and Jerk
+4/08/2020,Clean Pull,3,90,,Clean and Jerk
+4/08/2020,Clean Pull,3,90,,Clean and Jerk
+4/08/2020,Front Squat,2,50,,Clean and Jerk
+4/08/2020,Front Squat,2,70,,Clean and Jerk
+4/08/2020,Front Squat,2,80,,Clean and Jerk
+4/08/2020,Front Squat,2,90,,Clean and Jerk
+4/08/2020,Front Squat,2,90,,Clean and Jerk
+4/08/2020,Front Squat,2,90,,Clean and Jerk
+6/08/2020,Snatch,3,20,,Snatch
+6/08/2020,Snatch,3,40,,Snatch
+6/08/2020,Snatch,3,50,,Snatch
+6/08/2020,Snatch,2,60,,Snatch
+6/08/2020,Snatch,2,70,,Snatch
+6/08/2020,Snatch,1,75,,Snatch
+6/08/2020,Snatch,1,78,,Snatch
+6/08/2020,Snatch,1,80,,Snatch
+6/08/2020,Snatch,1,82,,Snatch
+6/08/2020,Clean and Jerk,2,50,,Clean and Jerk
+6/08/2020,Clean and Jerk,2,70,,Clean and Jerk
+6/08/2020,Clean and Jerk,2,80,,Clean and Jerk
+6/08/2020,Clean and Jerk,1,90,,Clean and Jerk
+6/08/2020,Clean and Jerk,1,95,,Clean and Jerk
+6/08/2020,Clean and Jerk,1,98,,Clean and Jerk
+6/08/2020,Clean and Jerk,1,100,,Clean and Jerk
+6/08/2020,Clean Pull,3,100,,Clean and Jerk
+6/08/2020,Clean Pull,3,110,,Clean and Jerk
+6/08/2020,Clean Pull,3,115,,Clean and Jerk
+6/08/2020,Clean Pull,3,115,,Clean and Jerk
+6/08/2020,Clean Pull,3,118,,Clean and Jerk
+6/08/2020,Clean Pull,3,110,,Clean and Jerk
+6/08/2020,Squat,3,50,,Clean and Jerk
+6/08/2020,Squat,3,70,,Clean and Jerk
+6/08/2020,Squat,3,90,,Clean and Jerk
+6/08/2020,Squat,2,100,,Clean and Jerk
+6/08/2020,Squat,2,105,,Clean and Jerk
+6/08/2020,Squat,2,110,,Clean and Jerk
+6/08/2020,Squat,2,110,,Clean and Jerk
+6/08/2020,Squat,2,110,,Clean and Jerk
+11/08/2020,Power Snatch,3,20,,Snatch
+11/08/2020,Power Snatch,3,40,,Snatch
+11/08/2020,Power Snatch,3,50,,Snatch
+11/08/2020,Power Snatch,2,60,,Snatch
+11/08/2020,Power Snatch,2,65,,Snatch
+11/08/2020,Power Snatch,1,70,,Snatch
+11/08/2020,Power Snatch,1,73,,Snatch
+11/08/2020,Power Clean and Jerk,3,50,,Clean and Jerk
+11/08/2020,Power Clean and Jerk,2,70,,Clean and Jerk
+11/08/2020,Power Clean and Jerk,2,80,,Clean and Jerk
+11/08/2020,Power Clean and Jerk,1,90,,Clean and Jerk
+11/08/2020,Power Clean and Jerk,1,93,,Clean and Jerk
+11/08/2020,Power Clean and Jerk,1,95,,Clean and Jerk
+11/08/2020,Front Squat,3,50,,Clean and Jerk
+11/08/2020,Front Squat,3,70,,Clean and Jerk
+11/08/2020,Front Squat,2,90,,Clean and Jerk
+11/08/2020,Front Squat,1,100,,Clean and Jerk
+11/08/2020,Front Squat,1,105,,Clean and Jerk
+11/08/2020,Front Squat,1,110,,Clean and Jerk
+15/08/2020,Snatch,3,20,,Snatch
+15/08/2020,Snatch,3,30,,Snatch
+15/08/2020,Snatch,3,40,,Snatch
+15/08/2020,Snatch,2,50,,Snatch
+15/08/2020,Snatch,2,60,,Snatch
+15/08/2020,Snatch,2,70,,Snatch
+15/08/2020,Snatch,1,75,,Snatch
+15/08/2020,Snatch,1,78,,Snatch
+15/08/2020,Snatch,1,82,1,Snatch
+15/08/2020,Snatch,1,86,2,Snatch
+15/08/2020,Snatch,X,89,3,Snatch
+15/08/2020,Clean and Jerk,3,20,,Clean and Jerk
+15/08/2020,Clean and Jerk,3,40,,Clean and Jerk
+15/08/2020,Clean and Jerk,2,50,,Clean and Jerk
+15/08/2020,Clean and Jerk,2,60,,Clean and Jerk
+15/08/2020,Clean and Jerk,2,70,,Clean and Jerk
+15/08/2020,Clean and Jerk,2,80,,Clean and Jerk
+15/08/2020,Clean and Jerk,1,85,,Clean and Jerk
+15/08/2020,Clean and Jerk,1,89,,Clean and Jerk
+15/08/2020,Clean and Jerk,1,95,,Clean and Jerk
+15/08/2020,Clean and Jerk,1,101,1,Clean and Jerk
+15/08/2020,Clean and Jerk,1,106,2,Clean and Jerk
+15/08/2020,Clean and Jerk,1,110,3,Clean and Jerk
+17/08/2020,Power Snatch,3,20,,Snatch
+17/08/2020,Power Snatch,3,40,,Snatch
+17/08/2020,Power Snatch,3,50,,Snatch
+17/08/2020,Power Snatch,3,55,,Snatch
+17/08/2020,Power Snatch,3,60,,Snatch
+17/08/2020,Power Snatch,3,60,,Snatch
+17/08/2020,Power Snatch,3,60,,Snatch
+17/08/2020,Good Morning,5,40,,Clean and Jerk
+17/08/2020,Good Morning,5,50,,Clean and Jerk
+17/08/2020,Good Morning,5,60,,Clean and Jerk
+17/08/2020,Good Morning,5,60,,Clean and Jerk
+17/08/2020,Good Morning,5,60,,Clean and Jerk
+17/08/2020,Good Morning,5,60,,Clean and Jerk
+17/08/2020,Clean Pull,3,60,,Clean and Jerk
+17/08/2020,Clean Pull,3,80,,Clean and Jerk
+17/08/2020,Clean Pull,3,100,,Clean and Jerk
+17/08/2020,Clean Pull,3,110,,Clean and Jerk
+17/08/2020,Clean Pull,3,110,,Clean and Jerk
+17/08/2020,Clean Pull,3,110,,Clean and Jerk
+17/08/2020,Seated Press,5,20,,Clean and Jerk
+17/08/2020,Seated Press,3,40,,Clean and Jerk
+17/08/2020,Seated Press,3,50,,Clean and Jerk
+17/08/2020,Seated Press,3,50,,Clean and Jerk
+17/08/2020,Seated Press,3,50,,Clean and Jerk
+17/08/2020,Seated Press,1,55,,Clean and Jerk
+17/08/2020,Seated Press,1,60,,Clean and Jerk
+17/08/2020,Back Squat,5,40,,Clean and Jerk
+17/08/2020,Back Squat,5,60,,Clean and Jerk
+17/08/2020,Back Squat,5,80,,Clean and Jerk
+17/08/2020,Back Squat,5,90,,Clean and Jerk
+17/08/2020,Back Squat,5,95,,Clean and Jerk
+17/08/2020,Back Squat,5,95,,Clean and Jerk
+18/08/2020,Power Clean + Front Squat,3,40,,Clean and Jerk
+18/08/2020,Power Clean + Front Squat,3,50,,Clean and Jerk
+18/08/2020,Power Clean + Front Squat,3,60,,Clean and Jerk
+18/08/2020,Power Clean + Front Squat,3,66,,Clean and Jerk
+18/08/2020,Power Clean + Front Squat,3,68,,Clean and Jerk
+18/08/2020,Power Clean + Front Squat,3,70,,Clean and Jerk
+18/08/2020,Clean Pull Mid Range,5,60,,Clean and Jerk
+18/08/2020,Clean Pull Mid Range,5,80,,Clean and Jerk
+18/08/2020,Clean Pull Mid Range,5,90,,Clean and Jerk
+18/08/2020,Clean Pull Mid Range,5,90,,Clean and Jerk
+18/08/2020,Clean Pull Mid Range,5,90,,Clean and Jerk
+18/08/2020,Split Squat,5,50,,Clean and Jerk
+18/08/2020,Split Squat,5,50,,Clean and Jerk
+18/08/2020,Split Squat,5,50,,Clean and Jerk
+18/08/2020,Split Squat,5,50,,Clean and Jerk
+18/08/2020,Split Squat,5,50,,Clean and Jerk
+18/08/2020,Power Jerk,3,20,,Clean and Jerk
+18/08/2020,Power Jerk,3,40,,Clean and Jerk
+18/08/2020,Power Jerk,3,50,,Clean and Jerk
+18/08/2020,Power Jerk,3,60,,Clean and Jerk
+18/08/2020,Power Jerk,3,65,,Clean and Jerk
+18/08/2020,Power Jerk,3,70,,Clean and Jerk
+18/08/2020,Power Jerk,3,65,,Clean and Jerk
+18/08/2020,Back Squat Slow Descent,3,60,,Clean and Jerk
+18/08/2020,Back Squat Slow Descent,3,80,,Clean and Jerk
+18/08/2020,Back Squat Slow Descent,3,80,,Clean and Jerk
+18/08/2020,Back Squat Slow Descent,3,80,,Clean and Jerk
+18/08/2020,Back Squat Slow Descent,3,80,,Clean and Jerk
+18/08/2020,Back Squat Slow Descent,3,83,,Clean and Jerk
+20/08/2020,Power Snatch,3,20,,Snatch
+20/08/2020,Power Snatch,3,40,,Snatch
+20/08/2020,Power Snatch,3,40,,Snatch
+20/08/2020,Power Snatch,3,45,,Snatch
+20/08/2020,Power Snatch,3,50,,Snatch
+20/08/2020,Power Snatch,3,55,,Snatch
+20/08/2020,Power Snatch,3,57,,Snatch
+20/08/2020,Power Snatch,3,59,,Snatch
+20/08/2020,Snatch Pull Slow Lower,3,50,,Snatch
+20/08/2020,Snatch Pull Slow Lower,3,70,,Snatch
+20/08/2020,Snatch Pull Slow Lower,3,80,,Snatch
+20/08/2020,Snatch Pull Slow Lower,3,80,,Snatch
+20/08/2020,Snatch Pull Slow Lower,3,80,,Snatch
+20/08/2020,Snatch Pull Slow Lower,3,85,,Snatch
+20/08/2020,Push Press,5,50,,Clean and Jerk
+20/08/2020,Push Press,3,60,,Clean and Jerk
+20/08/2020,Push Press,3,70,,Clean and Jerk
+20/08/2020,Push Press,3,70,,Clean and Jerk
+20/08/2020,Push Press,3,70,,Clean and Jerk
+20/08/2020,Press in Split,5,40,,Clean and Jerk
+20/08/2020,Press in Split,5,45,,Clean and Jerk
+20/08/2020,Press in Split,5,40,,Clean and Jerk
+20/08/2020,Press in Split,5,40,,Clean and Jerk
+20/08/2020,Press in Split,5,40,,Clean and Jerk
+20/08/2020,Back Squat Half,3,40,,Clean and Jerk
+20/08/2020,Back Squat Half,3,50,,Clean and Jerk
+20/08/2020,Back Squat Half,3,60,,Clean and Jerk
+20/08/2020,Back Squat Half,3,70,,Clean and Jerk
+20/08/2020,Back Squat Half,3,80,,Clean and Jerk
+20/08/2020,Back Squat Half,3,90,,Clean and Jerk
+20/08/2020,Back Squat Half,3,90,,Clean and Jerk
+20/08/2020,Back Squat Half,3,90,,Clean and Jerk
+20/08/2020,Front Squat Isometric Hold,2,90,,Clean and Jerk
+20/08/2020,Front Squat Isometric Hold,2,95,,Clean and Jerk
+20/08/2020,Front Squat Isometric Hold,2,95,,Clean and Jerk
+22/08/2020,Power Snatch + Overhead Squat,3,20,,Snatch
+22/08/2020,Power Snatch + Overhead Squat,3,30,,Snatch
+22/08/2020,Power Snatch + Overhead Squat,3,40,,Snatch
+22/08/2020,Power Snatch + Overhead Squat,3,50,,Snatch
+22/08/2020,Power Snatch + Overhead Squat,3,50,,Snatch
+22/08/2020,Power Snatch + Overhead Squat,3,50,,Snatch
+22/08/2020,Clean Top Thigh,3,50,,Clean and Jerk
+22/08/2020,Clean Top Thigh,3,50,,Clean and Jerk
+22/08/2020,Clean Top Thigh,3,50,,Clean and Jerk
+22/08/2020,Clean Top Thigh,3,50,,Clean and Jerk
+22/08/2020,Clean Top Thigh,3,50,,Clean and Jerk
+22/08/2020,Split Squat,3,50,,Clean and Jerk
+22/08/2020,Split Squat,3,50,,Clean and Jerk
+22/08/2020,Split Squat,3,50,,Clean and Jerk
+22/08/2020,Split Squat,3,50,,Clean and Jerk
+22/08/2020,Split Squat,3,50,,Clean and Jerk
+22/08/2020,Front Squat Slow Descent,3,50,,Clean and Jerk
+22/08/2020,Front Squat Slow Descent,3,50,,Clean and Jerk
+22/08/2020,Front Squat Slow Descent,3,50,,Clean and Jerk
+22/08/2020,Front Squat Slow Descent,3,50,,Clean and Jerk
+22/08/2020,Front Squat Slow Descent,3,50,,Clean and Jerk
+25/08/2020,Front Squat Warm Up,3,20,,Clean and Jerk
+25/08/2020,Front Squat Warm Up,3,50,,Clean and Jerk
+25/08/2020,Front Squat Warm Up,3,70,,Clean and Jerk
+25/08/2020,Front Squat Warm Up,3,70,,Clean and Jerk
+25/08/2020,Front Squat Warm Up,3,70,,Clean and Jerk
+25/08/2020,Power Clean,3,50,,Clean and Jerk
+25/08/2020,Power Clean,3,70,,Clean and Jerk
+25/08/2020,Power Clean,3,80,,Clean and Jerk
+25/08/2020,Power Clean,3,86,,Clean and Jerk
+25/08/2020,Power Clean,3,90,,Clean and Jerk
+25/08/2020,Power Clean,3,93,,Clean and Jerk
+25/08/2020,Clean Pull Slow Start,3,90,,Clean and Jerk
+25/08/2020,Clean Pull Slow Start,3,100,,Clean and Jerk
+25/08/2020,Clean Pull Slow Start,3,100,,Clean and Jerk
+25/08/2020,Clean Pull Slow Start,3,100,,Clean and Jerk
+25/08/2020,Clean Pull Slow Start,3,100,,Clean and Jerk
+25/08/2020,Press in Split,5,20,,Clean and Jerk
+25/08/2020,Press in Split,5,40,,Clean and Jerk
+25/08/2020,Press in Split,5,40,,Clean and Jerk
+25/08/2020,Press in Split,5,40,,Clean and Jerk
+25/08/2020,Press in Split,5,40,,Clean and Jerk
+25/08/2020,Jerk No Dip,3,20,,Clean and Jerk
+25/08/2020,Jerk No Dip,3,30,,Clean and Jerk
+25/08/2020,Jerk No Dip,3,40,,Clean and Jerk
+25/08/2020,Jerk No Dip,3,50,,Clean and Jerk
+25/08/2020,Jerk No Dip,2X,50,,Clean and Jerk
+25/08/2020,Jerk,3,50,,Clean and Jerk
+25/08/2020,Jerk,3,70,,Clean and Jerk
+25/08/2020,Jerk,3,80,,Clean and Jerk
+25/08/2020,Jerk,3,80,,Clean and Jerk
+25/08/2020,Jerk,3,80,,Clean and Jerk
+27/08/2020,Power Snatch + Overhead Squat,3,30,,Snatch
+27/08/2020,Power Snatch + Overhead Squat,3,40,,Snatch
+27/08/2020,Power Snatch + Overhead Squat,3,50,,Snatch
+27/08/2020,Power Snatch + Overhead Squat,3,55,,Snatch
+27/08/2020,Power Snatch + Overhead Squat,3,60,,Snatch
+27/08/2020,Snatch,3,62,,Snatch
+27/08/2020,Snatch,3,62,,Snatch
+27/08/2020,Power Clean and Jerk,2,50,,Clean and Jerk
+27/08/2020,Power Clean and Jerk,2,60,,Clean and Jerk
+27/08/2020,Power Clean and Jerk,2,65,,Clean and Jerk
+27/08/2020,Power Clean and Jerk,2,70,,Clean and Jerk
+27/08/2020,Power Clean and Jerk,2,70,,Clean and Jerk
+27/08/2020,Power Clean and Jerk,2,70,,Clean and Jerk
+27/08/2020,Clean Pull Slow Start,3,70,,Clean and Jerk
+27/08/2020,Clean Pull Slow Start,3,100,,Clean and Jerk
+27/08/2020,Clean Pull Slow Start,3,100,,Clean and Jerk
+27/08/2020,Clean Pull Slow Start,3,100,,Clean and Jerk
+27/08/2020,Clean Pull Slow Start,3,100,,Clean and Jerk
+27/08/2020,Clean Pull Slow Start,3,100,,Clean and Jerk
+27/08/2020,Back Squat,3,20,,Clean and Jerk
+27/08/2020,Back Squat,3,50,,Clean and Jerk
+27/08/2020,Back Squat,3,70,,Clean and Jerk
+27/08/2020,Back Squat,3,90,,Clean and Jerk
+27/08/2020,Back Squat,3,100,,Clean and Jerk
+27/08/2020,Back Squat,3,100,,Clean and Jerk
+27/08/2020,Back Squat,3,100,,Clean and Jerk
+1/09/2020,Overhead Squat,2,20,,Snatch
+1/09/2020,Overhead Squat,2,40,,Snatch
+1/09/2020,Overhead Squat,2,50,,Snatch
+1/09/2020,Overhead Squat,2,60,,Snatch
+1/09/2020,Overhead Squat,2,70,,Snatch
+1/09/2020,Overhead Squat,2,70,,Snatch
+1/09/2020,Overhead Squat,2,70,,Snatch
+1/09/2020,Rapid Drop Down Snatch,5,0,,Snatch
+1/09/2020,Rapid Drop Down Snatch,5,0,,Snatch
+1/09/2020,Rapid Drop Down Snatch,5,10,,Snatch
+1/09/2020,Rapid Drop Down Snatch,5,20,,Snatch
+1/09/2020,Rapid Drop Down Snatch,5,20,,Snatch
+1/09/2020,Power Snatch,3,20,,Snatch
+1/09/2020,Power Snatch,3,40,,Snatch
+1/09/2020,Power Snatch,3,50,,Snatch
+1/09/2020,Power Snatch,3,55,,Snatch
+1/09/2020,Power Snatch,3,55,,Snatch
+1/09/2020,Power Snatch,3,55,,Snatch
+1/09/2020,Power Snatch,3,55,,Snatch
+1/09/2020,Jerk Balance,3,20,,Clean and Jerk
+1/09/2020,Jerk Balance,3,40,,Clean and Jerk
+1/09/2020,Jerk Balance,3,45,,Clean and Jerk
+1/09/2020,Jerk Balance,3,45,,Clean and Jerk
+1/09/2020,Jerk Balance,3,45,,Clean and Jerk
+1/09/2020,Press in Split,3,45,,Clean and Jerk
+1/09/2020,Press in Split,3,45,,Clean and Jerk
+1/09/2020,Press in Split,3,45,,Clean and Jerk
+1/09/2020,Press in Split,3,45,,Clean and Jerk
+1/09/2020,Press in Split,3,45,,Clean and Jerk
+1/09/2020,Front Squat Pause,3,40,,Clean and Jerk
+1/09/2020,Front Squat Pause,3,50,,Clean and Jerk
+1/09/2020,Front Squat Pause,3,70,,Clean and Jerk
+1/09/2020,Front Squat Pause,3,75,,Clean and Jerk
+1/09/2020,Front Squat Pause,3,75,,Clean and Jerk
+1/09/2020,Front Squat Pause,3,75,,Clean and Jerk
+1/09/2020,Front Squat Pause,3,75,,Clean and Jerk
+1/09/2020,Front Squat Pause,3,75,,Clean and Jerk
+3/09/2020,Power Clean + Front Squat,3,40,,Clean and Jerk
+3/09/2020,Power Clean + Front Squat,3,50,,Clean and Jerk
+3/09/2020,Power Clean + Front Squat,3,60,,Clean and Jerk
+3/09/2020,Power Clean + Front Squat,3,70,,Clean and Jerk
+3/09/2020,Power Clean + Front Squat,2,80,,Clean and Jerk
+3/09/2020,Power Clean + Front Squat,2,80,,Clean and Jerk
+3/09/2020,Power Clean + Front Squat,2,85,,Clean and Jerk
+3/09/2020,Clean Pull Mid Range,5,80,,Clean and Jerk
+3/09/2020,Clean Pull Mid Range,5,80,,Clean and Jerk
+3/09/2020,Clean Pull Mid Range,5,80,,Clean and Jerk
+3/09/2020,Split Squat,3,50,,Clean and Jerk
+3/09/2020,Split Squat,3,70,,Clean and Jerk
+3/09/2020,Split Squat,3,80,,Clean and Jerk
+3/09/2020,Split Squat,3,80,,Clean and Jerk
+3/09/2020,Split Squat,3,80,,Clean and Jerk
+3/09/2020,Power Jerk,3,20,,Clean and Jerk
+3/09/2020,Power Jerk,3,50,,Clean and Jerk
+3/09/2020,Power Jerk,3,70,,Clean and Jerk
+3/09/2020,Power Jerk,3,75,,Clean and Jerk
+3/09/2020,Power Jerk,3,80,,Clean and Jerk
+3/09/2020,Power Jerk,3,80,,Clean and Jerk
+3/09/2020,Back Squat Slow Descent,3,50,,Clean and Jerk
+3/09/2020,Back Squat Slow Descent,3,70,,Clean and Jerk
+3/09/2020,Back Squat Slow Descent,3,90,,Clean and Jerk
+3/09/2020,Back Squat Slow Descent,3,90,,Clean and Jerk
+3/09/2020,Back Squat Slow Descent,3,90,,Clean and Jerk
+7/09/2020,Snatch Balance,3,20,,Snatch
+7/09/2020,Snatch Balance,3,40,,Snatch
+7/09/2020,Snatch Balance,3,50,,Snatch
+7/09/2020,Snatch Balance,3,60,,Snatch
+7/09/2020,Snatch Balance,3,60,,Snatch
+7/09/2020,Snatch Balance,3,60,,Snatch
+7/09/2020,Snatch Pulls,3,50,,Snatch
+7/09/2020,Snatch Pulls,3,70,,Snatch
+7/09/2020,Snatch Pulls,3,70,,Snatch
+7/09/2020,Snatch Pulls,3,70,,Snatch
+7/09/2020,Snatch Pulls,3,70,,Snatch
+7/09/2020,Snatch Pulls,3,70,,Snatch
+7/09/2020,Back Squat,3,50,,Clean and Jerk
+7/09/2020,Back Squat,3,70,,Clean and Jerk
+7/09/2020,Back Squat,3,70,,Clean and Jerk
+7/09/2020,Back Squat,3,70,,Clean and Jerk
+7/09/2020,Back Squat,3,70,,Clean and Jerk
+7/09/2020,Back Squat,3,70,,Clean and Jerk
+9/09/2020,Press in Split,5,20,,Clean and Jerk
+9/09/2020,Press in Split,5,30,,Clean and Jerk
+9/09/2020,Press in Split,5,40,,Clean and Jerk
+9/09/2020,Press in Split,5,45,,Clean and Jerk
+9/09/2020,Power Clean and Jerk,3,40,,Clean and Jerk
+9/09/2020,Power Clean and Jerk,3,50,,Clean and Jerk
+9/09/2020,Power Clean and Jerk,3,60,,Clean and Jerk
+9/09/2020,Power Clean and Jerk,3,70,,Clean and Jerk
+9/09/2020,Power Clean and Jerk,3,80,,Clean and Jerk
+9/09/2020,Power Clean and Jerk,3,90,,Clean and Jerk
+9/09/2020,Power Clean and Jerk,3,92,,Clean and Jerk
+9/09/2020,Power Clean and Jerk,2,95,,Clean and Jerk
+9/09/2020,Snatch Pull High,3,40,,Snatch
+9/09/2020,Snatch Pull High,3,50,,Snatch
+9/09/2020,Snatch Pull High,3,60,,Snatch
+9/09/2020,Snatch Pull High,3,70,,Snatch
+9/09/2020,Snatch Pull High,3,80,,Snatch
+9/09/2020,Snatch Pull High,3,90,,Snatch
+9/09/2020,Snatch Pull High,3,92,,Snatch
+9/09/2020,Back Squat,3,20,,Clean and Jerk
+9/09/2020,Back Squat,3,50,,Clean and Jerk
+9/09/2020,Back Squat,3,70,,Clean and Jerk
+9/09/2020,Back Squat,3,90,,Clean and Jerk
+9/09/2020,Back Squat,3,110,,Clean and Jerk
+9/09/2020,Back Squat,3,115,,Clean and Jerk
+9/09/2020,Back Squat,3,120,,Clean and Jerk
+9/09/2020,Seated Press,5,20,,Clean and Jerk
+9/09/2020,Seated Press,5,40,,Clean and Jerk
+9/09/2020,Seated Press,5,40,,Clean and Jerk
+9/09/2020,Seated Press,5,40,,Clean and Jerk
+9/09/2020,Seated Press,5,40,,Clean and Jerk
+9/09/2020,Seated Press,5,40,,Clean and Jerk
+11/09/2020,Snatch Balance,3,20,,Snatch
+11/09/2020,Snatch Balance,3,40,,Snatch
+11/09/2020,Snatch Balance,3,50,,Snatch
+11/09/2020,Snatch Balance,3,60,,Snatch
+11/09/2020,Snatch Balance,3,60,,Snatch
+11/09/2020,Snatch Balance,3,60,,Snatch
+11/09/2020,Clean,3,20,,Clean and Jerk
+11/09/2020,Clean,3,50,,Clean and Jerk
+11/09/2020,Clean,3,60,,Clean and Jerk
+11/09/2020,Clean,3,70,,Clean and Jerk
+11/09/2020,Clean,3,80,,Clean and Jerk
+11/09/2020,Good Morning,5,20,,Clean and Jerk
+11/09/2020,Good Morning,5,40,,Clean and Jerk
+11/09/2020,Good Morning,5,40,,Clean and Jerk
+11/09/2020,Good Morning,5,40,,Clean and Jerk
+11/09/2020,Good Morning,5,40,,Clean and Jerk
+11/09/2020,Good Morning,5,40,,Clean and Jerk
+11/09/2020,Front Squat,3,40,,Clean and Jerk
+11/09/2020,Front Squat,3,60,,Clean and Jerk
+11/09/2020,Front Squat,3,80,,Clean and Jerk
+11/09/2020,Front Squat,3,100,,Clean and Jerk
+12/09/2020,Snatch Balance,3,20,,Snatch
+12/09/2020,Snatch Balance,3,40,,Snatch
+12/09/2020,Snatch Balance,3,50,,Snatch
+12/09/2020,Snatch Balance,3,60,,Snatch
+12/09/2020,Snatch,3,20,,Snatch
+12/09/2020,Snatch,3,40,,Snatch
+12/09/2020,Snatch,3,50,,Snatch
+12/09/2020,Snatch,3,60,,Snatch
+12/09/2020,Snatch,3,70,,Snatch
+12/09/2020,Snatch,X2,75,,Snatch
+12/09/2020,Snatch,3,75,,Snatch
+12/09/2020,Snatch,2,80,,Snatch
+12/09/2020,Snatch,2,83,,Snatch
+12/09/2020,Clean and Jerk,2,50,,Clean and Jerk
+12/09/2020,Clean and Jerk,2,70,,Clean and Jerk
+12/09/2020,Clean and Jerk,2,90,,Clean and Jerk
+12/09/2020,Clean and Jerk,2,98,,Clean and Jerk
+12/09/2020,Clean Pull,3,90,,Clean and Jerk
+12/09/2020,Clean Pull,3,110,,Clean and Jerk
+12/09/2020,Clean Pull,3,120,,Clean and Jerk
+12/09/2020,Clean Pull,3,120,,Clean and Jerk
+12/09/2020,Clean Pull,3,120,,Clean and Jerk
+12/09/2020,Back Squat,3,50,,Clean and Jerk
+12/09/2020,Back Squat,2,90,,Clean and Jerk
+12/09/2020,Back Squat,2,100,,Clean and Jerk
+12/09/2020,Back Squat,2,110,,Clean and Jerk
+12/09/2020,Back Squat,2,115,,Clean and Jerk
+12/09/2020,Back Squat,2,120,,Clean and Jerk
+15/09/2020,Front Squat Warm Up,3,20,,Clean and Jerk
+15/09/2020,Front Squat Warm Up,3,40,,Clean and Jerk
+15/09/2020,Front Squat Warm Up,3,50,,Clean and Jerk
+15/09/2020,Front Squat Warm Up,3,60,,Clean and Jerk
+15/09/2020,Front Squat Warm Up,3,70,,Clean and Jerk
+15/09/2020,Power Clean and Clean,3,50,,Clean and Jerk
+15/09/2020,Power Clean and Clean,3,60,,Clean and Jerk
+15/09/2020,Power Clean and Clean,3,70,,Clean and Jerk
+15/09/2020,Power Clean and Clean,3,80,,Clean and Jerk
+15/09/2020,Power Clean and Clean,3,85,,Clean and Jerk
+15/09/2020,Power Clean and Clean,2,90,,Clean and Jerk
+15/09/2020,Power Clean and Clean,2,95,,Clean and Jerk
+15/09/2020,Clean Pull,3,95,,Clean and Jerk
+15/09/2020,Clean Pull,3,105,,Clean and Jerk
+15/09/2020,Clean Pull,3,115,,Clean and Jerk
+15/09/2020,Clean Pull,3,120,,Clean and Jerk
+15/09/2020,Clean Pull,3,120,,Clean and Jerk
+15/09/2020,Clean Pull,3,120,,Clean and Jerk
+15/09/2020,Split Squat,3,20,,Clean and Jerk
+15/09/2020,Split Squat,3,50,,Clean and Jerk
+15/09/2020,Split Squat,3,70,,Clean and Jerk
+15/09/2020,Split Squat,3,75,,Clean and Jerk
+15/09/2020,Split Squat,3,80,,Clean and Jerk
+15/09/2020,Back Squat,3,50,,Clean and Jerk
+15/09/2020,Back Squat,3,70,,Clean and Jerk
+15/09/2020,Back Squat,3,90,,Clean and Jerk
+15/09/2020,Back Squat,3,100,,Clean and Jerk
+15/09/2020,Back Squat,3,105,,Clean and Jerk
+15/09/2020,Back Squat,3,110,,Clean and Jerk
+15/09/2020,Back Squat,2,115,,Clean and Jerk
+15/09/2020,Back Squat,2,115,,Clean and Jerk
+15/09/2020,Hyperextension,6,20,,Accessory
+15/09/2020,Hyperextension,6,20,,Accessory
+15/09/2020,Hyperextension,6,20,,Accessory
+15/09/2020,Situps,10,0,,Accessory
+15/09/2020,Situps,10,0,,Accessory
+15/09/2020,Situps,10,0,,Accessory
+17/09/2020,Snatch Balance,3,20,,Snatch
+17/09/2020,Snatch Balance,3,40,,Snatch
+17/09/2020,Snatch Balance,3,60,,Snatch
+17/09/2020,Snatch Balance,3,70,,Snatch
+17/09/2020,Snatch Balance,3,70,,Snatch
+17/09/2020,Snatch Balance,3,70,,Snatch
+17/09/2020,Clean Pull Mid Range,3,70,,Clean and Jerk
+17/09/2020,Clean Pull Mid Range,3,70,,Clean and Jerk
+17/09/2020,Clean Pull Mid Range,3,70,,Clean and Jerk
+17/09/2020,Clean Pull Mid Range,3,70,,Clean and Jerk
+17/09/2020,Clean Pull Mid Range,3,70,,Clean and Jerk
+17/09/2020,Front Squat,5,20,,Clean and Jerk
+17/09/2020,Front Squat,5,50,,Clean and Jerk
+17/09/2020,Front Squat,5,70,,Clean and Jerk
+19/09/2020,Snatch,3,20,,Snatch
+19/09/2020,Snatch,3,40,,Snatch
+19/09/2020,Snatch,3,50,,Snatch
+19/09/2020,Snatch,3,60,,Snatch
+19/09/2020,Snatch,2,70,,Snatch
+19/09/2020,Snatch,2,75,,Snatch
+19/09/2020,Snatch,2,80,,Snatch
+19/09/2020,Snatch,1,85,,Snatch
+19/09/2020,Snatch,1,88,,Snatch
+19/09/2020,Snatch,1,90,,Snatch
+19/09/2020,Clean and Jerk,3,40,,Clean and Jerk
+19/09/2020,Clean and Jerk,3,50,,Clean and Jerk
+19/09/2020,Clean and Jerk,3,70,,Clean and Jerk
+19/09/2020,Clean and Jerk,2,80,,Clean and Jerk
+19/09/2020,Clean and Jerk,2,90,,Clean and Jerk
+19/09/2020,Clean and Jerk,2,100,,Clean and Jerk
+19/09/2020,Clean and Jerk,X,105,,Clean and Jerk
+19/09/2020,Clean and Jerk,1,105,,Clean and Jerk
+19/09/2020,Clean Pull Hover,3,90,,Clean and Jerk
+19/09/2020,Clean Pull Hover,3,90,,Clean and Jerk
+19/09/2020,Clean Pull Hover,3,90,,Clean and Jerk
+19/09/2020,Clean Pull Hover,3,90,,Clean and Jerk
+19/09/2020,Clean Pull Hover,3,90,,Clean and Jerk
+19/09/2020,Back Squat,3,50,,Clean and Jerk
+19/09/2020,Back Squat,3,70,,Clean and Jerk
+19/09/2020,Back Squat,3,90,,Clean and Jerk
+19/09/2020,Back Squat,3,100,,Clean and Jerk
+19/09/2020,Back Squat,2,110,,Clean and Jerk
+19/09/2020,Back Squat,2,115,,Clean and Jerk
+19/09/2020,Back Squat,2,120,,Clean and Jerk
+19/09/2020,Back Squat,2,125,,Clean and Jerk
+19/09/2020,Back Squat,1,130,,Clean and Jerk
