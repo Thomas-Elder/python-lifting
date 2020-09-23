@@ -37,16 +37,16 @@ class Test_DataReader():
         data = self.dr.getData()
         
         expectedDate = datetime.strptime('2020-07-14', '%Y-%m-%d')
-        expectedExerciseName = 'Front Squat'
-        expectedWeight = 50
+        expectedExerciseName = 'Power Snatch'
+        expectedWeight = 20
 
         actual = self.dr.translateData(data, self.dr.translateRepetitions)
 
         assert actual[0].date == expectedDate
         assert actual[0].exercises[0].name == expectedExerciseName
         assert actual[0].exercises[0].sets[0].weight == expectedWeight
-        assert actual[0].exercises[0].sets[0].totalRepetitions == 3
-        assert len(actual[0].exercises[0].sets) == 7
+        assert actual[0].exercises[0].sets[0].totalRepetitions == 5
+        assert len(actual[0].exercises[0].sets) == 8
 
     def test_translateRepetitions(self):
 
