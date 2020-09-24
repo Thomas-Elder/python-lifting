@@ -50,3 +50,10 @@ class Test_Exercise():
         result = self.exercise.topSet().weight
 
         assert result == expected
+
+    def test_topSetIntensity(self):
+
+        expected = 66.67
+        result = self.exercise.topSetIntensity({'Snatch': 90, 'Clean and Jerk': 110})
+
+        assert result == expected

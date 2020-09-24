@@ -37,3 +37,10 @@ class Exercise:
                 top = s
 
         return top
+
+    def topSetIntensity(self, competitionLifts: dict) -> float:
+
+        base = competitionLifts[self.type]
+
+        return round((self.topSet().weight/base) * 100, 2)
+
