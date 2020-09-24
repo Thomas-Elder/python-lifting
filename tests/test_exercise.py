@@ -21,6 +21,7 @@ class Test_Exercise():
 
     def test_exercise(self):
         assert self.exercise.name == 'Snatch'
+        assert self.exercise.type == 'Snatch'
 
     def test_totalWeight(self):
         
