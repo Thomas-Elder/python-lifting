@@ -233,3 +233,28 @@ class DataHandler:
             trainingPeriods.append((competitionDates[len(competitionDates) - 1] + day, end))
 
         return trainingPeriods
+
+    def getCompetitionLifts(self, competitionSessions: list) -> dict:
+        '''Returns the best weights achieved for Snatch and Clean and Jerk in competition
+
+        Parameters
+        ----------
+        competitionDates: a list of datetime objects representing competition dates
+
+        Returns
+        -------
+        A dictionary with two keys, 'Snatch' and 'Clean and Jerk', values are the top weight 
+        for each lift
+        '''
+        prs = {'Snatch': 0, 'Clean and Jerk': 0}
+
+        for session in competitionSessions:
+            for exercise in session.exercises:
+                if exercise.name == 'Snatch' and exercise.topSet().weight > prs['Snatch']:
+                    prs['Snatch'] = exercise.topSet().weight
+
+                if exercise.name == 'Clean and Jerk' and exercise.topSet().weight > prs['Clean and Jerk']:
+                    prs['Clean and Jerk'] = exercise.topSet().weight
+
+        return prs
+

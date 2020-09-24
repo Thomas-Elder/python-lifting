@@ -106,3 +106,11 @@ class Test_DataHandler():
         
         result = self.dh.getCompetitionPeriodDates(competitionDates)
         assert result == expected
+
+    def test_getCompetitionLifts(self, test_data):
+        competitionSessions = self.dh.getSessions(test_data, datetime.strptime('2020-05-01', '%Y-%m-%d'), datetime.strptime('2020-05-30', '%Y-%m-%d'), competition=True)
+        result = self.dh.getCompetitionLifts(competitionSessions)
+        expected = {'Snatch': 50, 'Clean and Jerk': 70}
+
+        assert result['Snatch'] == expected['Snatch']
+        assert result['Clean and Jerk'] == expected['Clean and Jerk']
