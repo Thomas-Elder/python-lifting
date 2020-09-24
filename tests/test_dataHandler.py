@@ -74,6 +74,15 @@ class Test_DataHandler():
         for i in range(len(result)):
             assert result[i].date == expected[i]
 
+    def test_getSessionsForExercise(self, test_data):
+        expected = [datetime.strptime('2020-04-01', '%Y-%m-%d')]
+        result = self.dh.getSessionsForExercise(test_data, datetime.strptime('2020-04-01', '%Y-%m-%d'), datetime.strptime('2020-05-30', '%Y-%m-%d'), 'Snatch')
+
+        assert len(result) == len(expected)
+        
+        for i in range(len(result)):
+            assert result[i].date == expected[i]
+
     def test_getExercises(self, test_data):
         exercises = ['Snatch', 'Clean and Jerk']
         assert self.dh.getExercises(test_data) == exercises

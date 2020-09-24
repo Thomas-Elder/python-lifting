@@ -36,6 +36,29 @@ class DataHandler:
 
         return [s for s in sessions if s.date >= fromDate and s.date <= toDate and s.competition == competition]
 
+    def getSessionsForExercise(self, sessions: list, fromDate: datetime, toDate: datetime, exercise: str):
+
+        '''Returns a list of sessions between the toDate and fromDate or a session on the fromDate from the given session list,
+        which include the given exercise. 
+
+        Parameters
+        ----------
+        sessions: a list of Session objects
+        fromDate: a datetime
+        toDate: a datetime
+        exercise: a string
+
+        Returns
+        -------
+        A list of sessions which include this exercise
+        '''
+
+        #allSessions = [s for s in sessions if s.date >= fromDate and s.date <= toDate]
+        #allSessionsNonComp = [s for s in allSessions if s.competition == False]
+        #allSessionsEx = [s for s in allSessionsNonComp if exercise in [e.name for e in s.exercises]]
+        #return allSessionsEx
+        return [s for s in sessions if s.date >= fromDate and s.date <= toDate and s.competition == False and exercise in [e.name for e in s.exercises]]
+
     def getExercises(self, sessions: list) -> list:
         '''Returns a list of exercises from the given dataset
 
