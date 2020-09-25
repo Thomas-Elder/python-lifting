@@ -56,6 +56,13 @@ class Test_DataHandler():
         logging.info('Tearing down after test... ')
         self.dh = None
 
+    def test_dateRange(self, test_data):
+        expected = (datetime.strptime('2020-04-01', '%Y-%m-%d'), datetime.strptime('2020-05-01', '%Y-%m-%d'))
+        result = self.dh.dateRange(test_data)
+
+        assert result[0] == expected[0]
+        assert result[1] == expected[1]
+
     def test_getSessionsNonCompetition(self, test_data):
         expected = [datetime.strptime('2020-04-01', '%Y-%m-%d')]
         result = self.dh.getSessions(test_data, datetime.strptime('2020-04-01', '%Y-%m-%d'), datetime.strptime('2020-04-30', '%Y-%m-%d'), competition=False)
@@ -75,8 +82,12 @@ class Test_DataHandler():
             assert result[i].date == expected[i]
 
     def test_getSessionsMonthly(self, test_data):
+        expected = [[datetime.strptime('2020-04-01', '%Y-%m-%d')]]
+        result = self.dh.getSessionsMonthly(test_data)
 
-        assert 1 == 1
+        assert len(result) == len(expected)
+        assert len(result[0]) == len(expected[0])
+        assert result[0][0].date == expected[0][0]
 
     def test_getSessionsForExercise(self, test_data):
         expected = [datetime.strptime('2020-04-01', '%Y-%m-%d')]

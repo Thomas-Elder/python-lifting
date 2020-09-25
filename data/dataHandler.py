@@ -6,6 +6,7 @@ from data.models.set import Set
 
 import os 
 import statistics
+import calendar
 
 from datetime import datetime, timedelta
 
@@ -14,6 +15,34 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 #logging.disable(logging.CRITICAL)
 
 class DataHandler:
+
+    def __init__(self):
+        self.startYear = 0
+        self.endYear = 0
+
+    def dateRange(self, sessions: list) -> tuple:
+        ''' Returns a tuple containing the first and last dates in the session list
+
+        Parameters
+        ----------
+        sessions: a list of Session objects
+
+        Returns
+        -------
+        A tuple with (startDate, endDate)
+        '''
+
+        startDate = datetime(2030, 12, 31)
+        endDate = datetime(2020, 1, 1)
+
+        for session in sessions:
+            if session.date > endDate:
+                endDate = session.date
+
+            if session.date < startDate:
+                startDate = session.date
+
+        return (startDate, endDate)
 
     def getSessions(self, sessions: list, fromDate: datetime, toDate: datetime, competition=False):
 
@@ -48,8 +77,16 @@ class DataHandler:
         -------
         A list of lists of sessions
         '''
+        monthlySessions = []
+        yearRange = self.dateRange(sessions)
+        for year in range(yearRange[0].year, yearRange[1].year + 1):
+            for month in range(1, 13):
+                s = self.getSessions(sessions, datetime(year, month, 1), datetime(year, month, calendar.monthrange(year, month)[1]), competition=False)
 
-        return []
+                if len(s) > 0:
+                    monthlySessions.append(s)
+
+        return monthlySessions
 
     def getSessionsForExercise(self, sessions: list, fromDate: datetime, toDate: datetime, exercise: str):
 
