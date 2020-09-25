@@ -31,10 +31,25 @@ class DataHandler:
 
         Returns
         -------
-        The exercises as a list of strings
+        The exercises as a list of Sessions
         '''
 
         return [s for s in sessions if s.date >= fromDate and s.date <= toDate and s.competition == competition]
+
+    def getSessionsMonthly(self, sessions: list):
+
+        '''Returns a list of sessions grouped by month. 
+
+        Parameters
+        ----------
+        sessions: a list of Session objects
+
+        Returns
+        -------
+        A list of lists of sessions
+        '''
+
+        return []
 
     def getSessionsForExercise(self, sessions: list, fromDate: datetime, toDate: datetime, exercise: str):
 

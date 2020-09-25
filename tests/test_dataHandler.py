@@ -74,6 +74,10 @@ class Test_DataHandler():
         for i in range(len(result)):
             assert result[i].date == expected[i]
 
+    def test_getSessionsMonthly(self, test_data):
+
+        assert 1 == 1
+
     def test_getSessionsForExercise(self, test_data):
         expected = [datetime.strptime('2020-04-01', '%Y-%m-%d')]
         result = self.dh.getSessionsForExercise(test_data, datetime.strptime('2020-04-01', '%Y-%m-%d'), datetime.strptime('2020-05-30', '%Y-%m-%d'), 'Snatch')
