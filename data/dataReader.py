@@ -89,14 +89,14 @@ class DataReader:
 
         total, successful, failed = 0, 0, 0
 
-        if 'X' not in repetitionString:
+        if 'x' not in repetitionString.lower():
             total += int(repetitionString)
             successful += int(repetitionString)
 
         else: 
             for char in repetitionString:
 
-                if char == 'X':
+                if char.lower() == 'x':
                     failed += 1
                     total += 1
                 else:
