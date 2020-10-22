@@ -27,7 +27,10 @@ class DataReader_Sort:
             for data in self.reader:
                 self.dataset.append(data)
 
+        start = timer()
         self.sessions = self.translateData(self.dataset, self.translateRepetitions)
+        end = timer()
+        print(f'Vanilla translateData exection time: {round(end-start, 2)} seconds') #  0 seconds
         logging.debug('DataReader initialised')
     
     def translateData(self, dataset: list, repetitionTranslator):
@@ -46,15 +49,10 @@ class DataReader_Sort:
         dates = list(set([x[0] for x in dataset]))
         dates.sort()
 
-        start = timer()
         sessions = [Session(datetime.strptime(date, '%Y/%m/%d')) for date in dates]
-        end = timer()
-        print(f'Sessions comprehension exection time: {round(end-start, 2)} seconds') #  0 seconds
-        print(f'Number of sessions: {len(sessions)}')
 
         for session in sessions:
 
-            start = timer()
             # Get all the exercises for this date
             uniqueExercisesForDate = list({data[1]: data for data in dataset if datetime.strptime(data[0], '%Y/%m/%d') == session.date}.values())
 
@@ -63,10 +61,7 @@ class DataReader_Sort:
 
             # Add them to the sessions' exercise list
             session.exercises = [Exercise(exercise[1], exercise[5]) for exercise in uniqueExercisesForDate]
-            end = timer()
-            print(f'Getting exercises for date, and adding them to session exection time: {round(end-start, 2)} seconds') # 0.01 seconds but for every session. 118 sessions atm.
 
-            start = timer()
             for exercise in session.exercises:
                 
                 # Get all the sets for this session's date, for this exercise               
@@ -80,9 +75,6 @@ class DataReader_Sort:
                     # while we're here, let's check if any sets have an attempt value, if so, mark this session as a competition one
                     if exerciseSet[4] != '':
                         session.competition = True
-
-            end = timer()
-            print(f'Organising exercises and sets exection time: {round(end-start, 2)} seconds') # ~0.04-0.1 seconds
 
         logging.debug('data translated')
         return sessions
