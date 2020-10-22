@@ -20,7 +20,7 @@ class DataReader_Sort:
         logging.debug('cwd: %s' % (os.getcwd()))
         self.file = file
         self.dataset = []
-        self.sessions = []
+        self.sessions = {}
         self.dates = []
 
         with open(file, mode='r', newline='') as csv_file:
@@ -30,9 +30,17 @@ class DataReader_Sort:
                 self.dataset.append(data)
 
                 # How about here, while we're reading in the data we translate and store in sessions. 
-                if data[0] in self.dates:
+                if data[0] in self.sessions:
                     # add this line to existing session
-                    pass 
+                    exercise = Exercise(data[1], data[5])
+
+                    # Translate reps from this line
+                    totalRepetitions, successfulRepetitions, failedRepetitions = self.translateRepetitions(data[2])
+                    exercise.sets.append(Set(totalRepetitions, successfulRepetitions, failedRepetitions, int(data[3])))
+
+                    # add exercise to this session
+                    self.sessions[data[0]].append(exercise)
+
                 else:
                     # add date to dates list
                     self.dates.append(data[0])
@@ -52,12 +60,8 @@ class DataReader_Sort:
                     if data[4] != '':
                         session.competition = True
 
-                    self.sessions.append(session)
+                    self.sessions[datetime.strptime(data[0], '%Y/%m/%d')] = session
 
-        #start = timer()
-        #self.sessions = self.translateData(self.dataset, self.translateRepetitions)
-        #end = timer()
-        #print(f'Vanilla translateData exection time: {round(end-start, 2)} seconds') #  0 seconds
         logging.debug('DataReader initialised')
     
     def translateData(self, dataset: list, repetitionTranslator):
