@@ -30,7 +30,7 @@ class DataReader_Sort:
                 self.dataset.append(data)
 
                 # How about here, while we're reading in the data we translate and store in sessions. 
-                if data[0] in self.sessions:
+                if datetime.strptime(data[0], '%Y/%m/%d') in self.sessions:
                     # add this line to existing session
                     exercise = Exercise(data[1], data[5])
 
@@ -39,10 +39,10 @@ class DataReader_Sort:
                     exercise.sets.append(Set(totalRepetitions, successfulRepetitions, failedRepetitions, int(data[3])))
 
                     # add exercise to this session
-                    self.sessions[data[0]].append(exercise)
+                    self.sessions[datetime.strptime(data[0], '%Y/%m/%d')].addExercise(exercise)
 
                 else:
-                    # add date to dates list
+                    # add date to dates list and initialise the exercises list
                     self.dates.append(data[0])
 
                     # create new session
