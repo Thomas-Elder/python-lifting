@@ -20,6 +20,8 @@ class DataReader_Sort:
         logging.debug('cwd: %s' % (os.getcwd()))
         self.file = file
         self.dataset = []
+        self.sessions = []
+        self.dates = []
 
         with open(file, mode='r', newline='') as csv_file:
             self.reader = csv.reader(csv_file)
@@ -27,10 +29,35 @@ class DataReader_Sort:
             for data in self.reader:
                 self.dataset.append(data)
 
-        start = timer()
-        self.sessions = self.translateData(self.dataset, self.translateRepetitions)
-        end = timer()
-        print(f'Vanilla translateData exection time: {round(end-start, 2)} seconds') #  0 seconds
+                # How about here, while we're reading in the data we translate and store in sessions. 
+                if data[0] in self.dates:
+                    # add this line to existing session
+                    pass 
+                else:
+                    # add date to dates list
+                    self.dates.append(data[0])
+
+                    # create new session
+                    session = Session(datetime.strptime(data[0], '%Y/%m/%d'))
+                    exercise = Exercise(data[1], data[5])
+
+                    # Translate reps from this line
+                    totalRepetitions, successfulRepetitions, failedRepetitions = self.translateRepetitions(data[2])
+                    exercise.sets.append(Set(totalRepetitions, successfulRepetitions, failedRepetitions, int(data[3])))
+
+                    # Add this exercise to this session, need to update addExercise to handle duplicates.
+                    session.addExercise(exercise)
+
+                    # Check if it's a competition session or not
+                    if data[4] != '':
+                        session.competition = True
+
+                    self.sessions.append(session)
+
+        #start = timer()
+        #self.sessions = self.translateData(self.dataset, self.translateRepetitions)
+        #end = timer()
+        #print(f'Vanilla translateData exection time: {round(end-start, 2)} seconds') #  0 seconds
         logging.debug('DataReader initialised')
     
     def translateData(self, dataset: list, repetitionTranslator):
