@@ -20,5 +20,6 @@ print(f'Data reader sort init exection time: {round(end-start, 2)} seconds') #  
 print()
 print(f'Current list of sessions: {len(dr.sessions)}')
 print(f'Session exercises:')
-for exercise in dr.sessions[datetime(2020, 10, 6, 0, 0)].exercises:
-    print(f'Exercise name: {exercise.name}')
+exercises = dr.sessions[datetime(2020, 10, 6, 0, 0)].exercises
+for key in exercises:
+    print(f'Exercise name: {exercises[key].name}')
