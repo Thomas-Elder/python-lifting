@@ -109,7 +109,7 @@ class DataHandler:
         #allSessionsNonComp = [s for s in allSessions if s.competition == False]
         #allSessionsEx = [s for s in allSessionsNonComp if exercise in [e.name for e in s.exercises]]
         #return allSessionsEx
-        return [s for s in sessions if s.date >= fromDate and s.date <= toDate and s.competition == False and exercise in [e.name for e in s.exercises]]
+        return [s for s in sessions if s.date >= fromDate and s.date <= toDate and s.competition == False and exercise in s.exercises]
 
     def getExercises(self, sessions: list) -> list:
         '''Returns a list of exercises from the given dataset
@@ -129,10 +129,10 @@ class DataHandler:
         
         for session in sessions:
 
-            for exercise in session.exercises:
+            for exercise in list(session.exercises.keys()):
 
-                if exercise.name not in exercises:
-                    exercises.append(exercise.name)
+                if exercise not in exercises:
+                    exercises.append(exercise)
 
         return exercises
 
@@ -154,8 +154,8 @@ class DataHandler:
 
         for session in sessions:
             for e in session.exercises:
-                if exercise == e.name:
-                    exerciseSets = [s for s in e.sets if s.totalRepetitions == reps]
+                if exercise == e:
+                    exerciseSets = [s for s in session.exercises[e].sets if s.totalRepetitions == reps]
 
                     for s in exerciseSets:
                         total += s.totalRepetitions
