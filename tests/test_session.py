@@ -22,7 +22,8 @@ class Test_Session():
 
     def test_session(self):
         expected = 'Snatch'
-        result = self.session.exercises[0].name
+        result = self.session.exercises
 
-        assert result == expected
+        for key in result.keys():
+            assert key == expected
     
