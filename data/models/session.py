@@ -13,8 +13,8 @@ class Session:
     def addExercise(self, exercise: Exercise):
 
         if exercise.name in self.exercises:
-            for eSet in exercise.sets:
-                self.exercises[exercise.name].sets.append(eSet)
+            for s in exercise.sets:
+                self.exercises[exercise.name].sets.append(s)
         else:
             self.exercises[exercise.name] = exercise
 
