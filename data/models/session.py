@@ -7,11 +7,16 @@ class Session:
 
     def __init__(self, date: datetime):
         self.date = date
-        self.exercises = []
+        self.exercises = {}
         self.competition = False
 
     def addExercise(self, exercise: Exercise):
-        self.exercises.append(exercise)
+
+        if exercise.name in self.exercises:
+            for eSet in exercise.sets:
+                self.exercises[exercise.name].sets.append(eSet)
+        else:
+            self.exercises[exercise.name] = exercise
 
     def getDate(self):
         return self.date
