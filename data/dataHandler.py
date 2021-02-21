@@ -250,7 +250,7 @@ class DataHandler:
     def getCompetitionDates(self, sessions: list) -> list:
         '''Finds the all the dates of competition.
         
-        Finds sets with an attempt number and returns the dates when those sets occured.
+        Finds sets with an attempt number and returns the dates when those sets occurred.
 
         Parameters
         ----------
